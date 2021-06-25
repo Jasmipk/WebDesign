@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" type="text/css"
         href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
-
 </head>
 
 <body>
@@ -31,18 +30,17 @@
                 </nav>
             </aside>
             <main class="col bg-faded py-3 flex-grow-1">
-                <div class="row ">
+                <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 formClass">
                         <h5>Flat White <i class="fa fa-chevron-down"></i></a></h5>
                         <h1>Welcome Abdulla</h1>
                         <h6 class=" mb-3 mt-5 font-weight-bold">
-                            Here's what happening for past <a href="">30 Days <i
-                                    class="fa fa-chevron-down"></i></a>
+                            Here's what happening for past <a href="">30 Days <i class="fa fa-chevron-down"></i></a>
                         </h6>
                         <div class="cardFirst">
-                            <div class="row ">
-                                <div class="coldiv col-md-6 ">
+                            <div class="row">
+                                <div class="coldiv col-md-6">
                                     <div class="card">
                                         <h1>88</h1>
                                         <h5>New customers</h5>
@@ -76,9 +74,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3" style="margin-left: 30px;">
-                        <h6 class="formClass1 pb-2" style="margin-top: 125px;">Start Insights</h6>
-                        <div class="card1 border pt-3 pl-3 pr-3" style="height: 355px;">
+                    <div class="col-lg-3" style="margin-left: 30px;margin-top: 92px;">
+                        <h6 class="formClass1 p-2">Start Insights</h6>
+                        <div class="card1 border pt-3 pl-3 pr-3" style="height: 319px;">
                             <h6>Your customers seem to be visiting<br> more often in january</h6>
                             <small>You had 536 active customers in December,and 621 in January,which means your
                                 active
@@ -90,16 +88,56 @@
                     </div>
                     <div class="col-lg-2"></div>
                 </div>
+                <!-- Charts -->
                 <hr class="solid m-5">
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4">
                         <h2>Insights</h2>
-                        <small>Find out more about your scheme.</small>
-                        <div class="card bg-light p-3 mt-3">
-                            <h5 class="formClass"> Stamps over time by outlet</h5>
-                            <div id="chart" style=" height: 234px;"></div>
-                            <div id="shieldChart" style="text-align: justify;">
+                        <h6>Find out more about your scheme.</h6>
+                        <div class="card bg-light p-3 pl-5 mt-4">
+                            <h5>Stamps over time by outlet</h5>
+                            <div class="line-chart-block">
+                                <div class="line-chart">
+                                    <dl class="chart" style="--scale: 100;">
+                                        <dt class="date">2000</dt>
+                                        <dd class="bar" style="--start: 56;">
+                                        </dd>
+                                        <dt class="date">2001</dt>
+                                        <dd class="bar" style="--start: 1;">
+                                        </dd>
+                                        <dt class="date">2002</dt>
+                                        <dd class="bar" style="--start: 38;">
+                                        </dd>
+                                        <dt class="date">2003</dt>
+                                        <dd class="bar" style="--start: 90;">
+                                        </dd>
+                                        <dt class="date">2004</dt>
+                                        <dd class="bar" style="--start: 55;">
+                                        </dd>
+                                        <dt class="date">2005</dt>
+                                        <dd class="bar" style="--start: 13;">
+                                        </dd>
+                                        <dt class="date">2006</dt>
+                                        <dd class="bar" style="--start: 66;">
+                                        </dd>
+                                        <dt class="date">2007</dt>
+                                        <dd class="bar" style="--start: 96;">
+                                        </dd>
+                                        <dt class="date">2008</dt>
+                                        <dd class="bar" style="--start: 23;">
+                                        </dd>
+                                        <dt class="date">2009</dt>
+                                        <dd class="bar" style="--start: 10;">
+                                        </dd>
+                                        <dt class="date">2010</dt>
+                                        <dd class="bar" style="--start: 46;">
+                                        </dd>
+                                        <dt class="date">2011</dt>
+                                        <dd class="bar" style="--start: 85;">
+                                        </dd>
+                                    </dl>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -110,7 +148,7 @@
                             Past 30 days
                         </button>
                         <div class="card bg-light p-3 mt-5">
-                            <h5 class="formClass"> Stamps over time by outlet</h5>
+                            <h5>Average visits</h5>
                             <div class="line-chart-block">
                                 <div class="line-chart">
                                     <div class='grafico'>
@@ -146,6 +184,81 @@
                     </div>
                     <div class="col-lg-2"></div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-4">
+                        <div class="card bg-light p-3 mt-2">
+                            <div class="row pl-5">
+                                <h5 class="formClass">Reword awarded & redeemed</h5>
+                                <button type="button" class="btn btn-light btn-sm dropdown-toggle"
+                                    data-toggle="dropdown">
+                                    Past 30 days
+                                </button>
+                            </div>
+                            <div id="chart" style=" height: 234px;"></div>
+                            <div id="shieldChart" style="text-align: justify;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card bg-light p-3 mt-2">
+                            <h5>Active Customers by week</h5>
+                            <div class="line-chart-block">
+                                <div class="line-chart">
+                                    <div class='grafico'>
+                                        <ul class='eje-y'>
+                                            <li data-ejeY='30'></li>
+                                            <li data-ejeY='20'></li>
+                                            <li data-ejeY='10'></li>
+                                            <li data-ejeY='0'></li>
+                                        </ul>
+                                        <ul class='eje-x'>
+                                            <li>Apr</li>
+                                            <li>May</li>
+                                            <li>Jun</li>
+                                        </ul>
+                                        <span data-valor='25'>
+                                            <span data-valor='8'>
+                                                <span data-valor='13'>
+                                                    <span data-valor='5'>
+                                                        <span data-valor='23'>
+                                                            <span data-valor='12'>
+                                                                <span data-valor='15'>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-3">
+                        <div id="verticalChart">
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="card bg-light p-3 mt-3">
+                            <h5 class="formClass"> Stamps over time by outlet</h5>
+                            <div id="pieChart" style=" height: 234px;"></div>
+                            <div id="shieldChart" style="text-align: justify;">
+                            </div>
+                        </div>
+                        <div class="card bg-light p-3 mt-3">
+                            <h5 class="formClass"> Stamps over time by outlet</h5>
+                            <div id="pieChart" style=" height: 234px;"></div>
+                            <div id="shieldChart" style="text-align: justify;">
+                        </div>
+                        <div class="col-lg-2"></div>
+                    </div>
+
             </main>
         </div>
     </div>
@@ -157,6 +270,8 @@
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script type="text/javascript"
         src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+    <script src="https://unpkg.com/apexcharts@3.22.1/dist/apexcharts.min.js
+        "></script>
     <script>
         var xValues = ["Dec", "Jan"];
         var yValues = [55, 49, 44,];
@@ -202,6 +317,198 @@
                     },]
                 });
             });
+
+
+        // pie chart 
+        var options = {
+            chart: {
+                width: 380,
+                type: "donut"
+            },
+            dataLabels: {
+                enabled: false
+            },
+            series: [75, 30]
+        };
+
+        var chart = new ApexCharts(document.querySelector("#pieChart"), options);
+
+        chart.render();
+
+        function random() {
+            return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+        }
+
+        function appendData() {
+            var arr = chart.w.globals.series.map(() => {
+                return random();
+            });
+            arr.push(random());
+            return arr;
+        }
+
+        function removeData() {
+            var arr = chart.w.globals.series.map(() => {
+                return random()
+            });
+            arr.pop();
+            return arr;
+        }
+
+        function randomize() {
+            return chart.w.globals.series.map(() => {
+                return random();
+            });
+        }
+
+        function reset() {
+            return options.series;
+        }
+
+        document.querySelector("#randomize").addEventListener("click", function () {
+            chart.updateSeries(randomize());
+        });
+
+        document.querySelector("#add").addEventListener("click", function () {
+            console.log(appendData());
+            chart.updateSeries(appendData());
+        });
+
+        document.querySelector("#remove").addEventListener("click", function () {
+            chart.updateSeries(removeData());
+        });
+
+        document.querySelector("#reset").addEventListener("click", function () {
+            chart.updateSeries(reset());
+        });
+        // bar chart vertical
+
+        const fruits = [
+            { name: "bananas", value: 221, color: "#ffe135" },
+            { name: "apples", value: 205, color: "#66b447" },
+            { name: "strawberries", value: 174, color: "#fc5a8d" },
+            { name: "grapes", value: 170, color: "#6f2da8" },
+            { name: "oranges", value: 102, color: "#ffa500" },
+            { name: "limes", value: 98, color: "#32cd32" },
+            { name: "watermelon", value: 89, color: "#fc6c85" },
+            { name: "lemons", value: 55, color: "#fff700" }
+        ];
+
+        const margin = { top: 36, right: 1, bottom: 30, left: 100 };
+        const width = 600 - margin.left - margin.right;
+        const height = 600 - margin.top - margin.bottom;
+
+        var x = d3.scaleLinear().range([0, width]);
+        var y = d3.scaleBand().rangeRound([height, 0], 0);
+
+        var xAxis = d3.axisBottom().scale(x).ticks(5);
+        x.domain([0, 250]);
+
+        var yAxis = d3.axisLeft().scale(y).tickSize(0);
+        y.domain(
+            fruits.map(function (d) {
+                return d.name;
+            })
+        );
+
+        var svg = d3
+            .select("#verticalChart")
+            .append("svg:svg")
+            .attr("id", "svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        svg
+            .selectAll("bar")
+            .data(fruits)
+            .enter()
+            .append("g")
+            .attr("class", "bar-group")
+            .append("rect")
+            .style("fill", "#2e4a62")
+            .attr("y", (d) => y(d.name) + margin.top / 2)
+            .attr("height", 30)
+            .attr("x", (d) => x(0))
+            .attr("width", (d) => x(d.value));
+
+        svg
+            .selectAll(".bar-group")
+            .append("text")
+            .text((d) => d.value)
+            .attr("fill", "black")
+            .attr("x", (d) => x(d.value) + 12)
+            .attr("y", (d) => y(d.name) + margin.top)
+            .style("font", "16px sans-serif");
+
+        svg
+            .append("g")
+            .attr("class", "y axis")
+            .call(yAxis)
+            .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dx", "-0.5em")
+            .style("font", "16px sans-serif");
+
+        svg
+            .append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(xAxis)
+            .selectAll("text")
+            .style("text-anchor", "end")
+            .attr("dy", "1em")
+            .style("font", "16px sans-serif");
+
+        svg
+            .append("text")
+            .attr("x", width / 2)
+            .attr("y", 0 - margin.top / 2)
+            .attr("text-anchor", "middle")
+            .style("font-size", "24px")
+            .style("font-family", "sans-serif")
+            .text("D3 Bar Chart");
+
+        var serializer = new XMLSerializer();
+        var src = serializer.serializeToString(document.getElementById("svg"));
+        src = '<?xml version="1.0" standalone="no"?>\r\n' + src;
+        var url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(src);
+        document.getElementById("download").href = url;
+
+
+        // horizopntal bar chart
+
+        (function ($) {
+            function generateBarGraph(wrapper) {
+                // Set Up Values Array
+                var values = [];
+
+                // Get Values and save to Array
+                $(wrapper + ' .bar').each(function (index, el) {
+                    values.push($(this).data('value'));
+                });
+
+                // Get Max Value From Array
+                var max_value = Math.max.apply(Math, values);
+
+                // Set width of bar to percent of max value
+                $(wrapper + ' .bar').each(function (index, el) {
+                    var bar = $(this),
+                        value = bar.data('value'),
+                        percent = Math.ceil((value / max_value) * 100);
+
+                    // Set Width & Add Class
+                    bar.width(percent + '%');
+                    bar.addClass('in');
+                });
+            }
+
+            // Generate the bar graph on window load...
+            $(window).on('load', function (event) {
+                generateBarGraph('#dashboard-stats');
+            });
+        })(jQuery); // Fully reference jQuery after this point.
 
     </script>
 </body>
