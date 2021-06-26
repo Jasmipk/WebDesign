@@ -24,6 +24,9 @@
                                 <a class="navbar-brand" href="#">
                                     <img src="img/img7" alt="logo" style="width:40px;">
                                 </a>
+                               <a href="/Dashboard.html"><i class="fas fa-th-large fa-2x"></i></a> 
+                               <a href="/Campaigns.html"> <i class="fas fa-assistive-listening-systems fa-2x"></i></a>
+                                <i class="fas fa-truck fa-2x"></i>
                             </li>
                         </ul>
                     </div>
@@ -67,14 +70,13 @@
                                     <div class="card">
                                         <h1>95</h1>
                                         <h5>Total visit</h5>
-                                        <small class="text-danger">+2% increase</small>
+                                        <small class="text-danger"> +2% increase</small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3" style="margin-left: 30px;margin-top: 92px;">
+                    <div class="col-lg-3  coldiv" style="margin-left: 30px;margin-top: 92px;">
                         <h6 class="formClass1 p-2">Start Insights</h6>
                         <div class="card1 border pt-3 pl-3 pr-3" style="height: 319px;">
                             <h6>Your customers seem to be visiting<br> more often in january</h6>
@@ -82,7 +84,7 @@
                                 active
                                 customers grew by 15.2%</small>
                             <div class="canvas">
-                                <canvas id="chart1"></canvas>
+                                <canvas id="chart1" class="coldiv"></canvas>
                             </div>
                         </div>
                     </div>
@@ -92,56 +94,14 @@
                 <hr class="solid m-5">
                 <div class="row">
                     <div class="col-lg-2"></div>
-                    <div class="col-lg-4">
+                    <div class=" col-lg-4 coldiv">
                         <h2>Insights</h2>
                         <h6>Find out more about your scheme.</h6>
                         <div class="card bg-light p-3 pl-5 mt-4">
                             <h5>Stamps over time by outlet</h5>
-                            <div class="line-chart-block">
-                                <div class="line-chart">
-                                    <dl class="chart" style="--scale: 100;">
-                                        <dt class="date">2000</dt>
-                                        <dd class="bar" style="--start: 56;">
-                                        </dd>
-                                        <dt class="date">2001</dt>
-                                        <dd class="bar" style="--start: 1;">
-                                        </dd>
-                                        <dt class="date">2002</dt>
-                                        <dd class="bar" style="--start: 38;">
-                                        </dd>
-                                        <dt class="date">2003</dt>
-                                        <dd class="bar" style="--start: 90;">
-                                        </dd>
-                                        <dt class="date">2004</dt>
-                                        <dd class="bar" style="--start: 55;">
-                                        </dd>
-                                        <dt class="date">2005</dt>
-                                        <dd class="bar" style="--start: 13;">
-                                        </dd>
-                                        <dt class="date">2006</dt>
-                                        <dd class="bar" style="--start: 66;">
-                                        </dd>
-                                        <dt class="date">2007</dt>
-                                        <dd class="bar" style="--start: 96;">
-                                        </dd>
-                                        <dt class="date">2008</dt>
-                                        <dd class="bar" style="--start: 23;">
-                                        </dd>
-                                        <dt class="date">2009</dt>
-                                        <dd class="bar" style="--start: 10;">
-                                        </dd>
-                                        <dt class="date">2010</dt>
-                                        <dd class="bar" style="--start: 46;">
-                                        </dd>
-                                        <dt class="date">2011</dt>
-                                        <dd class="bar" style="--start: 85;">
-                                        </dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
+                         </div>
                     </div>
-                    <div class="col-lg-4" style="float: right;">
+                    <div class="col-lg-4 coldiv" style="float: right;">
                         <a href="#"><i class="fas fa-download"></i> EXPORT
                             DATA</a>
                         <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
@@ -186,7 +146,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-2"></div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 coldiv">
                         <div class="card bg-light p-3 mt-2">
                             <div class="row pl-5">
                                 <h5 class="formClass">Reword awarded & redeemed</h5>
@@ -200,7 +160,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 coldiv">
                         <div class="card bg-light p-3 mt-2">
                             <h5>Active Customers by week</h5>
                             <div class="line-chart-block">
@@ -240,7 +200,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-2"></div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 coldiv">
                         <div id="verticalChart">
                         </div>
                     </div>
@@ -255,10 +215,11 @@
                             <h5 class="formClass"> Stamps over time by outlet</h5>
                             <div id="pieChart" style=" height: 234px;"></div>
                             <div id="shieldChart" style="text-align: justify;">
+                            </div>
+                            <div class="col-lg-2"></div>
                         </div>
-                        <div class="col-lg-2"></div>
                     </div>
-
+                </div>
             </main>
         </div>
     </div>
@@ -272,8 +233,10 @@
         src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
     <script src="https://unpkg.com/apexcharts@3.22.1/dist/apexcharts.min.js
         "></script>
+        <script src="Deshboard.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"></script>
     <script>
-        var xValues = ["Dec", "Jan"];
+        var xValues = ["Dec","Jan"];
         var yValues = [55, 49, 44,];
         var barColors = ["green", "green"];
 
@@ -475,35 +438,27 @@
         src = '<?xml version="1.0" standalone="no"?>\r\n' + src;
         var url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(src);
         document.getElementById("download").href = url;
-
-
         // horizopntal bar chart
-
         (function ($) {
             function generateBarGraph(wrapper) {
                 // Set Up Values Array
                 var values = [];
-
                 // Get Values and save to Array
                 $(wrapper + ' .bar').each(function (index, el) {
                     values.push($(this).data('value'));
                 });
-
                 // Get Max Value From Array
                 var max_value = Math.max.apply(Math, values);
-
                 // Set width of bar to percent of max value
                 $(wrapper + ' .bar').each(function (index, el) {
                     var bar = $(this),
                         value = bar.data('value'),
                         percent = Math.ceil((value / max_value) * 100);
-
                     // Set Width & Add Class
                     bar.width(percent + '%');
                     bar.addClass('in');
                 });
             }
-
             // Generate the bar graph on window load...
             $(window).on('load', function (event) {
                 generateBarGraph('#dashboard-stats');

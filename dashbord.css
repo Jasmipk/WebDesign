@@ -10,8 +10,7 @@
              flex: 0 0 16.666667%;
         max-width: 4.666667% !important;
   }
-}
-
+}   
 /* Float four columns side by side */
 .coldiv {
     float: left;
@@ -28,18 +27,21 @@
     display: table;
     clear: both;
   }
+ .fas, .fa{
+
+  margin-top: 15px !important;
+    padding: 3px !important;
+    color: gray !important;
+ }
   
   /* Responsive columns */
   @media screen and (max-width: 600px) {
     .coldiv {
       width: 100%;
       display: block;
-     
-      
-    }
+             }
   }
-  
-  /* Style the counter cards */
+     /* Style the counter cards */
   .card {
       background-color: rgb(241, 237, 237) !important;
       text-align: left;
@@ -406,4 +408,3 @@ USO NÚMEROS MÁGICOS EN ALGUNOS VALORES
 POR NO PARARME A ESTUDIAR A FONDO
 EL CSS DEL PEN ORIGINAL
 *****************************/
-/* horizontal bar chart */
