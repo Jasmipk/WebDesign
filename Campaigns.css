@@ -1,0 +1,84 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Aleo';font-size: 22px;
+  }
+@media (min-width: 768px){
+    .col-md-2 {
+             flex: 0 0 16.666667%;
+        max-width: 4.666667% !important;
+  }
+}   
+/* Float four columns side by side */
+.coldiv {
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+    margin-bottom: 20px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ .fas, .fa{
+
+  margin-top: 15px !important;
+    padding: 3px !important;
+    color: gray !important;
+ }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .coldiv {
+      width: 100%;
+      display: block;
+             }
+  }
+     /* Style the counter cards */
+  .card {
+      background-color: rgb(241, 237, 237) !important;
+      text-align: left;
+      padding: 30px;
+       }
+       
+ @media (max-width: 700px) {
+    .formClass{
+        margin-top: 0 !important;
+        }
+  }
+
+input[type=search] {
+    width: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+       padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+    input[type=search]:focus {
+    width: 100%;
+  }
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+       padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+    input[type=text]:focus {
+    width: 100%;
+  }
