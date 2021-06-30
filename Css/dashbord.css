@@ -5,7 +5,7 @@
   body {
     font-family: 'Aleo';font-size: 22px;
   }
-@media (min-width: 768px){
+@media (min-width: 770px){
     .col-md-2 {
              flex: 0 0 16.666667%;
         max-width: 4.666667% !important;
@@ -32,6 +32,11 @@
   margin-top: 15px !important;
     padding: 3px !important;
     color: gray !important;
+ }
+ @media screen and (min-width: 680px){
+   .col{
+     margin-left: 70px !important;
+   }
  }
   
   /* Responsive columns */

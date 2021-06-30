@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../Css//Campaigns.css">
+    <link rel="stylesheet" href="/sidebar.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -17,24 +18,15 @@
 </head>
 
 <body>
+    <div class="sidebar">
+       <a><i class="disabled fa fa-fire"></i></a>
+       <a href="/Html/Dashboard.html"><i class="fa fa-grip-horizontal"></i></a>
+       <a href="/Html/Campaigns.html"><i class="fa fa-bullhorn"></i></a>
+        <a href="#"><i class="fa fa-truck"></i></a>
+        <a href="#" style="margin-top: 525px"><i class=" fa fa-cog"></i></a>
+        <a href="#"><i class="fa fa-sign-out-alt"></i></a>
+    </div>
     <div class="container-fluid">
-        <div class="row min-vh-100 flex-column flex-md-row">
-            <aside class="col-md-2 p-0 bg-warning flex-shrink-1">
-                <nav class="navbar navbar-expand  bg-warning flex-md-column flex-row align-items-start py-2">
-                    <div class="collapse navbar-collapse">
-                        <ul class="flex-md-column flex-row navbar-nav w-100 justify-content-between">
-                            <li class="nav-item">
-                                <a class="navbar-brand" href="#">
-                                    <img src="../img/img7" alt="logo" style="width:40px;">
-                                </a>
-                                <a href="Dashboard.html"> <i class="fas fa-th-large fa-2x"></i></a>
-                                <a href="Campaigns.html"><i class="fas fa-assistive-listening-systems fa-2x"></i></a>
-                                <i class="fas fa-truck fa-2x"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </aside>
             <main class="col bg-faded py-3 flex-grow-1">
                 <div class="row">
                     <div class="col-sm-2 col-md-6 col-lg-4 col-xl-3 formClass">
@@ -43,7 +35,9 @@
                         <h6>Campaigns allows you to drive footfall and customize your customer experience.</h6>
                     </div>
                 </div>
-                <hr class="solid">
+                <div class="row">
+                <hr class="col-xl-12 solid">
+            </div>
                 <div class="row">
                     <div class="col-lg-2 col-md-6 col-sm-3">
                         <input type="search" class="form-control" placeholder="Search..">

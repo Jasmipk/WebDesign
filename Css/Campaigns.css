@@ -33,4 +33,18 @@
          width: 88px !important;
        }
       }
+      @media screen and (max-width: 700px){
+        .col{
+          margin-left: 0 !important;
+        }
+        .col-lg-2, .col-lg-1, .col-lg-3{
+          margin-top: 5px !important;
+        }
+      }
+  
+ @media screen and (min-width: 680px){
+  .col{
+    margin-left: 70px !important;
+  }
+}
     
