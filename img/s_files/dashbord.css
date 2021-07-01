@@ -42,40 +42,4 @@
 #motion-effect-example-1 tr {
   transition-duration: 0.3s;
 }
-/* pie chart */
-[data-pie-id] li:nth-child(0) {
-  color: blue;
-}
-[data-pie-id] li:nth-child(1) {
-  color: #4d00ff;
-}
-[data-pie-id] li:nth-child(2) {
-  color: #9900ff;
-}
-[data-pie-id] li:nth-child(3) {
-  color: #e500ff;
-}
-[data-pie-id] li:nth-child(4) {
-  color: #ff00cc;
-}
-[data-pie-id] li:nth-child(5) {
-  color: #ff0080;
-}
-[data-pie-id] li:nth-child(6) {
-  color: #ff0033;
-}
-ul[data-pie-id] {
-  list-style: none;
-  padding: 10px;
-}
-#my-cool-chart {
-  width:300px;
-}
-ul, #my-cool-chart {
-  float:left;
-}
-/* Color graph only */
-/*#my-cool-chart g[data-id="g1"] path {
-  fill:yellow;
-}*/
- 
+

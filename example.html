@@ -1,0 +1,1092 @@
+<table id="motion-effect-example-1"
+    class="charts-css column show-labels show-primary-axis show-5-secondary-axes data-spacing-5 hide-data">
+    <caption> Puntos registrados por localidad </caption>
+    <thead>
+        <tr>
+            <th scope="col"> Year </th>
+            <th scope="col"> Progress </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row"> Bosa </th>
+            <td style="--size:0.15;"><span class="data"> 20</span></td>
+        </tr>
+        <tr>
+            <th scope="row"> Santa Fe </th>
+            <td style="--size:0.5;"><span class="data"> 40 </span></td>
+        </tr>
+        <tr>
+            <th scope="row"> Fontibo </th>
+            <td style="--size:0.6;"><span class="data"> 60 </span></td>
+        </tr>
+        <tr>
+            <th scope="row"> 2019 </th>
+            <td style="--size:0.4;"><span class="data"> 40 </span></td>
+        </tr>
+        <tr>
+            <th scope="row"> 2020 </th>
+            <td style="--size:0.2;"><span class="data"> 20 </span></td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+</div>
+<div class="col-lg-3 coldiv" style="margin-top: 130px; margin-left: 20px;">
+    <h6 class="formClass1 p-2">Start Insights</h6>
+    <div class="card border pt-3 pl-3 pr-3" style="height: 319px;">
+        <h6>Your customers seem to be visiting<br> more often in january</h6>
+        <small>You had 536 active customers in December,and 621 in January,which means your
+            active
+            customers grew by 15.2%</small>
+        <div class="canvas">
+            <canvas id="chart1" class="coldiv"></canvas>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2"></div>
+</div>
+<!-- Charts -->
+<hr class="solid">
+<div class="row">
+    <div class="col-lg-4 coldiv">
+        <h2>Insights</h2>
+        <h6>Find out more about your scheme.</h6>
+        <div class="card bg-light p-3 pl-5" style="margin-top: 26px; height: 294px;">
+            <h5>Stamps over time by outlet</h5>
+            <dl class="multichart" style="--scale: 100;">
+                <dt class="date">2000</dt>
+                <dd class="bar" style="--start: 56;">
+                </dd>
+                <dt class="date">2001</dt>
+                <dd class="bar" style="--start: 1;">
+                </dd>
+                <dt class="date">2002</dt>
+                <dd class="bar" style="--start: 38;">
+                </dd>
+                <dt class="date">2003</dt>
+                <dd class="bar" style="--start: 90;">
+                </dd>
+                <dt class="date">2004</dt>
+                <dd class="bar" style="--start: 55;">
+                </dd>
+                <dt class="date">2005</dt>
+                <dd class="bar" style="--start: 13;">
+                </dd>
+                <dt class="date">2006</dt>
+                <dd class="bar" style="--start: 66;">
+                </dd>
+                <dt class="date">2007</dt>
+                <dd class="bar" style="--start: 96;">
+                </dd>
+                <dt class="date">2008</dt>
+                <dd class="bar" style="--start: 23;">
+                </dd>
+                <dt class="date">2009</dt>
+                <dd class="bar" style="--start: 10;">
+                </dd>
+                <dt class="date">2010</dt>
+                <dd class="bar" style="--start: 46;">
+                </dd>
+                <dt class="date">2011</dt>
+                <dd class="bar" style="--start: 85;">
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="col-lg-4 coldiv">
+        <a href="#"><i class="fas fa-download"></i> EXPORT
+            DATA</a>
+        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+            Past 30 days
+        </button>
+        <div class="card bg-light p-3 mt-5">
+            <h5>Average visits</h5>
+            <div class="line-chart-block">
+                <div class="line-chart">
+                    <div class='grafico'>
+                        <ul class='eje-y'>
+                            <li data-ejeY='30'></li>
+                            <li data-ejeY='20'></li>
+                            <li data-ejeY='10'></li>
+                            <li data-ejeY='0'></li>
+                        </ul>
+                        <ul class='eje-x'>
+                            <li>Apr</li>
+                            <li>May</li>
+                            <li>Jun</li>
+                        </ul>
+                        <span data-valor='25'>
+                            <span data-valor='8'>
+                                <span data-valor='13'>
+                                    <span data-valor='5'>
+                                        <span data-valor='23'>
+                                            <span data-valor='12'>
+                                                <span data-valor='15'>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 coldiv">
+        <div class="card bg-light p-3 mt-2">
+            <div class="row pl-5">
+                <h5 class="formClass">Reword awarded & redeemed</h5>
+                <button type="button" class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown">
+                    Past 30 days
+                </button>
+            </div>
+            <div id="chart" style=" height: 234px;"></div>
+            <div id="shieldChart" style="text-align: justify;">
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 coldiv">
+        <div class="card bg-light p-3 mt-2">
+            <h5>Active Customers by week</h5>
+            <div class="line-chart-block">
+                <div class="line-chart">
+                    <div class='grafico'>
+                        <ul class='eje-y'>
+                            <li data-ejeY='30'></li>
+                            <li data-ejeY='20'></li>
+                            <li data-ejeY='10'></li>
+                            <li data-ejeY='0'></li>
+                        </ul>
+                        <ul class='eje-x'>
+                            <li>Apr</li>
+                            <li>May</li>
+                            <li>Jun</li>
+                        </ul>
+                        <span data-valor='25'>
+                            <span data-valor='8'>
+                                <span data-valor='13'>
+                                    <span data-valor='5'>
+                                        <span data-valor='23'>
+                                            <span data-valor='12'>
+                                                <span data-valor='15'>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-xl-4 col-md-6 col-sm-4">
+        <div class="card bg-light p-3 mt-3" style="height: 615px;">
+            <div>
+                <iframe src="https://image.shutterstock.com/image-vector/world-map-vector-260nw-361292339.jpg"
+                    height="300px" frameborder="0" style="border:0"></iframe>
+            </div>
+            <section class="bar-graph bar-graph-horizontal bar-graph-one">
+                <div class="bar-one">
+                    <span class="year">2019</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="bar-two">
+                    <span class="year">2018</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="bar-three">
+                    <span class="year">2017</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="bar-four">
+                    <span class="year">2019</span>
+                    <div class="bar"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="col-xl-4 col-md-4 col-sm-4">
+        <div class="card bg-light p-3 mt-3">
+            <h5 class="formClass"> Stamps over time by outlet</h5>
+            <div id="pieChart" class="col-xl-6 col-md-6 col-sm-6"></div>
+            <div id="shieldChart" style="text-align: justify;">
+            </div>
+        </div>
+        <div class="card bg-light p-3 mt-3" style="height: 300px;">
+            <h5 class="formClass"> Stamps over time by outlet</h5>
+            <section class="bar-graph bar-graph-horizontal bar-graph-one">
+                <div class="bar-one">
+                    <span class="year">2019</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="bar-two">
+                    <span class="year">2018</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="bar-three">
+                    <span class="year">2017</span>
+                    <div class="bar"></div>
+                </div>
+                <div class="bar-four">
+                    <span class="year">2019</span>
+                    <div class="bar"></div>
+                </div>
+            </section>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</div>
+</main>
+</div>
+</main>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+<script src="https://unpkg.com/apexcharts@3.22.1/dist/apexcharts.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"></script>
+<script>
+
+    type = "text/javascript" >
+        jQuery(function ($) {
+            $("#chart").shieldChart({
+                theme: "bootstrap",
+                exportOptions: {
+                    image: false,
+                    print: false
+                },
+                seriesSettings: {
+                    bar: {
+                        stackMode: "normal"
+                    }
+                },
+                dataSeries: [{
+                    seriesType: "bar",
+                    collectionAlias: "Gold Medals",
+                    data: [40, 32, 34, 36, 45, 33, 34, 0, 83, 36, 37, 44, 37, 35, 36, 46]
+                }, {
+                    seriesType: "bar",
+                    collectionAlias: "Silver Medals",
+                    data: [19, 25, 21, 26, 28, 31, 35, 0, 60, 31, 34, 32, 24, 40, 38, 29]
+                },]
+            });
+        });
+
+
+    // pie chart 
+    var options = {
+        chart: {
+            width: 380,
+            type: "donut"
+        },
+        dataLabels: {
+            enabled: false
+        },
+        series: [75, 30]
+    };
+
+    var chart = new ApexCharts(document.querySelector("#pieChart"), options);
+
+    chart.render();
+
+    function random() {
+        return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+    }
+
+    function appendData() {
+        var arr = chart.w.globals.series.map(() => {
+            return random();
+        });
+        arr.push(random());
+        return arr;
+    }
+
+    function removeData() {
+        var arr = chart.w.globals.series.map(() => {
+            return random()
+        });
+        arr.pop();
+        return arr;
+    }
+
+    function randomize() {
+        return chart.w.globals.series.map(() => {
+            return random();
+        });
+    }
+
+    function reset() {
+        return options.series;
+    }
+
+    document.querySelector("#randomize").addEventListener("click", function () {
+        chart.updateSeries(randomize());
+    });
+
+    document.querySelector("#add").addEventListener("click", function () {
+        console.log(appendData());
+        chart.updateSeries(appendData());
+    });
+
+    document.querySelector("#remove").addEventListener("click", function () {
+        chart.updateSeries(removeData());
+    });
+
+    document.querySelector("#reset").addEventListener("click", function () {
+        chart.updateSeries(reset());
+    });
+    // bar chart vertical
+
+    const fruits = [
+        { name: "bananas", value: 221, color: "#ffe135" },
+        { name: "apples", value: 205, color: "#66b447" },
+        { name: "strawberries", value: 174, color: "#fc5a8d" },
+        { name: "grapes", value: 170, color: "#6f2da8" },
+        { name: "oranges", value: 102, color: "#ffa500" },
+        { name: "limes", value: 98, color: "#32cd32" },
+        { name: "watermelon", value: 89, color: "#fc6c85" },
+        { name: "lemons", value: 55, color: "#fff700" }
+    ];
+
+    const margin = { top: 36, right: 1, bottom: 30, left: 100 };
+    const width = 600 - margin.left - margin.right;
+    const height = 600 - margin.top - margin.bottom;
+
+    var x = d3.scaleLinear().range([0, width]);
+    var y = d3.scaleBand().rangeRound([height, 0], 0);
+
+    var xAxis = d3.axisBottom().scale(x).ticks(5);
+    x.domain([0, 250]);
+
+    var yAxis = d3.axisLeft().scale(y).tickSize(0);
+    y.domain(
+        fruits.map(function (d) {
+            return d.name;
+        })
+    );
+
+    var svg = d3
+        .select("#verticalChart")
+        .append("svg:svg")
+        .attr("id", "svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+    svg
+        .selectAll("bar")
+        .data(fruits)
+        .enter()
+        .append("g")
+        .attr("class", "bar-group")
+        .append("rect")
+        .style("fill", "#2e4a62")
+        .attr("y", (d) => y(d.name) + margin.top / 2)
+        .attr("height", 30)
+        .attr("x", (d) => x(0))
+        .attr("width", (d) => x(d.value));
+
+    svg
+        .selectAll(".bar-group")
+        .append("text")
+        .text((d) => d.value)
+        .attr("fill", "black")
+        .attr("x", (d) => x(d.value) + 12)
+        .attr("y", (d) => y(d.name) + margin.top)
+        .style("font", "16px sans-serif");
+
+    svg
+        .append("g")
+        .attr("class", "y axis")
+        .call(yAxis)
+        .selectAll("text")
+        .style("text-anchor", "end")
+        .attr("dx", "-0.5em")
+        .style("font", "16px sans-serif");
+
+    svg
+        .append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(xAxis)
+        .selectAll("text")
+        .style("text-anchor", "end")
+        .attr("dy", "1em")
+        .style("font", "16px sans-serif");
+
+    svg
+        .append("text")
+        .attr("x", width / 2)
+        .attr("y", 0 - margin.top / 2)
+        .attr("text-anchor", "middle")
+        .style("font-size", "24px")
+        .style("font-family", "sans-serif")
+        .text("D3 Bar Chart");
+
+    var serializer = new XMLSerializer();
+    var src = serializer.serializeToString(document.getElementById("svg"));
+    src = '<?xml version="1.0" standalone="no"?>\r\n' + src;
+    var url = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(src);
+    document.getElementById("download").href = url;
+
+
+    // horizopntal bar chart
+    (function ($) {
+        function generateBarGraph(wrapper) {
+            // Set Up Values Array
+            var values = [];
+            // Get Values and save to Array
+            $(wrapper + ' .barr').each(function (index, el) {
+                values.push($(this).data('value'));
+            });
+            // Get Max Value From Array
+            var max_value = Math.max.apply(Math, values);
+            // Set width of bar to percent of max value
+            $(wrapper + ' .barr').each(function (index, el) {
+                var bar = $(this),
+                    value = bar.data('value'),
+                    percent = Math.ceil((value / max_value) * 100);
+                // Set Width & Add Class
+                bar.width(percent + '%');
+                bar.addClass('in');
+            });
+        }
+        // Generate the bar graph on window load...
+        $(window).on('load', function (event) {
+            generateBarGraph('#dashboard-stats');
+        });
+    })(jQuery); // Fully reference jQuery after this point.
+
+    // multichart
+    var ctx = document.getElementById("chart-wrap").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'barr',
+        data: {
+            labels: ["M", "T", "W", "T", "F", "S", "S"],
+            datasets: [{
+                label: 'apples',
+                data: [12, 19, 3, 17, 28, 24, 7],
+                backgroundColor: "rgba(153,255,51,1)"
+            }, {
+                label: 'oranges',
+                data: [30, 29, 5, 5, 20, 3, 10],
+                backgroundColor: "rgba(255,153,0,1)"
+            }]
+        }
+    });
+
+        // map
+
+
+
+</script>
+</body>
+
+
+
+
+
+<!-- css -->
+
+/* Float four columns side by side */
+.coldiv {
+    float: left;
+    width: 50%;
+    padding: 0 5px;
+    margin-bottom: 20px;
+  }
+  
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ .fas, .fa{
+
+  margin-top: 15px !important;
+    padding: 3px !important;
+    color: gray !important;
+ }
+ @media screen and (min-width: 680px){
+   .col{
+     margin-left: 70px !important;
+   }
+ }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .coldiv {
+      width: 100%;
+      display: block;
+             }
+  }
+     /* Style the counter cards */
+  .card {
+      background-color: rgb(241, 237, 237) !important;
+      text-align: left;
+      padding: 30px;
+       }
+       
+ @media (max-width: 700px) {
+    .formClass{
+        margin-top: 0 !important;
+        }
+  }
+ @media (max-width: 700px) {
+    .formClass1{
+       margin-top: 0 !important;         
+    }
+  }
+ .chart{
+  vertical-align: middle;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+
+}
+p {
+  text-align: center;
+  font-family:'Verdana', sans-serif;
+  font-size: 10px;
+}
+
+canvas{
+height: 237px !important;
+width: 480px ;
+}
+
+@media (max-width: 700px) {
+  .col-lg-3{
+    margin-left: 0 !important;
+  }
+}
+/* mulltiple bar chart */
+.chart {
+  --scale: 100;
+
+  /* Setup the grid */
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: repeat(var(--scale), minmax(0, 1fr)) 1.4rem;
+  grid-column-gap: 5px;
+
+  /* Generate background guides */
+  /* (sub-pixel rounding errors make this imperfect) */
+  --line-every: 10;
+  background-image: linear-gradient(to bottom, #ccc 1px, transparent 1px);
+  background-size: 100% calc((100% - 1.4rem) / var(--scale) * var(--line-every));
+  
+  /* other styles… */
+   position: relative;
+ }
+.chart::after {
+  background: #fff;
+  bottom: 0;
+  content: ' ';
+  height: 1.4rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+
+/* Dates… */
+/* ------ */
+
+.date {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  grid-row-start: -2;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+
+/* Each bar on the graph… */
+/* ---------------------- */
+
+.bar {
+  grid-row: var(--start) / -2;
+  
+  /* Background-Color */
+  background-image: linear-gradient(to right, green, yellow, orange, red);
+  background-size: 1600% 100%;
+  background-position: calc(var(--start) * 1%) 0;
+  
+  /* Other styles… */
+ 
+  color: #000;
+  list-style: none;
+  position: relative;
+  margin: 5px;
+}
+
+.value {
+  background: #fff;
+  bottom: 100%;  
+  display: inline-block;
+  left: 50%;
+  padding: 0 0.4em;
+  position: absolute;
+  transform: translate(-50%, -1px);
+}
+
+
+/* Global helpers… */
+/* --------------- */
+
+:root {
+  font-size: 80%;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/************************
+Css orignal https://codepen.io/jlalovi/details/bIyAr
+************************/
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
+}
+body {
+	background: #1f253d;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+h1 {
+	font-size: 23px;
+}
+
+h2 {
+	font-size: 17px;
+}
+
+p {
+	font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 15px;
+}
+	a:hover {
+		text-decoration: underline;
+	}
+
+h1, h2, p, a, span{
+	color: rgb(33, 51, 214);
+}
+
+		/******************************************** LEFT CONTAINER *****************************************/
+		
+
+			.donut-chart-block {
+				overflow: hidden;
+			}
+				.donut-chart-block {
+					padding: 10px 0;
+				}
+				
+			.line-chart-block {
+        height: 234px;
+			}
+				.line-chart {
+					height: 200px;
+				
+				}
+				
+				
+/******************************************
+↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓
+ESTILOS PROPIOS DE LOS GRÄFICOS
+↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ ↑ 
+GRAFICO LINEAL
+******************************************/
+
+.grafico {
+  padding: 2rem 1rem 1rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: rgb(10, 8, 8);
+  font-size: 80%;
+}
+.grafico span {
+  display: block;
+  position: absolute;
+  bottom: 3rem;
+  left: 2rem;
+  height: 0;
+  border-top: 2px solid;
+  transform-origin: left center;
+}
+.grafico span > span {
+  left: 100%; bottom: 0;
+}
+[data-valor='25'] {width: 75px; transform: rotate(-45deg);}
+[data-valor='8'] {width: 24px; transform: rotate(65deg);}
+[data-valor='13'] {width: 39px; transform: rotate(-45deg);}
+[data-valor='5'] {width: 15px; transform: rotate(50deg);}
+[data-valor='23'] {width: 69px; transform: rotate(-70deg);}
+[data-valor='12'] {width: 36px; transform: rotate(75deg);}
+[data-valor='15'] {width: 45px; transform: rotate(-45deg);}
+
+[data-valor]:before {
+  content: '';
+  position: absolute;
+  display: block;
+  right: -4px;
+  bottom: -3px;
+  padding: 4px;
+  background: #fff;
+  border-radius: 50%;
+}
+[data-valor='23']:after {
+  content: '+' attr(data-valor) '%';
+  position: absolute;
+  right: -2.7rem;
+  top: -1.7rem;
+  padding: .3rem .5rem;
+  background: #50597B;
+  border-radius: .5rem;
+  transform: rotate(45deg);  
+}
+[class^='eje-'] {
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+  padding: 1rem 1rem 0 2rem;
+  height: 80%;
+}
+.eje-x {
+  height: 2.5rem;
+}
+.eje-y li {
+  height: 25%;
+  border-top: 1px solid #777;
+}
+[data-ejeY]:before {
+  content: attr(data-ejeY);
+  display: inline-block;
+  width: 2rem;
+  text-align: right;
+  line-height: 0;
+  position: relative;
+  left: -2.5rem;
+  top: -.5rem;
+} 
+.eje-x li {
+  width: 33%;
+  float: left;
+  text-align: center;
+}
+
+/******************************************
+GRAFICO CIRCULAR PIE CHART
+******************************************/
+.donut-chart {
+  position: relative;
+	width: 200px;
+  height: 200px;
+	margin: 0 auto 2rem;
+	border-radius: 100%
+ }
+p.center-date {
+  background: #394264;
+  position: absolute;
+  text-align: center;
+	font-size: 28px;
+  top:0;left:0;bottom:0;right:0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  line-height: 35px;
+  padding: 15% 0 0;
+}
+.center-date span.scnd-font-color {
+ line-height: 0; 
+}
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+#porcion1 {
+    transform: rotate(0deg);
+  }
+
+#porcion1 .quesito {
+    background-color: #E64C65;
+    transform: rotate(76deg);
+  }
+#porcion2 {
+    transform: rotate(76deg);
+  }
+#porcion2 .quesito {
+    background-color: #11A8AB;
+    transform: rotate(140deg);
+  }
+#porcion3 {
+    transform: rotate(215deg);
+  }
+#porcion3 .quesito {
+    background-color: #4FC4F6;
+    transform: rotate(113deg);
+  }
+#porcionFin {
+    transform:rotate(-32deg);
+  }
+#porcionFin .quesito {
+    background-color: #FCB150;
+    transform: rotate(32deg);
+  }
+.nota-final {
+  clear: both;
+  color: #4FC4F6;
+  font-size: 1rem;
+  padding: 2rem 0;
+}
+.nota-final strong {
+  color: #E64C65;
+}
+.nota-final a {
+  color: #FCB150;
+  font-size: inherit;
+}
+
+/*****************************
+USO NÚMEROS MÁGICOS EN ALGUNOS VALORES
+POR NO PARARME A ESTUDIAR A FONDO
+EL CSS DEL PEN ORIGINAL
+*****************************/
+/* multichart */
+
+.multichart {
+  height: 200px !important;
+
+  /* Setup the grid */
+  display: grid;
+  grid-template-rows: repeat(var(--scale), minmax(0, 1fr)) 1.4rem;
+  grid-column-gap: 10px;
+  --line-every: 10;
+     /* other styles… */
+  margin: 2em auto 1em;
+  padding: 0 1em;
+  min-width: 10vw;
+ 
+}
+
+
+
+/* Dates… */
+/* ------ */
+
+.date {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  grid-row-start: -2;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+
+/* Each bar on the graph… */
+/* ---------------------- */
+
+
+.value {
+  background: #fff;
+  bottom: 100%;  
+  display: inline-block;
+  left: 50%;
+  padding: 0 0.4em;
+  position: absolute;
+  transform: translate(-50%, -1px);
+}
+
+
+/* Global helpers… */
+/* --------------- */
+
+:root {
+  font-size: 80%;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* horizontalChart */
+/* Bar Graph Horizontal */
+.bar-graph .year {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  opacity: 0;
+}
+.bar-graph-horizontal > div {
+  float: left;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.bar-graph-horizontal .year {
+  float: left;
+  margin-top: 18px;
+  width: 50px;
+}
+
+.bar-graph-horizontal .bar {
+
+  height: 30px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 0;
+}
+
+.bar-graph-one .bar::after {
+  -webkit-animation: fade-in-text 2.2s 0.1s forwards;
+  -moz-animation: fade-in-text 2.2s 0.1s forwards;
+  animation: fade-in-text 2.2s 0.1s forwards;
+  color: #fff;
+  content: attr(data-percentage);
+  font-weight: 700;
+  position: absolute;
+  right: 16px;
+  top: 17px;
+}
+
+.bar-graph-one .bar-one .bar {
+  background-color: #64b2d1;
+  -webkit-animation: show-bar-one 1.2s 0.1s forwards;
+  -moz-animation: show-bar-one 1.2s 0.1s forwards;
+  animation: show-bar-one 1.2s 0.1s forwards;
+}
+
+.bar-graph-one .bar-two .bar {
+  background-color: #5292ac;
+  -webkit-animation: show-bar-two 1.2s 0.2s forwards;
+  -moz-animation: show-bar-two 1.2s 0.2s forwards;
+  animation: show-bar-two 1.2s 0.2s forwards;
+}
+
+.bar-graph-one .bar-three .bar {
+  background-color: #407286;
+  -webkit-animation: show-bar-three 1.2s 0.3s forwards;
+  -moz-animation: show-bar-three 1.2s 0.3s forwards;
+  animation: show-bar-three 1.2s 0.3s forwards;
+}
+
+.bar-graph-one .bar-four .bar {
+  background-color: #2e515f;
+  -webkit-animation: show-bar-four 1.2s 0.4s forwards;
+  -moz-animation: show-bar-four 1.2s 0.4s forwards;
+  animation: show-bar-four 1.2s 0.4s forwards;
+}
+
+/* Bar Graph Horizontal Animations */
+ @-webkit-keyframes show-bar-one {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 69.6%;
+  }
+}
+
+@-webkit-keyframes show-bar-two {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 71%;
+  }
+}
+
+@-webkit-keyframes show-bar-three {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 74.7%;
+  }
+}
+
+@-webkit-keyframes show-bar-four {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 76.8%;
+  }
+}
+
+@-webkit-keyframes fade-in-text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* map */
+
+

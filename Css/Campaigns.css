@@ -29,7 +29,7 @@
         vertical-align: revert !important;
     }
        @media (min-width: 1200px){
-       .filter{
+       .button1{
          width: 88px !important;
        }
       }
@@ -47,4 +47,7 @@
     margin-left: 70px !important;
   }
 }
-    
+
+table{
+    text-indent: 10px !important;
+}

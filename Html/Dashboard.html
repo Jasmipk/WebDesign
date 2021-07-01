@@ -11,546 +11,312 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" type="text/css"
-        href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+        href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+    <!-- pie chart -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/css/pizza.min.css">
 </head>
 
 <body>
-
     <div class="sidebar">
         <a><i class="disabled fa fa-fire"></i></a>
         <a href="/Html/Dashboard.html"><i class="fa fa-grip-horizontal"></i></a>
         <a href="/Html/Campaigns.html"><i class="fa fa-bullhorn"></i></a>
-         <a href="#"><i class="fa fa-truck"></i></a>
-         <a href="#" style="margin-top: 525px"><i class="fa fa-cog"></i></a>
-         <a href="#"><i class="fa fa-sign-out-alt"></i></a>
-     </div>
+        <a href="#"><i class="fa fa-truck"></i></a>
+        <a href="#" style="margin-top: 525px"><i class="fa fa-cog"></i></a>
+        <a href="#"><i class="fa fa-sign-out-alt"></i></a>
+    </div>
     <div class="container-fluid">
-        <main class="col bg-faded py-3 flex-grow-1">
+        <main class="col bg-faded py-3 flex-grow-1" style="margin-left: 80px;">
             <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12 formClass">
+                <div class="col-lg-4 col-md-12 col-sm-12">
                     <h5>Flat White <i class="fa fa-chevron-down"></i></a></h5>
                     <h1>Welcome Abdulla</h1>
                     <h6 class="mb-3 mt-5 font-weight-bold">
                         Here's what happening for past <a href="">30 Days <i class="fa fa-chevron-down"></i></a>
                     </h6>
-                    <div class="cardFirst">
-                        <div class="row">
-                            <div class="coldiv col-md-6">
-                                <div class="card">
-                                    <h1>88</h1>
-                                    <h5>New customers</h5>
-                                    <small class="text-success">+10% increase</small>
-                                </div>
-                            </div>
-                            <div class="coldiv col-md-6">
-                                <div class="card">
-                                    <h1>154</h1>
-                                    <h5>new stamping</h5>
-                                    <small class="text-success">+7% increase</small>
-                                </div>
-                            </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="d-flex flex-wrap align-items-center">
+                        <div class="m-2 card bg-light col-sm-12 col-md-12 col-lg-4">
+                            <h1>88</h1>
+                            <h5>new customers</h5>
+                            <small class="text-success">+10% increase</small>
                         </div>
-                        <div class="row">
-                            <div class="coldiv col-md-6">
-                                <div class="card">
-                                    <h1>17</h1>
-                                    <h5>rewards awarded</h5>
-                                    <small class="text-danger">-3% decrease</small>
-                                </div>
-                            </div>
-                            <div class="coldiv col-md-6">
-                                <div class="card">
-                                    <h1>95</h1>
-                                    <h5>Total visit</h5>
-                                    <small class="text-danger"> +2% increase</small>
-                                </div>
-                            </div>
+                        <div class="m-2 card  col-sm-12 col-md-12 col-lg-4 bg-light">
+                            <h1>154</h1>
+                            <h5>New customers</h5>
+                            <small class="text-success">+7% increase</small>
+                        </div>
+                        <div class="m-2 card col-sm-12 col-md-12 col-lg-4  bg-light">
+                            <h1>17</h1>
+                            <h5>new stamping</h5>
+                            <small class="text-danger">-3% increase</small>
+                        </div>
+                        <div class="m-2 card col-sm-12 col-md-12 col-lg-4  bg-light">
+                            <h1>95</h1>
+                            <h5>new stamping</h5>
+                            <small class="text-danger">+2% increase</small>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 coldiv" style="margin-top: 130px; margin-left: 20px;">
-                    <h6 class="formClass1 p-2">Start Insights</h6>
-                    <div class="card1 border pt-3 pl-3 pr-3" style="height: 319px;">
-                        <h6>Your customers seem to be visiting<br> more often in january</h6>
-                        <small>You had 536 active customers in December,and 621 in January,which means your
+                <div class="col-sm-12 col-md-12 col-lg-4">
+                    <div class="m-2 cardChart border p-3 " style="height: 416px; width: auto;">
+                        <h5 class="pl-2">Your customers seem to be visiting more often in january</h5>
+                        <h6 class="p-3" style="line-height: 2.2;">You had 536 active customers in December,and 621 in
+                            January,which
+                            means your
                             active
-                            customers grew by 15.2%</small>
-                        <div class="canvas">
-                            <canvas id="chart1" class="coldiv"></canvas>
-                        </div>
+                            customers grew by 15.2%</h6>
+                        <table id="motion-effect-example-1"
+                            class="charts-css column show-labels show-primary-axis show-5-secondary-axes data-spacing-5 hide-data">
+                            <caption> Puntos registrados por localidad </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col"> Year </th>
+                                    <th scope="col"> Progress </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"> Jan </th>
+                                    <td style="--size:0.15;"><span class="data"> 20</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> Feb </th>
+                                    <td style="--size:0.5;"><span class="data"> 40 </span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> March </th>
+                                    <td style="--size:0.6;"><span class="data"> 60 </span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> April </th>
+                                    <td style="--size:0.4;"><span class="data"> 40 </span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> May </th>
+                                    <td style="--size:0.2;"><span class="data"> 20 </span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
-                <div class="col-lg-2"></div>
             </div>
-            <!-- Charts -->
-            <hr class="solid">
             <div class="row">
-                <div class="col-lg-4 coldiv">
+                <div class="col-lg-8">
                     <h2>Insights</h2>
-                    <h6>Find out more about your scheme.</h6>
-                    <div class="card bg-light p-3 pl-5" style="margin-top: 26px; height: 294px;">
+                    <h5>Find out more about your scheme</h5>
+                    <div class="text-right">
+                        <a href="#"><i class="fas fa-download"></i> EXPORT
+                            DATA</a>
+                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                            Past 30 days
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="m-2 cardChart border p-3" style="height: 416px; width: auto;">
                         <h5>Stamps over time by outlet</h5>
-                        <dl class="multichart" style="--scale: 100;">
-                            <dt class="date">2000</dt>
-                            <dd class="bar" style="--start: 56;">
-                            </dd>
-                            <dt class="date">2001</dt>
-                            <dd class="bar" style="--start: 1;">
-                            </dd>
-                            <dt class="date">2002</dt>
-                            <dd class="bar" style="--start: 38;">
-                            </dd>
-                            <dt class="date">2003</dt>
-                            <dd class="bar" style="--start: 90;">
-                            </dd>
-                            <dt class="date">2004</dt>
-                            <dd class="bar" style="--start: 55;">
-                            </dd>
-                            <dt class="date">2005</dt>
-                            <dd class="bar" style="--start: 13;">
-                            </dd>
-                            <dt class="date">2006</dt>
-                            <dd class="bar" style="--start: 66;">
-                            </dd>
-                            <dt class="date">2007</dt>
-                            <dd class="bar" style="--start: 96;">
-                            </dd>
-                            <dt class="date">2008</dt>
-                            <dd class="bar" style="--start: 23;">
-                            </dd>
-                            <dt class="date">2009</dt>
-                            <dd class="bar" style="--start: 10;">
-                            </dd>
-                            <dt class="date">2010</dt>
-                            <dd class="bar" style="--start: 46;">
-                            </dd>
-                            <dt class="date">2011</dt>
-                            <dd class="bar" style="--start: 85;">
-                            </dd>
-                        </dl>
-                    </div>
-                </div>
-                <div class="col-lg-4 coldiv">
-                    <a href="#"><i class="fas fa-download"></i> EXPORT
-                        DATA</a>
-                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-                        Past 30 days
-                    </button>
-                    <div class="card bg-light p-3 mt-5">
-                        <h5>Average visits</h5>
-                        <div class="line-chart-block">
-                            <div class="line-chart">
-                                <div class='grafico'>
-                                    <ul class='eje-y'>
-                                        <li data-ejeY='30'></li>
-                                        <li data-ejeY='20'></li>
-                                        <li data-ejeY='10'></li>
-                                        <li data-ejeY='0'></li>
-                                    </ul>
-                                    <ul class='eje-x'>
-                                        <li>Apr</li>
-                                        <li>May</li>
-                                        <li>Jun</li>
-                                    </ul>
-                                    <span data-valor='25'>
-                                        <span data-valor='8'>
-                                            <span data-valor='13'>
-                                                <span data-valor='5'>
-                                                    <span data-valor='23'>
-                                                        <span data-valor='12'>
-                                                            <span data-valor='15'>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 coldiv">
-                    <div class="card bg-light p-3 mt-2">
-                        <div class="row pl-5">
-                            <h5 class="formClass">Reword awarded & redeemed</h5>
-                            <button type="button" class="btn btn-light btn-sm dropdown-toggle" data-toggle="dropdown">
-                                Past 30 days
-                            </button>
-                        </div>
-                        <div id="chart" style=" height: 234px;"></div>
-                        <div id="shieldChart" style="text-align: justify;">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 coldiv">
-                    <div class="card bg-light p-3 mt-2">
-                        <h5>Active Customers by week</h5>
-                        <div class="line-chart-block">
-                            <div class="line-chart">
-                                <div class='grafico'>
-                                    <ul class='eje-y'>
-                                        <li data-ejeY='30'></li>
-                                        <li data-ejeY='20'></li>
-                                        <li data-ejeY='10'></li>
-                                        <li data-ejeY='0'></li>
-                                    </ul>
-                                    <ul class='eje-x'>
-                                        <li>Apr</li>
-                                        <li>May</li>
-                                        <li>Jun</li>
-                                    </ul>
-                                    <span data-valor='25'>
-                                        <span data-valor='8'>
-                                            <span data-valor='13'>
-                                                <span data-valor='5'>
-                                                    <span data-valor='23'>
-                                                        <span data-valor='12'>
-                                                            <span data-valor='15'>
-                                                            </span>
-                                                        </span>
-                                                    </span>
-                                                </span>
-                                            </span>
-                                        </span>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-md-6 col-sm-4">
-                    <div class="card bg-light p-3 mt-3" style="height: 615px;">
-                        <div>
-                            <iframe
-                                src="https://image.shutterstock.com/image-vector/world-map-vector-260nw-361292339.jpg"
-                                height="300px" frameborder="0" style="border:0"></iframe>
-                        </div>
-                        <section class="bar-graph bar-graph-horizontal bar-graph-one">
-                            <div class="bar-one">
-                                <span class="year">2019</span>
-                                <div class="bar"></div>
-                            </div>
-                            <div class="bar-two">
-                                <span class="year">2018</span>
-                                <div class="bar"></div>
-                            </div>
-                            <div class="bar-three">
-                                <span class="year">2017</span>
-                                <div class="bar"></div>
-                            </div>
-                            <div class="bar-four">
-                                <span class="year">2019</span>
-                                <div class="bar"></div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+                        <div id="chart-1" style="margin-top: 50px; width:100%; height:300px;"></div>
 
-                <div class="col-xl-4 col-md-4 col-sm-4">
-                    <div class="card bg-light p-3 mt-3">
-                        <h5 class="formClass"> Stamps over time by outlet</h5>
-                        <div id="pieChart" class="col-xl-6 col-md-6 col-sm-6"></div>
-                        <div id="shieldChart" style="text-align: justify;">
-                        </div>
                     </div>
-                    <div class="card bg-light p-3 mt-3" style="height: 300px;">
-                        <h5 class="formClass"> Stamps over time by outlet</h5>
-                        <section class="bar-graph bar-graph-horizontal bar-graph-one">
-                            <div class="bar-one">
-                                <span class="year">2019</span>
-                                <div class="bar"></div>
-                            </div>
-                            <div class="bar-two">
-                                <span class="year">2018</span>
-                                <div class="bar"></div>
-                            </div>
-                            <div class="bar-three">
-                                <span class="year">2017</span>
-                                <div class="bar"></div>
-                            </div>
-                            <div class="bar-four">
-                                <span class="year">2019</span>
-                                <div class="bar"></div>
-                            </div>
-                        </section>
-                        <div class="col-lg-2"></div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="m-2 cardChart border p-3" style="height: 416px; width: auto;">
+                        <h5>Stamps over time by outlet</h5>
+                        <canvas id="chartLine"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="m-2 cardChart border p-3" style="height: 416px; width: auto;">
+                        <h5>Stamps over time by outlet</h5>
+                        <canvas id="chartLine2"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="m-2 cardChart border p-3" style="height: 416px; width: auto;">
+                        <h5>Stamps over time by outlet</h5>
+                        <img src="https://fvmstatic.s3.amazonaws.com/maps/m/SG-EPS-01-0001.png" alt="" style="
+                       width: 100%; ">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="m-2 cardChart border p-3" style="height: 416px; width: auto;">
+                        <h5>Stamps over time by outlet</h5>
+                        <ul data-pie-id="my-cool-chart">
+                            <li data-value="36">Pepperoni</li>
+                            <li data-value="21">Sausage</li>
+                            <li data-value="8">Cheese</li>
+                            <li data-value="15">Mushrooms</li>
+                            <li data-value="20">Chicken</li>
+                        </ul>
+                        <div id="my-cool-chart"></div>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-    </main>
-    </div>
-    </div>
+
+
+    <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-    <script type="text/javascript"
-        src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
-    <script src="https://unpkg.com/apexcharts@3.22.1/dist/apexcharts.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"></script>
-    <script>
-        var xValues = ["Dec","Jan"];
-        var yValues = [55, 49, 44,];
-        var barColors = ["green","green"];
+    <!-- chart-1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <!-- chart-line   chartLine-2-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <!-- pie chart -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/js/pizza.min.js"></script>
 
-        new Chart("chart1", {
-            type:"bar",
+    <!-- chart-1 -->
+    <script>
+        $(function () {
+
+            Highcharts.setOptions({
+                colors: ['#67BCE6'],
+                chart: {
+                    style: {
+                        fontFamily: 'sans-serif',
+                        color: '#404040'
+                    }
+                }
+            });
+            $('#chart-1').highcharts({
+                chart: {
+                    type: 'column',
+                    backgroundColor: '#b3cccc'
+                },
+                title: {
+                    text: 'Weekly Revenue',
+                    style: {
+                        color: '#404040'
+                    }
+                },
+                xAxis: {
+                    tickWidth: 0,
+                    labels: {
+                        style: {
+                            color: '#404040',
+                        }
+                    },
+                    categories: ['May 5', 'May 6', 'May 7', 'May 8', 'May 9', 'May 10', 'May 11']
+                },
+                yAxis: {
+                    gridLineWidth: .5,
+                    gridLineDashStyle: 'dash',
+                    gridLineColor: 'black',
+                    title: {
+                        text: '',
+                        style: {
+                            color: '#404040'
+                        }
+                    },
+                    labels: {
+                        formatter: function () {
+                            return '$' + Highcharts.numberFormat(this.value, 0, '', ',');
+                        },
+                        style: {
+                            color: '#404040',
+                        }
+                    }
+                },
+                legend: {
+                    enabled: false,
+                },
+                credits: {
+                    enabled: false
+                },
+                tooltip: {
+                    valuePrefix: '$'
+                },
+                plotOptions: {
+                    column: {
+                        borderRadius: 2,
+                        pointPadding: 0,
+                        groupPadding: 0.1
+                    }
+                },
+                series: [{
+                    name: 'Revenue',
+                    data: [2200, 2800, 2300, 1700, 2000, 1200, 1400]
+                }]
+            });
+        });
+        //    chart-line 
+        var ctx = document.getElementById("chartLine").getContext('2d');
+
+
+        var chartLine = new Chart(ctx, {
+            type: 'line',
             data: {
-                labels: xValues,
+                labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
                 datasets: [{
-                    backgroundColor: barColors,
-                    data: yValues
+                    label: 'Series 1', // Name the series
+                    data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
+                    fill: false,
+                    borderColor: '#2196f3', // Add custom color border (Line)
+                    backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+                    borderWidth: 1 // Specify bar border width
                 }]
             },
             options: {
-                legend: { display: false },
-                title: {
-                    display: true,
-                }
+                responsive: true, // Instruct chart js to respond nicely.
+                maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
             }
         });
-        type ="text/javascript" >
-            jQuery(function ($) {
-                $("#chart").shieldChart({
-                    theme:"bootstrap",
-                    exportOptions: {
-                        image: false,
-                        print: false
-                    },
-                    seriesSettings: {
-                        bar: {
-                            stackMode:"normal"
-                        }
-                    },
-                    dataSeries: [{
-                        seriesType:"bar",
-                        collectionAlias:"Gold Medals",
-                        data: [40, 32, 34, 36, 45, 33, 34, 0, 83, 36, 37, 44, 37, 35, 36, 46]
-                    }, {
-                        seriesType:"bar",
-                        collectionAlias:"Silver Medals",
-                        data: [19, 25, 21, 26, 28, 31, 35, 0, 60, 31, 34, 32, 24, 40, 38, 29]
-                    },]
-                });
-            });
 
+        // chartLine2
+        var ctx = document.getElementById("chartLine2").getContext('2d');
 
-        // pie chart 
-        var options = {
-            chart: {
-                width: 380,
-                type:"donut"
-            },
-            dataLabels: {
-                enabled: false
-            },
-            series: [75, 30]
-        };
-
-        var chart = new ApexCharts(document.querySelector("#pieChart"), options);
-
-        chart.render();
-
-        function random() {
-            return Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-        }
-
-        function appendData() {
-            var arr = chart.w.globals.series.map(() => {
-                return random();
-            });
-            arr.push(random());
-            return arr;
-        }
-
-        function removeData() {
-            var arr = chart.w.globals.series.map(() => {
-                return random()
-            });
-            arr.pop();
-            return arr;
-        }
-
-        function randomize() {
-            return chart.w.globals.series.map(() => {
-                return random();
-            });
-        }
-
-        function reset() {
-            return options.series;
-        }
-
-        document.querySelector("#randomize").addEventListener("click", function () {
-            chart.updateSeries(randomize());
-        });
-
-        document.querySelector("#add").addEventListener("click", function () {
-            console.log(appendData());
-            chart.updateSeries(appendData());
-        });
-
-        document.querySelector("#remove").addEventListener("click", function () {
-            chart.updateSeries(removeData());
-        });
-
-        document.querySelector("#reset").addEventListener("click", function () {
-            chart.updateSeries(reset());
-        });
-        // bar chart vertical
-
-        const fruits = [
-            { name:"bananas", value: 221, color:"#ffe135" },
-            { name:"apples", value: 205, color:"#66b447" },
-            { name:"strawberries", value: 174, color:"#fc5a8d" },
-            { name:"grapes", value: 170, color:"#6f2da8" },
-            { name:"oranges", value: 102, color:"#ffa500" },
-            { name:"limes", value: 98, color:"#32cd32" },
-            { name:"watermelon", value: 89, color:"#fc6c85" },
-            { name:"lemons", value: 55, color:"#fff700" }
-        ];
-
-        const margin = { top: 36, right: 1, bottom: 30, left: 100 };
-        const width = 600 - margin.left - margin.right;
-        const height = 600 - margin.top - margin.bottom;
-
-        var x = d3.scaleLinear().range([0, width]);
-        var y = d3.scaleBand().rangeRound([height, 0], 0);
-
-        var xAxis = d3.axisBottom().scale(x).ticks(5);
-        x.domain([0, 250]);
-
-        var yAxis = d3.axisLeft().scale(y).tickSize(0);
-        y.domain(
-            fruits.map(function (d) {
-                return d.name;
-            })
-        );
-
-        var svg = d3
-            .select("#verticalChart")
-            .append("svg:svg")
-            .attr("id","svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform","translate(" + margin.left +"," + margin.top +")");
-
-        svg
-            .selectAll("bar")
-            .data(fruits)
-            .enter()
-            .append("g")
-            .attr("class","bar-group")
-            .append("rect")
-            .style("fill","#2e4a62")
-            .attr("y", (d) => y(d.name) + margin.top / 2)
-            .attr("height", 30)
-            .attr("x", (d) => x(0))
-            .attr("width", (d) => x(d.value));
-
-        svg
-            .selectAll(".bar-group")
-            .append("text")
-            .text((d) => d.value)
-            .attr("fill","black")
-            .attr("x", (d) => x(d.value) + 12)
-            .attr("y", (d) => y(d.name) + margin.top)
-            .style("font","16px sans-serif");
-
-        svg
-            .append("g")
-            .attr("class","y axis")
-            .call(yAxis)
-            .selectAll("text")
-            .style("text-anchor","end")
-            .attr("dx","-0.5em")
-            .style("font","16px sans-serif");
-
-        svg
-            .append("g")
-            .attr("class","x axis")
-            .attr("transform","translate(0," + height +")")
-            .call(xAxis)
-            .selectAll("text")
-            .style("text-anchor","end")
-            .attr("dy","1em")
-            .style("font","16px sans-serif");
-
-        svg
-            .append("text")
-            .attr("x", width / 2)
-            .attr("y", 0 - margin.top / 2)
-            .attr("text-anchor","middle")
-            .style("font-size","24px")
-            .style("font-family","sans-serif")
-            .text("D3 Bar Chart");
-
-        var serializer = new XMLSerializer();
-        var src = serializer.serializeToString(document.getElementById("svg"));
-        src = '<?xml version="1.0" standalone="no"?>\r\n' + src;
-        var url ="data:image/svg+xml;charset=utf-8," + encodeURIComponent(src);
-        document.getElementById("download").href = url;
-
-
-        // horizopntal bar chart
-        (function ($) {
-            function generateBarGraph(wrapper) {
-                // Set Up Values Array
-                var values = [];
-                // Get Values and save to Array
-                $(wrapper + ' .barr').each(function (index, el) {
-                    values.push($(this).data('value'));
-                });
-                // Get Max Value From Array
-                var max_value = Math.max.apply(Math, values);
-                // Set width of bar to percent of max value
-                $(wrapper + ' .barr').each(function (index, el) {
-                    var bar = $(this),
-                        value = bar.data('value'),
-                        percent = Math.ceil((value / max_value) * 100);
-                    // Set Width & Add Class
-                    bar.width(percent + '%');
-                    bar.addClass('in');
-                });
-            }
-            // Generate the bar graph on window load...
-            $(window).on('load', function (event) {
-                generateBarGraph('#dashboard-stats');
-            });
-        })(jQuery); // Fully reference jQuery after this point.
-
-        // multichart
-        var ctx = document.getElementById("chart-wrap").getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'barr',
+        var chartLine2 = new Chart(ctx, {
+            type: 'line',
             data: {
-                labels: ["M","T","W","T","F","S","S"],
+                labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
                 datasets: [{
-                    label: 'apples',
-                    data: [12, 19, 3, 17, 28, 24, 7],
-                    backgroundColor:"rgba(153,255,51,1)"
-                }, {
-                    label: 'oranges',
-                    data: [30, 29, 5, 5, 20, 3, 10],
-                    backgroundColor:"rgba(255,153,0,1)"
+                    label: 'Series 1', // Name the series
+                    data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
+                    fill: false,
+                    borderColor: '#2196f3', // Add custom color border (Line)
+                    backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+                    borderWidth: 1 // Specify bar border width
+                },
+                {
+                    label: 'Series 2', // Name the series
+                    data: [1288, 88942, 44545, 7588, 99, 242, 1417, 5504, 75, 457], // Specify the data values array
+                    fill: false,
+                    borderColor: '#4CAF50', // Add custom color border (Line)
+                    backgroundColor: '#4CAF50', // Add custom color background (Points and Fill)
+                    borderWidth: 1 // Specify bar border width
                 }]
+            },
+            options: {
+                responsive: true, // Instruct chart js to respond nicely.
+                maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
             }
         });
 
-        // map
-
-
-
+        // pie chart
+        Pizza.init(document.body, {
+            donut: false,
+            donut_inner_ratio: 0.4, // between 0 and 1
+            percent_offset: 30, // relative to radius
+            /*stroke_color: '#333',*/
+            stroke_width: 0,
+            show_percent: false, // show or hide the percentage on the chart.
+           
+        });
     </script>
 </body>
