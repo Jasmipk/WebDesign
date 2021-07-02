@@ -57,7 +57,34 @@
                     <span class="fa fa-download"></span><a href=""> EXPORT DATA</a>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-3 text-right">
-                    <button class="btn btn-primary"> REQUEST CAMPAIGN</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#firstmodel"> REQUEST
+                        CAMPAIGN</button>
+                    <div class="modal fade" id="firstmodel">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Request a new campaign</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    Reward your best customers and encourage other to vist more often.
+                                    <div class="form-group">
+                                        <div>10 Characters</div>
+                                        <input type="text" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Campaign Name">
+                                    </div>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancle</button>
+                                    <button type="button" class="btn btn-info"><a href="/Html/Requestcampaign.html">
+                                            BEGIN</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -140,7 +167,6 @@
                                     <td>Campaign Title 04
                                         <div> <small>Top Customers</small></div>
                                         <div> <small class="smalltext">Sending to 50 customers</small></div>
-
                                     </td>
                                     <td>Apr 11,2021
                                     </td>
@@ -161,7 +187,6 @@
                                     <td>Campaign Title 05
                                         <div> <small>Lapsed Customers</small></div>
                                         <div> <small class="smalltext">sent to 50 customers</small></div>
-
                                     </td>
                                     <td>Apr 11,2021
                                     </td>
@@ -185,7 +210,6 @@
                 </div>
             </div>
         </main>
-    </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

@@ -15,9 +15,11 @@
   .col{
     margin-left: 0 !important;
   }
+  .specing{
+    margin-top: 7px !important;
+  }
 }
 /* card */
-
 
 .card{
   border-radius: 8px;
@@ -25,13 +27,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5px;
   box-sizing: border-box;
-  width: 200px;
-  min-width: 222px !important;
-  height: 200px;
-  transition: all linear 200ms;
+  
+ 
 }
+
+/* line */
+
+.hr-theme-slash-2 {
+  display: flex;
+}
+  .hr-line {
+    width: 100%;
+    position: relative;
+    margin: 15px;
+    border-bottom: 1px solid rgb(126, 123, 123);
+  }
+ 
 /* bar chart */
 
 #motion-effect-example-1 {
@@ -66,15 +78,12 @@
 }
 ul[data-pie-id] {
   list-style: none;
-  padding: 10px;
-}
+ }
 #my-cool-chart {
   width:300px;
 }
-ul, #my-cool-chart {
-  float:left;
-}
-/* Color graph only */
+
+  /* Color graph only */
 /*#my-cool-chart g[data-id="g1"] path {
   fill:yellow;
 }*/

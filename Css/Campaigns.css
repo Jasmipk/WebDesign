@@ -11,11 +11,13 @@
         max-width: 4.666667% !important;
   }
 }   
-@media (max-width: 768px){
+@media (max-width: 768px)
+{
   .col-xl-2{
   margin-top: 10px !important;
   }
 }
+
    .fas, .fa{
     margin-top: 15px !important;
     padding: 3px !important;
@@ -51,3 +53,11 @@
 table{
     text-indent: 10px !important;
 }
+/* a link */
+
+
+
+
+
+
+
