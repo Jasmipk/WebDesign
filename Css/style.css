@@ -1,10 +1,12 @@
-@media (min-width: 768px){
+/* @media (min-width: 768px){
+  .container-fluid {
+    margin-left: 3% !important;
+} */
   .col-md-2 {
     flex: 0 0 16.666667%;
     max-width: 4.666667% !important;
   }
-}
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .formClass{
     margin-top: 0 !important;
   }

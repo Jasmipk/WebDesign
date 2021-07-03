@@ -1,23 +1,38 @@
 *{
     box-sizing: border-box;
   }
-  
-  body {
-    font-family: 'Aleo';font-size: 22px;
-     }
-    @media (min-width: 770px){
+    @media (min-width: 768px){
     .col-md-2 {
              flex: 0 0 16.666667%;
         max-width: 4.666667% !important;
   }
-}   
-@media (max-width: 770px){
-  .col{
-    margin-left: 0 !important;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .content{
+   margin-left: 0 !important;
   }
-  .specing{
-    margin-top: 7px !important;
-  }
+}
+ 
+div.content {
+  margin-left: 70px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.customheight{
+  height: 416px;
+    width: auto;
+}  
+.cahrt-1{
+  margin-top: 50px;
+   width:100%;
+    height:300px;
+}
+/* imag */
+.imagmap{
+   width: 100%;
+    height: 91%;
+
 }
 /* card */
 
@@ -28,8 +43,6 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  
- 
 }
 
 /* line */
@@ -45,7 +58,21 @@
   }
  
 /* bar chart */
-
+ .charts-css .td1{
+  --size:0.6; 
+ } 
+ .charts-css .td2{
+  --size:0.3; 
+ } 
+ .charts-css .td3{
+  --size:0.4; 
+ } 
+ .charts-css .td4{
+  --size:0.7; 
+ } 
+ .charts-css .td5{
+  --size:0.9; 
+ } 
 #motion-effect-example-1 {
   height: 200px;
   max-width: 300px;

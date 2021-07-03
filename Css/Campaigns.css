@@ -1,59 +1,47 @@
 *{
     box-sizing: border-box;
   }
-  
-  body {
-    font-family: 'Aleo';font-size: 22px;
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .content{
+     margin-left: 0 !important;
+    }
   }
-@media (min-width: 768px){
-    .col-md-2 {
-             flex: 0 0 16.666667%;
-        max-width: 4.666667% !important;
-  }
-}   
-@media (max-width: 768px)
-{
-  .col-xl-2{
-  margin-top: 10px !important;
-  }
+div.content {
+  margin-left: 50px;
+  padding: 1px 16px;
+  height: 1000px;
 }
-
+.model1{
+  float: right;
+  font-size: 14px;
+}
    .fas, .fa{
     margin-top: 15px !important;
     padding: 3px !important;
-    color: rgb(98, 98, 100);
     }
   .smalltext{
     color: darkgrey;
 }
  .table td, .table th {
-
         vertical-align: revert !important;
     }
-       @media (min-width: 1200px){
-       .button1{
-         width: 88px !important;
-       }
-      }
-      @media screen and (max-width: 700px){
-        .col{
-          margin-left: 0 !important;
-        }
-        .col-lg-2, .col-lg-1, .col-lg-3{
-          margin-top: 5px !important;
-        }
-      }
-  
- @media screen and (min-width: 680px){
-  .col{
-    margin-left: 70px !important;
-  }
-}
-
-table{
-    text-indent: 10px !important;
-}
-/* a link */
+    .progress{
+      height:10px;
+    }
+    .br1{
+     width: 30%;
+    }
+    .br3{
+      width: 60%;
+     }
+     .br4{
+      width: 40%;
+     }
+     .br5{
+      width: 100%;
+     }
+   
 
 
 

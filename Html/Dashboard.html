@@ -5,46 +5,51 @@
     <title>Dashboard</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/Css/dashbord.css">
-    <link rel="stylesheet" href="/sidebar.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
     <!-- pie chart -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/css/pizza.min.css">
+    <!-- pie chart and -->
+    <!-- custom sylesheet -->
+    <link rel="stylesheet" href="/Css/dashbord.css">
+    <link rel="stylesheet" href="/sidebar.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <!-- custom stylesheet and -->
 </head>
 
 <body>
+    <!-- sidebar start -->
     <div class="sidebar">
         <a><i class="disabled fa fa-fire"></i></a>
         <a href="/Html/Dashboard.html"><i class="fa fa-grip-horizontal"></i></a>
         <a href="/Html/Campaigns.html"><i class="fa fa-bullhorn"></i></a>
         <a href="#"><i class="fa fa-truck"></i></a>
-        <a href="#" style="margin-top: 525px"><i class="fa fa-cog"></i></a>
-        <a href="#"><i class="fa fa-sign-out-alt"></i></a>
+        <a href="#"><i class="mybutton fa fa-cog"></i></a>
+            <a href="/Html/Log In.html"><i class="mybutton1fa fa-sign-out-alt"></i></a> 
     </div>
-    <div class="container-fluid" style="width: 80% !important;">
+    <!-- sidebar end -->
+    <div class="content">
+        <!-- main body start -->
         <main class="bg-faded py-3 flex-grow-1">
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
-                    <h5>Flat White <i class="fa fa-chevron-down"></i></a></h5>
+                    <h5>Flat White<i class="fa fa-chevron-down"></i></h5>
                     <h1>Welcome Abdulla</h1>
                     <h6 class="mb-3 mt-5 font-weight-bold">
-                        Here's what happening for past <a href="">30 Days <i class="fa fa-chevron-down"></i></a>
+                        Here's what happening for past <a href="#">30 Days <i class="fa fa-chevron-down"></i></a>
                     </h6>
                 </div>
             </div>
+            <!-- stag items  start-->
             <div class="row">
                 <div class="d-flex col-lg-5">
-                    <div class="m-1 p-2 col-10 card bg-light flex-fill">
+                    <div class="m-1 p-2 card bg-light flex-fill">
                         <h1>88</h1>
                         <h5>new customers</h5>
                         <small class="text-success">+10% increase</small>
                     </div>
-                    <div class="m-1 p-2 col-10 card bg-light flex-fill">
+                    <div class="m-1 p-2 card bg-light flex-fill">
                         <h1>154</h1>
                         <h5>New customers</h5>
                         <small class="text-success">+7% increase</small>
@@ -65,13 +70,16 @@
                     </div>
                 </div>
             </div>
-            <div class="card border m-1 col-lg-5" style="height: 416px; width: auto;">
+            <!-- stage items end -->
+            <!-- first barchart start -->
+            <div class="card border m-1 col-lg-5">
                 <h5>Your customers seem to be visiting more often in january</h5>
-                <h6 style="line-height: 2.2;">You had 536 active customers in December,and 621 in
+                <h6>You had 536 active customers in December,and 621 in
                     January,which
                     means your
                     active
-                    customers grew by 15.2%</h6>
+                    customers grew by 15.2%
+                </h6>
                 <table id="motion-effect-example-1"
                     class="charts-css column show-labels show-primary-axis show-5-secondary-axes data-spacing-5 hide-data">
                     <caption> Puntos registrados por localidad </caption>
@@ -82,34 +90,36 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr id="sizecode">
                             <th scope="row"> Jan </th>
-                            <td style="--size:0.15;"><span class="data"> 20</span></td>
+                            <td class="td1"><span class="data"> 20</span></td>
                         </tr>
                         <tr>
                             <th scope="row"> Feb </th>
-                            <td style="--size:0.5;"><span class="data"> 40 </span></td>
+                            <td class="td2"><span class="data"> 40 </span></td>
                         </tr>
                         <tr>
                             <th scope="row"> March </th>
-                            <td style="--size:0.6;"><span class="data"> 60 </span></td>
+                            <td class="td3"><span class="data"> 60 </span></td>
                         </tr>
                         <tr>
                             <th scope="row"> April </th>
-                            <td style="--size:0.4;"><span class="data"> 40 </span></td>
+                            <td class="td4"><span class="data"> 40 </span></td>
                         </tr>
                         <tr>
                             <th scope="row"> May </th>
-                            <td style="--size:0.2;"><span class="data"> 20 </span></td>
+                            <td class="td-5"><span class="data"> 20 </span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+            <!-- first barchart end -->
             <div class="hr-theme-slash-2">
                 <div class="hr-line"></div>
             </div>
+            <!-- lines -->
             <div class="row">
-                <div class="col-lg-8">
+                <div class="col-lg-8 mt-3">
                     <h2>Insights</h2>
                     <h5>Find out more about your scheme</h5>
                     <div class="text-right">
@@ -121,38 +131,45 @@
                     </div>
                 </div>
             </div>
+            <!-- lines end -->
+            <!-- bar chart  linechart1 start -->
             <div class="row">
                 <div class="col-lg-4">
-                    <div class=" card border p-3" style="height: 416px; width: auto;">
+                    <div class="card border p-3">
                         <h5>Stamps over time by outlet</h5>
-                        <div id="chart-1" style="margin-top: 50px; width:100%; height:300px;"></div>
+                        <div id="chart-1" class="cahrt-1"></div>
                     </div>
                 </div>
-                <div class="specing col-lg-4">
-                    <div class=" card border p-3" style="height: 416px; width: auto;">
+                <!-- bar chart end -->
+                <!-- linechart-1  start -->
+                <div class="col-lg-4">
+                    <div class="card border p-3 customheight">
                         <h5>Stamps over time by outlet</h5>
                         <canvas id="chartLine"></canvas>
                     </div>
                 </div>
             </div>
+            <!-- bar chart and linechart1 end -->
+            <!-- linechart-2 start -->
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="mt-2 card border p-3" style="height: 416px; width: auto;">
+                    <div class="mt-2 card border p-3 customheight">
                         <h5>Stamps over time by outlet</h5>
                         <canvas id="chartLine2"></canvas>
                     </div>
                 </div>
             </div>
+            <!-- linechart-2 end -->
+            <!-- map and pie chart start -->
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="mt-2 card border p-3" style="height: 416px; width: auto;">
+                    <div class="mt-2 card border p-3 customheight">
                         <h5>Stamps over time by outlet</h5>
-                        <img src="https://fvmstatic.s3.amazonaws.com/maps/m/SG-EPS-01-0001.png" alt="" style="
-                       width: 100%; height: 91%;">
+                        <img class="imagmap" src="https://fvmstatic.s3.amazonaws.com/maps/m/SG-EPS-01-0001.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="mt-2 card border p-3" style="height: 416px; width: auto;">
+                    <div class="mt-2 card border p-3 customheight">
                         <h5>Stamps over time by outlet</h5>
                         <ul data-pie-id="my-cool-chart">
                             <li data-value="36"></li>
@@ -165,8 +182,11 @@
                     </div>
                 </div>
             </div>
+            <!-- map and pie chart end -->
         </main>
+        <!-- main close -->
     </div>
+    <!-- end container-fluid -->
 
 
     <!-- script -->
@@ -174,18 +194,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- chart-1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <!-- chart-line   chartLine-2-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <!-- pie chart -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/js/pizza.min.js"></script>
+    <!-- pie chart end -->
 
-    <!-- chart-1 -->
     <script>
+        // chart-1 start
         $(function () {
-
             Highcharts.setOptions({
                 colors: ['#67BCE6'],
                 chart: {
@@ -256,60 +275,62 @@
                 }]
             });
         });
-        //    chart-line 
-        var ctx = document.getElementById("chartLine").getContext('2d');
-
-
-        var chartLine = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ["Tokyo","Mumbai","Mexico City","Shanghai","Sao Paulo","New York","Karachi","Buenos Aires","Delhi","Moscow"],
-                datasets: [{
-                    label: 'Series 1', // Name the series
-                    data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
-                    fill: false,
-                    borderColor: '#2196f3', // Add custom color border (Line)
-                    backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
-                    borderWidth: 1 // Specify bar border width
-                }]
-            },
-            options: {
-                responsive: true, // Instruct chart js to respond nicely.
-                maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
-            }
-        });
-
-        // chartLine2
-        var ctx = document.getElementById("chartLine2").getContext('2d');
-
-        var chartLine2 = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ["Tokyo","Mumbai","Mexico City","Shanghai","Sao Paulo","New York","Karachi","Buenos Aires","Delhi","Moscow"],
-                datasets: [{
-                    label: 'Series 1', // Name the series
-                    data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
-                    fill: false,
-                    borderColor: '#2196f3', // Add custom color border (Line)
-                    backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
-                    borderWidth: 1 // Specify bar border width
+        //    chart-1 end
+        //    chart-line  start
+        $(function () {
+            var ctx = document.getElementById("chartLine").getContext('2d');
+            var chartLine = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
+                    datasets: [{
+                        label: 'Series 1', // Name the series
+                        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
+                        fill: false,
+                        borderColor: '#2196f3', // Add custom color border (Line)
+                        backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+                        borderWidth: 1 // Specify bar border width
+                    }]
                 },
-                {
-
-                    label: 'Series 2', // Name the series
-                    data: [1288, 88942, 44545, 7588, 99, 242, 1417, 5504, 75, 457], // Specify the data values array
-                    fill: false,
-                    borderColor: '#4CAF50', // Add custom color border (Line)
-                    backgroundColor: '#4CAF50', // Add custom color background (Points and Fill)
-                    borderWidth: 1 // Specify bar border width
-                }]
-            },
-            options: {
-                responsive: true, // Instruct chart js to respond nicely.
-                maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
-            }
+                options: {
+                    responsive: true, // Instruct chart js to respond nicely.
+                    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+                }
+            });
         });
+        //    chart-line end
+        // chartLine2 start
+        $(function () {
+            var ctx = document.getElementById("chartLine2").getContext('2d');
+            var chartLine2 = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ["Tokyo", "Mumbai", "Mexico City", "Shanghai", "Sao Paulo", "New York", "Karachi", "Buenos Aires", "Delhi", "Moscow"],
+                    datasets: [{
+                        label: 'Series 1', // Name the series
+                        data: [500, 50, 2424, 14040, 14141, 4111, 4544, 47, 5555, 6811], // Specify the data values array
+                        fill: false,
+                        borderColor: '#2196f3', // Add custom color border (Line)
+                        backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
+                        borderWidth: 1 // Specify bar border width
+                    },
+                    {
 
+                        label: 'Series 2', // Name the series
+                        data: [1288, 88942, 44545, 7588, 99, 242, 1417, 5504, 75, 457], // Specify the data values array
+                        fill: false,
+                        borderColor: '#4CAF50', // Add custom color border (Line)
+                        backgroundColor: '#4CAF50', // Add custom color background (Points and Fill)
+                        borderWidth: 1 // Specify bar border width
+                    }]
+                },
+                options: {
+                    responsive: true, // Instruct chart js to respond nicely.
+                    maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
+                }
+            });
+        });
+        // chartline2 end
         // pie chart
         Pizza.init(document.body, {
             donut: false,
@@ -319,5 +340,6 @@
             stroke_width: 0,
             show_percent: false, // show or hide the percentage on the chart.
         });
+    // pie chart end
     </script>
 </body>
