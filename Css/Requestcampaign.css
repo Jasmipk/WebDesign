@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 @media (max-width: 700px){
     .col-lg-5{
         margin-top: 3px!important;
@@ -16,3 +14,63 @@
     display: flex;
     box-sizing: border-box;
   }
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .content{
+     margin-left: 0 !important;
+    }
+    .btnsend{
+        margin-top: 0px !important;
+    }
+    .radio1{
+        margin-left: 0 !important;
+    }
+    .mainrow{
+        margin-left: 0 !important;
+    }
+}
+div.content {
+  margin-left: 90px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.btndone{
+    margin: 75px;
+    height: 40px;
+}
+.btnsend{
+    margin-top: 123px;
+    height: 40px;
+}
+.workship{
+    font-size: 30px;
+}
+.radiobutton
+{
+    margin: 3px;
+}
+.model1{
+    float:right;
+}
+.btngroup{
+    margin: 5px;
+   width: max-content;
+}
+h2 {
+     width:100%; 
+    text-align:center;
+    border-bottom: 0.1px solid #dee2e6;
+     line-height:0.1em;
+      margin:10px 0 20px;
+     }
+     .mainrow{
+         margin-left: 60px;
+     }
+     card{
+        border-radius: 8px;
+        border: 1px solid #cccccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }

@@ -1,13 +1,13 @@
 
-body {
+/* body {
     margin: 0;
     font-family: "Lato", sans-serif;
       }
-  
+   */
   .sidebar {
     margin: 0;
     padding: 0;
-    background-color: yellow    ;
+    background-color: yellow;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -40,6 +40,12 @@ body {
     .sidebar a{
       margin-top: 0 !important;
   }
+  .mybutton {
+  position:unset !important;
+  }
+  .mybutton1 {
+    position:unset !important;
+    }
  }
   .fa, .fab, .fad, .fal, .far, .fas{
   display :contents !important;

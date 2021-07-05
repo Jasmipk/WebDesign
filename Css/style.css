@@ -1,13 +1,24 @@
-/* @media (min-width: 768px){
-  .container-fluid {
-    margin-left: 3% !important;
-} */
+
   .col-md-2 {
     flex: 0 0 16.666667%;
     max-width: 4.666667% !important;
   }
 @media (max-width: 768px) {
-  .formClass{
-    margin-top: 0 !important;
-  }
+  .content{
+    margin-left: 0 !important;
+   }
+}
+ div.content {
+  margin-left: 70px;
+  padding: 1px 16px;
+  height: 1000px;
+  /* float: right; */
+}
+.icon{
+  float:right;
+  font-size:12px;
+}
+.img{
+  width: 100%;
+  float:right;
 }
