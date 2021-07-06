@@ -15,7 +15,7 @@
   
   .sidebar a {
     display: block;
-    color: black;
+    color: rgb(37, 36, 36);
     padding: 16px;
     text-decoration: none;
     text-align: center !important;
@@ -58,4 +58,3 @@
   position: fixed;
   bottom: 4px;
 }
-

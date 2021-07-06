@@ -1,21 +1,20 @@
-*{
-    box-sizing: border-box;
-  }
-    @media (min-width: 768px){
+
+ @media (min-width: 768px)
+ {
     .col-md-2 {
              flex: 0 0 16.666667%;
         max-width: 4.666667% !important;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px)
+ {
   /* For mobile phones: */
   .content{
    margin-left: 0 !important;
   }
-}
- 
-div.content {
-  margin-left: 70px;
+ }
+.content{
+  margin-left: 90px;
   padding: 1px 16px;
   height: 1000px;
 }
@@ -24,39 +23,99 @@ div.content {
     width: auto;
 }  
 .cahrt-1{
-  margin-top: 50px;
+  margin-top:50px;
    width:100%;
-    height:300px;
+    height:309px;
 }
 /* imag */
 .imagmap{
    width: 100%;
     height: 91%;
-
 }
-/* card */
-
-.card{
-  border-radius: 8px;
+.rightcolumn {
+  float: right;
+  width: 30%;
+  padding-left: 20px;
+}
+/* column new */
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 5px;
+}
+.column-60{
+  float: left;
+  width: 100%;
+    padding: 5px;
+}
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 5px;
+}
+.column-40 {
+  float: left;
+  width: 44.66666%;
+  padding: 5px;
+}
+@media screen and (max-width: 768px) {
+  .column-66,
+  .column-33,.column-40 {
+    width: 100%;
+    text-align: center;
+  }
+  .row{
+    display: block;
+  }
+}
+.card1{
+  border-radius: 8px; 
   border: 1px solid #cccccc;
-  display: flex;
-  align-items: center;
+  display: block;
+  align-items :flex-start;
   justify-content: center;
   box-sizing: border-box;
+ width: 100%;
+ height: 138px;
+ text-align: center;
 }
-
+.card{
+  border-radius: 8px; 
+border: 1px solid #cccccc;
+  display: block;
+  align-items :flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+ width: 100%;
+}
+.col-lg-12{
+  padding-right: 12px;
+}
+.row{
+  display: block;
+}
+@media (min-width: 992px){
+  .col-lg-11 {
+    -ms-flex: 0 0 91.666667%;
+    flex: 0 0 91.666667%;
+    max-width: 89%;
+}
+}
 /* line */
-
 .hr-theme-slash-2 {
   display: flex;
 }
   .hr-line {
+    margin-top: 10px;
     width: 100%;
     position: relative;
-    margin: 15px;
     border-bottom: 1px solid rgb(126, 123, 123);
   }
- 
 /* bar chart */
  .charts-css .td1{
   --size:0.6; 
@@ -109,9 +168,4 @@ ul[data-pie-id] {
 #my-cool-chart {
   width:300px;
 }
-
-  /* Color graph only */
-/*#my-cool-chart g[data-id="g1"] path {
-  fill:yellow;
-}*/
- 
+  

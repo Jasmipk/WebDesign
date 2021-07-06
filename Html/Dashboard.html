@@ -14,7 +14,7 @@
     <!-- custom sylesheet -->
     <link rel="stylesheet" href="/Css/dashbord.css">
     <link rel="stylesheet" href="/sidebar.css">
-    <link rel="stylesheet" href="/Css/style.css">
+    <!-- <link rel="stylesheet" href="/Css/style.css"> -->
     <!-- custom stylesheet and -->
 </head>
 
@@ -26,93 +26,104 @@
         <a href="/Html/Campaigns.html"><i class="fa fa-bullhorn"></i></a>
         <a href="#"><i class="fa fa-truck"></i></a>
         <a href="#" class="mybutton"><i class="fa fa-cog"></i></a>
-            <a href="/Html/Log In.html" class="mybutton1"><i class="mybutton1 fa fa-sign-out-alt"></i></a> 
+        <a href="/Html/Log In.html" class="mybutton1"><i class="mybutton1 fa fa-sign-out-alt"></i></a>
     </div>
     <!-- sidebar end -->
     <div class="content">
         <!-- main body start -->
-        <main class="bg-faded py-3 flex-grow-1">
+        <main class="bg-faded py-3">
+            <!-- first row start -->
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <h5>Flat White<i class="fa fa-chevron-down"></i></h5>
                     <h1>Welcome Abdulla</h1>
-                    <h6 class="mb-3 mt-5 font-weight-bold">
+                    <h6 class="mt-5 font-weight-bold">
                         Here's what happening for past <a href="#">30 Days <i class="fa fa-chevron-down"></i></a>
                     </h6>
                 </div>
             </div>
-            <!-- stag items  start-->
+            <!-- first row end -->
+            <!-- start  second row-->
             <div class="row">
-                <div class="d-flex col-lg-5">
-                    <div class="m-1 p-2 card bg-light flex-fill">
-                        <h1>88</h1>
-                        <h5>new customers</h5>
-                        <small class="text-success">+10% increase</small>
+                <!-- start stage -->
+                <div class="column-33">
+                    <div class="row">
+                        <div class="d-flex col-lg-12">
+                            <div class="mt-1 p-2 card1 bg-light flex-fill">
+                                <h1>88</h1>
+                                <h5>new customers</h5>
+                                <small class="text-success">+10% increase</small>
+                            </div>
+                            <div class="ml-3 mt-1 p-2 card1 bg-light flex-fill">
+                                <h1>154</h1>
+                                <h5>New customers</h5>
+                                <small class="text-success">+7% increase</small>
+                            </div>
+                        </div>
                     </div>
-                    <div class="m-1 p-2 card bg-light flex-fill">
-                        <h1>154</h1>
-                        <h5>New customers</h5>
-                        <small class="text-success">+7% increase</small>
+                    <div class="row">
+                        <div class="d-flex col-lg-12">
+                            <div class="mt-3 p-2 card1 bg-light flex-fill">
+                                <h1>17</h1>
+                                <h5>new stamping</h5>
+                                <small class="text-danger">-3% increase</small>
+                            </div>
+                            <div class="mt-3 ml-3 p-2 card1 bg-light flex-fill">
+                                <h1>95</h1>
+                                <h5>new stamping</h5>
+                                <small class="text-danger">+2% increase</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="d-flex col-lg-5">
-                    <div class="m-1 p-2 card bg-light flex-fill">
-                        <h1>17</h1>
-                        <h5>new stamping</h5>
-                        <small class="text-danger">-3% increase</small>
-                    </div>
-                    <div class="m-1 p-2 card bg-light flex-fill">
-                        <h1>95</h1>
-                        <h5>new stamping</h5>
-                        <small class="text-danger">+2% increase</small>
+                <!-- end stage -->
+                <!-- line chart-1 start-->
+                <div class="column-66">
+                    <div class="p-3 m-1 card border col-lg-10 col-sm-12">
+                        <h5>Your customers seem to be visiting more often in january</h5>
+                        <h6>You had 536 active customers in December,and 621 in
+                            January,which
+                            means your
+                            active
+                            customers grew by 15.2%
+                        </h6>
+                        <table id="motion-effect-example-1"
+                            class="charts-css column show-labels show-primary-axis show-5-secondary-axes data-spacing-5 hide-data">
+                            <caption> Puntos registrados por localidad </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col"> Year </th>
+                                    <th scope="col"> Progress </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="sizecode">
+                                    <th scope="row"> Jan </th>
+                                    <td class="td1"><span class="data"> 20</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> Feb </th>
+                                    <td class="td2"><span class="data"> 40 </span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> March </th>
+                                    <td class="td3"><span class="data"> 60 </span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> April </th>
+                                    <td class="td4"><span class="data"> 40 </span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"> May </th>
+                                    <td class="td-5"><span class="data"> 20 </span></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+                <!-- line chart-1 end -->
             </div>
-            <!-- stage items end -->
-            <!-- first barchart start -->
-            <div class="card border m-1 col-lg-5">
-                <h5>Your customers seem to be visiting more often in january</h5>
-                <h6>You had 536 active customers in December,and 621 in
-                    January,which
-                    means your
-                    active
-                    customers grew by 15.2%
-                </h6>
-                <table id="motion-effect-example-1"
-                    class="charts-css column show-labels show-primary-axis show-5-secondary-axes data-spacing-5 hide-data">
-                    <caption> Puntos registrados por localidad </caption>
-                    <thead>
-                        <tr>
-                            <th scope="col"> Year </th>
-                            <th scope="col"> Progress </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr id="sizecode">
-                            <th scope="row"> Jan </th>
-                            <td class="td1"><span class="data"> 20</span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"> Feb </th>
-                            <td class="td2"><span class="data"> 40 </span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"> March </th>
-                            <td class="td3"><span class="data"> 60 </span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"> April </th>
-                            <td class="td4"><span class="data"> 40 </span></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"> May </th>
-                            <td class="td-5"><span class="data"> 20 </span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <!-- end stage -->
             <!-- first barchart end -->
             <div class="hr-theme-slash-2">
                 <div class="hr-line"></div>
@@ -134,7 +145,7 @@
             <!-- lines end -->
             <!-- bar chart  linechart1 start -->
             <div class="row">
-                <div class="col-lg-4">
+                <div class="column-33">
                     <div class="card border p-3">
                         <h5>Stamps over time by outlet</h5>
                         <div id="chart-1" class="cahrt-1"></div>
@@ -142,9 +153,9 @@
                 </div>
                 <!-- bar chart end -->
                 <!-- linechart-1  start -->
-                <div class="col-lg-4">
-                    <div class="card border p-3 customheight">
-                        <h5>Stamps over time by outlet</h5>
+                <div class="column-66">
+                    <div class="card border customheight col-lg-10 p-5">
+                        <h5>Average Visits</h5>
                         <canvas id="chartLine"></canvas>
                     </div>
                 </div>
@@ -152,9 +163,9 @@
             <!-- bar chart and linechart1 end -->
             <!-- linechart-2 start -->
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="mt-2 card border p-3 customheight">
-                        <h5>Stamps over time by outlet</h5>
+                <div class="column-60">
+                    <div class="mt-2 card border p-5 customheight col-lg-11">
+                        <h5>Rewards awarded & redeemed</h5>
                         <canvas id="chartLine2"></canvas>
                     </div>
                 </div>
@@ -162,15 +173,15 @@
             <!-- linechart-2 end -->
             <!-- map and pie chart start -->
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="mt-2 card border p-3 customheight">
+                <div class="column-40">
+                    <div class="mt-2 card border p-4 customheight">
                         <h5>Stamps over time by outlet</h5>
                         <img class="imagmap" src="https://fvmstatic.s3.amazonaws.com/maps/m/SG-EPS-01-0001.png" alt="">
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="mt-2 card border p-3 customheight">
-                        <h5>Stamps over time by outlet</h5>
+                <div class="column-40">
+                    <div class="mt-2 card border customheight p-3">
+                        <h5 class="p-2">Active customers by week</h5>
                         <ul data-pie-id="my-cool-chart">
                             <li data-value="36"></li>
                             <li data-value="21"></li>
@@ -187,8 +198,6 @@
         <!-- main close -->
     </div>
     <!-- end container-fluid -->
-
-
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
