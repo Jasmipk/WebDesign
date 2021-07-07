@@ -6,14 +6,7 @@
 }
 .far :hover{
     color :darkgreen;
-
 }
-.card{
-    border-radius: 8px;
-    border: 1px solid #cccccc;
-    display: flex;
-    box-sizing: border-box;
-  }
   @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     .content{
@@ -21,15 +14,28 @@
     }
     .btnsend{
         margin-top: 0px !important;
+        margin-bottom: 5px;
     }
     .radio1{
-        margin-left: 0 !important;
+        margin-left: 2 !important;
     }
     .mainrow{
-        margin-left: 0 !important;
+        margin-left: 2 !important;
     }
+    .circle{
+        margin-top: 2 !important;
+    }
+    .workship{
+        padding-left: 2 !important;
+    }
+    .title{
+        padding-left: 2 !important;
+    }
+    /* .btndone{
+        margin: 0 !important;
+     
+    } */
 }
-
 .content{
   margin-left: 90px;
   padding: 1px 16px;
@@ -43,9 +49,7 @@
     margin-top: 123px;
     height: 40px;
 }
-.workship{
-    font-size: 30px;
-}
+
 .radiobutton
 {
     margin: 3px;
@@ -57,21 +61,36 @@
     margin: 5px;
    width: max-content;
 }
-h2 {
+     h2 {
      width:100%; 
     text-align:center;
     border-bottom: 0.1px solid #dee2e6;
      line-height:0.1em;
       margin:10px 0 20px;
      }
-     .mainrow{
-         margin-left: 60px;
-     }
-     card{
-        border-radius: 8px;
-        border: 1px solid #cccccc;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-      }
+   
+.circle{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.workship{
+    font-size: 30px;
+    padding-left: 35px;
+    color: #495057;
+}
+.title{
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.icon{
+    color: gray;
+}
+.icon :hover{
+    color: rgb(28, 204, 57);
+}
+.col-lg-4 {
+    margin-left: 105px;
+}
+.card{
+    padding: 10px;
+}

@@ -18,12 +18,12 @@
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
-        <a><i class="disabled fa fa-fire"></i></a>
-        <a href="/Html/Dashboard.html"><i class="fa fa-grip-horizontal"></i></a>
-        <a href="/Html/Campaigns.html"><i class="fa fa-bullhorn"></i></a>
-        <a href="#"><i class="fa fa-truck"></i></a>
-        <a href="#" class="mybutton"><i class=" fa fa-cog"></i></a>
-        <a href="/Html/Log In.html" class="mybutton1"><i class="fa fa-sign-out-alt"></i></a>
+        <a><i class="disabled demoicon fa fa-fire"></i></a>
+        <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
+        <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
+        <a href="#"><i class="demoicon fa fa-truck"></i></a>
+        <a href="#" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="/Html/Log In.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
     <!-- start bar end  -->
     <!-- start content -->
@@ -32,149 +32,188 @@
         <main class="col bg-faded py-3 flex-grow-1">
             <!-- first row start -->
             <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="col-xl-5">
                     <span class="fas fa-chevron-left"></span><a href="/Html/Campaigns.html"> Back to campaign</a>
                     <h5 class="mt-5">Flat White</h5>
                     <h3>Kool Cafe Lapsed Recall</h3>
                     <p class="text-primary">Edit campaign page </p>
                 </div>
-                <div class="rebutton col-lg-4 col-md-6 col-sm-12 text-right">
+                <div class="rebutton col-lg-3 col-md-6 col-sm-12 text-right">
                     <button type="button" class="btnsend btn btn-primary" data-toggle="modal" data-target="#firstmodel">
                         SEND REQUEST</button>
                 </div>
             </div>
-            <!-- first row end -->
-            <!-- second row start -->
-            <div class="row">
-                <div class="card col-lg-8 col-md-12 col-sm-12 col-xs-12 p-4">
-                    <!-- start OUTLET col-1 -->
-                    <div class="mainrow col-lg-8 col-md-12 col-sm-12 d-flex flex-row">
-                        <div class="m-4 pt-3"><i class="far fa-check-circle"></i></div>
-                        <div class="mt-3 pt-3"><i class="workship fas fa-place-of-worship fa-xl"></i></div>
-                        <div class="mt-4 ml-3"><b>
-                                <h4>Outlet(s)</h4>
-                            </b>
-                            <div>
-                                <h6>Select which outlet(s) you want to this campaign to target</h6>
-                            </div>
-                            <div>
-                                <button type="button"
-                                    class=" col-xs-12 btngroup btn btn-primary border active">All</button>
-                                <button type="button" class="btngroup btn btn-light border">AI Gharafa</button>
-                                <button type="button" class="btngroup btn btn-light border">Matar Kadeem</button>
-                                <button type="button" class="btngroup btn btn-light border">Doha Festival City</button>
-                                <button type="button" class="btngroup btn btn-light border">AI Wakra</button>
-                                <button type="button" class="btngroup btn btn-light border">Souq Waqif</button>
-                            </div>
-                        </div>
-                        <div><button type="button" class="btndone btn btn-success d-flex  flex-row">
-                                Done</button>
-                        </div>
+            <!--first row end -->
+            <div class="card col-lg-8">
+                <!-- start OUTLET col-1 -->
+                <div class="row">
+                    <div class="circle">
+                        <a class="icon" href="">
+                            <i class="far fa-check-circle"></i>
+                        </a>
                     </div>
-                    <!-- end col-1  -->
-                    <h2></h2>
-                    <!-- start SEGMENT col-2 -->
-                    <div class="mainrow col-lg-12 col-md-12 col-sm-12 d-flex mr-auto flex-row">
-                        <div class="m-4 pt-3"><i class="far fa-check-circle"></i></div>
-                        <div class="mt-3 pt-3"><i class="workship fas fa-user fa-xl"></i></div>
-                        <div class="mt-4 ml-3"><b>
-                                <h4>Segment</h4>
-                            </b>
-                            <div>
-                                <h6>Which customers would you like to include in this campaign?</h6>
-                            </div>
-                            <div class="radio1 ml-5 col-lg-12 col-md-6 col-xs-12">
-                                <div class="radiobutton">
-                                    <input type="radio" class="form-check-input" name="optradio">All my customers
-                                </div>
-                                <div class="radiobutton">
-                                    <input type="radio" class="form-check-input" name="optradio">Active customers
-                                </div>
-                                <div class="radiobutton">
-                                    <input type="radio" class="form-check-input" name="optradio">Lapsed customers
-                                </div>
-                                <div class="radiobutton">
-                                    <input type="radio" class="form-check-input" name="optradio">Top cutomers in the
-                                    last
-                                    period of time
-                                </div>
-                                <div class="radiobutton">
-                                    <input type="radio" class="form-check-input" name="optradio">Customers by age and
-                                    country
-                                </div>
-                            </div>
-                        </div>
+                    <div class="workship">
+                        <i class="workship fas fa-place-of-worship fa-xl"></i>
                     </div>
-                    <!-- end col-2 -->
-                    <h2></h2>
-                    <!-- start REWARD col-3 -->
-                    <div class="mainrow col-lg-12 col-md-12 col-sm-12 d-flex mr-auto flex-row">
-                        <div class="m-4 pt-3"><i class="far fa-check-circle"></i></div>
-                        <div class="mt-3 pt-3"><i class="workship fas fa-gift fa-xl"></i></div>
-                        <div class="mt-4 ml-3"><b>
-                                <h4>Reward</h4>
-                            </b>
-                            <div>
-                                <h6>Describe the reward for this campaign</h6>
-                            </div>
-                            <div class="mt-2 mb-2"><input type="text" class="form-control text-light"
-                                    placeholder="Eg: A free cookie" name="cookie">
-                            </div>
-                            <div>
-                                <h6>When will this reward expire?</h6>
-                            </div>
-                            <div class="mt-2 mb-2"><input type="date" class="form-control text-dark"
-                                    placeholder="Select a date" name="cookie"></div>
-                            <div class="form-group">
-                                <label for="">Message for customers</label>
-                                <div class="model1">10 Characters</div>
-                                <textarea class="form-control" cols="50" rows="10"
-                                    placeholder="Eg: We appreciate you! Come and grab a free cookie with your next purchase"></textarea>
-                            </div>
-                        </div>
+                    <div class="title"><b>
+                            <h4>Outlet(s)</h4>
+                        </b>
                     </div>
-                    <!-- end col-3 -->
-                    <h2></h2>
-                    <!-- start SCHEDULE AND SEND  col-4 -->
-                    <div class="mainrow col-lg-6 col-md-12 col-sm-12 d-flex mr-auto flex-row">
-                        <div class="m-4 pt-3"><i class="far fa-check-circle"></i></div>
-                        <div class="mt-3 pt-3"><i class="workship fas fa-paper-plane fa-xl"></i></div>
-                        <div class="mt-4 ml-3"><b>
-                                <h4>Sehedule and send</h4>
-                            </b>
-                            <div>
-                                <h6>When would you like to send this campaign's notification?</h6>
-                            </div>
-                            <div class="mt-2 mb-2"><input type="date" class="form-control text-dark"
-                                    placeholder="Select a date" name="cookie"></div>
-                            <small class="text-primary">Please allow for at least 3 business days ahead for Loyaltee to
-                                review and send your
-                                campaign.</small>
-                            <div>We will alert customers that have received a reward in the app.</div>
-                            <div class="radio1 radiobutton ml-5">
-                                <input type="radio" class="form-check-input" name="optradio">Standard delivery
-                                <div><small class="text-muted">Send notificatin at a specific time <p
-                                            class="text-primary">
-                                            Select time</p> </small></div>
-                            </div>
-                            <div class="radio1 radiobutton ml-5">
-                                <input type="radio" class="form-check-input" name="optradio">Intelligent delivery <span
-                                    class="badge badge-danger">Recommended</span>
-                                <div><small class="text-muted">Send notificatin at the time each customer is most likely
-                                        to
-                                        open the app(Loyaltee's Intelligence). </small></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end col-4 -->
                 </div>
-            </div>
-            <!-- second row end -->
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div>
+                            <h6>Select which outlet(s) you want to this campaign to target</h6>
+                        </div>
+                        <div>
+                            <button type="button" class="col-xs-12 btngroup btn btn-primary border active">All</button>
+                            <button type="button" class="btngroup btn btn-light border">AI Gharafa</button>
+                            <button type="button" class="btngroup btn btn-light border">Matar Kadeem</button>
+                            <button type="button" class="btngroup btn btn-light border">Doha Festival
+                                City</button>
+                            <button type="button" class="btngroup btn btn-light border">AI Wakra</button>
+                            <button type="button" class="btngroup btn btn-light border">Souq Waqif</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div><button type="button" class="btndone btn btn-success d-flex  flex-row">
+                            Done</button>
+                    </div> -->
+                <!-- end OUTLET col-1  -->
+                <h2></h2>
+                <!-- start SEGMENT col-2 -->
+                <div class="row">
+                    <div class="circle">
+                        <a class="icon" href="">
+                            <i class="far fa-check-circle"></i>
+                        </a>
+                    </div>
+                    <div class="workship">
+                        <i class="workship fas fa-user fa-xl"></i>
+                    </div>
+                    <div class="title"><b>
+                            <h4>Segment</h4>
+                        </b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div>
+                            <h6>Which customers would you like to include in this campaign?</h6>
+                        </div>
+                        <div class="radio1 col-lg-12 col-md-6 col-xs-12">
+                            <div class="radiobutton">
+                                <input type="radio" class="form-check-input" name="optradio">All my customers
+                            </div>
+                            <div class="radiobutton">
+                                <input type="radio" class="form-check-input" name="optradio">Active customers
+                            </div>
+                            <div class="radiobutton">
+                                <input type="radio" class="form-check-input" name="optradio">Lapsed customers
+                            </div>
+                            <div class="radiobutton">
+                                <input type="radio" class="form-check-input" name="optradio">Top cutomers in the
+                                last
+                                period of time
+                            </div>
+                            <div class="radiobutton">
+                                <input type="radio" class="form-check-input" name="optradio">Customers by age and
+                                country
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end SEGMENTcol-2 -->
+                <h2></h2>
+                <!-- start REWARD col-3 -->
+                <div class="row">
+                    <div class="circle">
+                        <a class="icon" href="">
+                            <i class="far fa-check-circle"></i>
+                        </a>
+                    </div>
+                    <div class="workship">
+                        <i class="workship fas fa-gift fa-xl"></i>
+                    </div>
+                    <div class="title"><b>
+                            <h4>Reward</h4>
+                        </b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div>
+                            <h6>Describe the reward for this campaign</h6>
+                        </div>
+                        <div class="mt-2 mb-2"><input type="text" class="form-control text-light"
+                                placeholder="Eg: A free cookie" name="cookie">
+                        </div>
+                        <div>
+                            <h6>When will this reward expire?</h6>
+                        </div>
+                        <div class="mt-2 mb-2"><input type="date" class="form-control text-dark"
+                                placeholder="Select a date" name="cookie"></div>
+                        <div class="form-group">
+                            <label for="">Message for customers</label>
+                            <div class="model1">10 Characters</div>
+                            <textarea class="form-control" cols="50" rows="10"
+                                placeholder="Eg: We appreciate you! Come and grab a free cookie with your next purchase"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-3 -->
+                <h2></h2>
+                <!-- start SCHEDULE AND SEND  col-4 -->
+                <div class="row">
+                    <div class="circle">
+                        <a class="icon" href="">
+                            <i class="far fa-check-circle"></i>
+                        </a>
+                    </div>
+                    <div class="workship">
+                        <i class="workship fas fa-paper-plane fa-xl"></i>
+                    </div>
+                    <div class="title">
+                        <b>
+                            <h4>Sehedule and send</h4>
+                        </b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div>
+                            <h6>When would you like to send this campaign's notification?</h6>
+                        </div>
+                        <div class="mt-2 mb-2"><input type="date" class="form-control text-dark"
+                                placeholder="Select a date" name="cookie"></div>
+                        <small class="text-primary">Please allow for at least 3 business days ahead for Loyaltee to
+                            review and send your
+                            campaign.</small>
+                        <div>We will alert customers that have received a reward in the app.</div>
+                        <div class="radio1 radiobutton ml-5">
+                            <input type="radio" class="form-check-input" name="optradio">Standard delivery
+                            <div><small class="text-muted">Send notificatin at a specific time <p class="text-primary">
+                                        Select time</p>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="radio1 radiobutton ml-5">
+                            <input type="radio" class="form-check-input" name="optradio">Intelligent delivery <span
+                                class="badge badge-danger">Recommended</span>
+                            <div><small class="text-muted">Send notificatin at the time each customer is most likely
+                                    to
+                                    open the app(Loyaltee's Intelligence).
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-4 -->
         </main>
-        <!-- end main  -->
+         <!-- end main  -->
     </div>
     <!-- end content -->
-
+    </div>
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

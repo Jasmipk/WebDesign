@@ -4,6 +4,9 @@
     font-family: "Lato", sans-serif;
       }
    */
+   .demoicon{
+     font-size :x-large;
+   }
   .sidebar {
     margin: 0;
     padding: 0;
@@ -12,23 +15,18 @@
     height: 100%;
     overflow: auto;
   }
-  
+  a:link, a:visited{
+    text-decoration: none;
+    text-align: center; 
+  }
   .sidebar a {
     display: block;
     color: rgb(37, 36, 36);
     padding: 16px;
-    text-decoration: none;
-    text-align: center !important;
   }
-   
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
   .sidebar a:hover{
-    background-color: rgb(53, 17, 253);
-    color: white;
+    background-color: rgb(221, 219, 230);
+    color: rgb(12, 11, 11);
   }
   @media only screen and (max-width: 768px) {
     .sidebar {
@@ -58,3 +56,10 @@
   position: fixed;
   bottom: 4px;
 }
+.fa-cog:before {
+  padding: 3px;
+}
+.fa-sign-out-alt:before{
+  padding:3px;
+}
+
