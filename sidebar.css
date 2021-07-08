@@ -10,7 +10,7 @@
   .sidebar {
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    background-color: rgb(240, 205, 6);
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -21,12 +21,13 @@
   }
   .sidebar a {
     display: block;
-    color: rgb(37, 36, 36);
+    color: black;
     padding: 16px;
   }
   .sidebar a:hover{
-    background-color: rgb(221, 219, 230);
-    color: rgb(12, 11, 11);
+    background-color: rgba(250, 246, 6, 0.603);
+    color: #505050
+   
   }
   @media only screen and (max-width: 768px) {
     .sidebar {

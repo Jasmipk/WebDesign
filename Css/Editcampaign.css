@@ -42,10 +42,10 @@
   padding: 1px 16px;
   height: 1000px;
 }
-.btndone{
+/* .btndone{
     margin: 75px;
     height: 40px;
-}
+} */
 .btnsend{
     margin-top: 123px;
     height: 40px;
@@ -65,9 +65,10 @@
      h2 {
      width:100%; 
     text-align:center;
-     border-bottom: 0.1px solid #dee2e6;
+    border-bottom: 0.1px solid #dee2e6;
      line-height:0.1em;
-     margin: 10px 0 20px;
+      /* margin:10px 0 20px; */
+      padding: 4px;
      }
    
 .circle{
@@ -95,9 +96,6 @@
 .card{
     padding: 10px;
 }
-.diffrent{
+/* .diffrent{
     margin-left: 100px;
-}
-.iconcircle{
-    color: gray;
-}
+} */
