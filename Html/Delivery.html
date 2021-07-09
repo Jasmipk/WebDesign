@@ -60,32 +60,32 @@
                     <div class="col-lg-3 col-md-6 col-sm-12">
                         <button type="button" class="model1 btn btn-primary text-right" data-toggle="modal"
                             data-target="#firstmodel">NEW BATCH</button>
-                        <!-- <div class="modal fade" id="firstmodel">
+                        <div class="modal fade" id="firstmodel">
                             <div class="modal-dialog modal-dialog-top">
                                 <div class="modal-content">
                                     <!-- Modal Header -->
-                                    <!-- <div class="modal-header">
-                                        <h4 class="modal-title">Request a new campaign</h4>
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Request a new delivery code batch </h4>
                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
-                                    Modal body
+                                    <!-- Modal body -->
                                     <div class="modal-body">
-                                        <h6>Reward your best customers and encourage others to visit more often.</h6>
+                                        <h6>Issue stamps to your customers ordering form home.</h6>
                                         <div class="form-group">
-                                            <label for="" class="m-3">Campaign Name </label>
-                                            <div class="model1 m-3 ">10 Characters</div>
+                                            <label for="" class="m-3">Batch Name</label>
+                                            <div class="model1 m-3 ">100 Characters</div>
                                             <input type="text" class="form-control" id="exampleInputPassword1"
-                                                placeholder="Campaign Name">
+                                                placeholder="Batch Name">
                                         </div>
                                     </div>
-                                    Modal footer -->
-                                    <!-- <div class="modal-footer">
-                                        <button type="button" class="btn btn-light" data-dismiss="modal">Cancle</button>
-                                        <a href="/Html/Requestcampaign.html" class="btn btn-primary">BEGING</a>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
+                                        <a href="/Html/Requestcampaign.html" class="btn btn-primary">BEGIN</a>
                                     </div>
                                 </div>
                             </div>
-                        </div> --> 
+                        </div>
                     </div>
                 </div>
                 <!-- input form close -->
@@ -99,13 +99,16 @@
                                     <tr>
                                         <th>Delivery Batch</th>
                                         <div class="dropdown">
-                                            <th class=" dropdown-toggle" data-toggle="dropdown">
+                                            <th class="dropdown-toggle" data-toggle="dropdown">
                                                 Data generated</th>
                                         </div>
                                         <div class="dropdown">
-                                            <th class=" dropdown-toggle" data-toggle="dropdown">
-                                                <a data-toggle="tooltip" data-placement="top" title="Export all code batches in CSV  format,cantaining Delivery Codes,Customer ID,U sage Date &Time, and Demographics."> Progress</a></th>
-                                               <!-- <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a> -->
+                                            <th class="dropdown-toggle" data-toggle="dropdown">
+                                                <a data-toggle="tooltip" data-placement="top"
+                                                    title="Export all code batches in CSV  format,cantaining Delivery Codes,Customer ID,U sage Date &Time, and Demographics.">
+                                                    Progress</a>
+                                            </th>
+                                            <!-- <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a> -->
                                         </div>
                                         <th>Status</th>
                                         <th>Actions</th>
@@ -187,23 +190,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#myinput").on("keyup", function () {
-                var value = $(this).val().toLowerCase();
-                $("#mytable tr").filter(function () {
-                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                });
-            });
-        });
-    </script>
 
     <!-- tooltip -->
     <script>
-       $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
-        </script>
-        
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
 
 </body>
