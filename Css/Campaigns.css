@@ -6,12 +6,15 @@
     .content{
      margin-left: 0 !important;
     }
+    .customform{
+      margin: 0 !important;
+    }
   }
-div.content {
+ .content {
   margin-left: 50px;
   padding: 1px 16px;
   height: 1000px;
-}
+} 
 .model1{
   float: right;
   font-size: 14px;
@@ -41,6 +44,9 @@ div.content {
      .br5{
       width: 100%;
      }
+     .customform{
+      margin: 80px;
+    }
    
 
 

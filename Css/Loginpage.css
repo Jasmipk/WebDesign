@@ -3,7 +3,7 @@
     flex: 0 0 16.666667%;
     max-width: 4.666667% !important;
   }
-@media (max-width: 768px) {
+@media (max-width: 1260px) {
   .content{
     margin-left: 0 !important;
    }
@@ -11,6 +11,9 @@
     margin-left: 0 !important;
     margin-top: 0 !important;
    }
+   .customform{
+    margin: 0 !important;
+  }
   }
  div.content {
   margin-left: 70px;
@@ -49,7 +52,7 @@
  
   /* background: rgba(0, 0, 0, 0.7); */
 }
-.col-md-3{
-  margin-top: 85px !important;
+.customform{
+  margin: 150px;
 }
 

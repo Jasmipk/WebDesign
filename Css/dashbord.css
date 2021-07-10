@@ -1,12 +1,9 @@
 
  @media (min-width: 768px)
  {
-    .col-md-2 {
-             flex: 0 0 16.666667%;
-        max-width: 4.666667% !important;
-  }
+   
 }
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 1000px)
  {
   /* For mobile phones: */
   .content{
@@ -63,7 +60,7 @@
   width: 44.66666%;
   padding: 5px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
   .column-66,
   .column-33,.column-40 {
     width: 100%;

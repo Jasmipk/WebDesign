@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
-    <!-- pie chart -->
+    <!-- pie chart start -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/css/pizza.min.css">
     <!-- pie chart and -->
     <!-- custom sylesheet -->
@@ -26,7 +26,7 @@
         <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
         <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
         <a href="#" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
-        <a href="/Html/Log In.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+        <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
     <!-- sidebar end -->
     <!-- content strat -->
@@ -39,7 +39,7 @@
                     <h5>Flat White<i class="fa fa-chevron-down"></i></h5>
                     <h1>Welcome Abdulla</h1>
                     <h6 class="mt-5 font-weight-bold">
-                        Here's what happening for past<a href="#">30 Days <i class="fa fa-chevron-down"></i></a>
+                        Here's what happening for past<a href="#"> 30 Days <i class="fa fa-chevron-down"></i></a>
                     </h6>
                 </div>
             </div>
@@ -124,8 +124,8 @@
                 </div>
                 <!-- line chart-1 end -->
             </div>
-           <!-- end second row -->
-           <!-- horizontal line -->
+            <!-- end second row -->
+            <!-- horizontal line -->
             <div class="hr-theme-slash-2">
                 <div class="hr-line"></div>
             </div>
@@ -286,10 +286,8 @@
                     data: [2200, 2800, 2300, 1700, 2000, 1200, 1400]
                 }]
             });
-        });
-        //    chart-1 end
-        //    chart-line  start
-        $(function () {
+            //    chart-1 end
+            //    chart-line  start
             var ctx = document.getElementById("chartLine").getContext('2d');
             var chartLine = new Chart(ctx, {
                 type: 'line',
@@ -309,10 +307,8 @@
                     maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
                 }
             });
-        });
-        //    chart-line end
-        // chartLine2 start
-        $(function () {
+            //    chart-line end
+            // chartLine2 start
             var ctx = document.getElementById("chartLine2").getContext('2d');
             var chartLine2 = new Chart(ctx, {
                 type: 'line',
@@ -327,7 +323,6 @@
                         borderWidth: 1 // Specify bar border width
                     },
                     {
-
                         label: 'Series 2', // Name the series
                         data: [1288, 88942, 44545, 7588, 99, 242, 1417, 5504, 75, 457], // Specify the data values array
                         fill: false,
@@ -341,17 +336,17 @@
                     maintainAspectRatio: false, // Add to prevent default behaviour of full-width/height 
                 }
             });
+            // chartline2 end
+            // pie chart
+            Pizza.init(document.body, {
+                donut: false,
+                donut_inner_ratio: 0.4, // between 0 and 1
+                percent_offset: 30, // relative to radius
+                /*stroke_color: '#333',*/
+                stroke_width: 0,
+                show_percent: false, // show or hide the percentage on the chart.
+            });
+            // pie chart end
         });
-        // chartline2 end
-        // pie chart
-        Pizza.init(document.body, {
-            donut: false,
-            donut_inner_ratio: 0.4, // between 0 and 1
-            percent_offset: 30, // relative to radius
-            /*stroke_color: '#333',*/
-            stroke_width: 0,
-            show_percent: false, // show or hide the percentage on the chart.
-        });
-    // pie chart end
     </script>
 </body>

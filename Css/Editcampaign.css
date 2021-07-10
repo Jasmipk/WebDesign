@@ -35,7 +35,6 @@
         margin-left: 0 !important;
         padding-right: 5px !important;
     }
-    
 }
 .content{
   margin-left: 90px;
@@ -72,17 +71,15 @@
      }
    
 .circle{
-    margin-top: 20px;
-    margin-left: 20px;
+  margin: 30px;
 }
 .workship{
+    margin: 20px;
     font-size: 30px;
-    padding-left: 35px;
     color: #495057;
 }
 .title{
-    margin-top: 10px;
-    margin-left: 20px;
+   margin: 20px;
 }
 .icon{
     color: gray;
@@ -90,11 +87,12 @@
 .icon :hover{
     color: rgb(28, 204, 57);
 }
-.col-lg-4 {
-    margin-left: 105px;
-}
+
 .card{
     padding: 10px;
+}
+.btn-1{
+    margin-left: 90px;
 }
 /* .diffrent{
     margin-left: 100px;

@@ -1,8 +1,8 @@
 
 @media (max-width: 700px){
-    .col-lg-5{
+    /* .col-lg-5{
         margin-top: 3px!important;
-    }
+    } */
 }
 .far :hover{
     color :darkgreen;
@@ -35,6 +35,10 @@
         margin-left: 0 !important;
         padding-right: 15px !important;
     }
+    .h4 ,h4{
+        font-size: 17.5px !important;
+    }
+
     
 }
 .content{
@@ -62,13 +66,13 @@
     margin: 5px;
    width: max-content;
 }
-     h2 {
+ h2 {
      width:100%; 
     text-align:center;
      border-bottom: 0.1px solid #dee2e6;
      line-height:0.1em;
      margin: 10px 0 20px;
-     }
+}
    
 .circle{
     margin-top: 20px;
@@ -89,14 +93,14 @@
 .icon :hover{
     color: rgb(28, 204, 57);
 }
-.col-lg-4 {
+/* .col-lg-4 {
     margin-left: 105px;
-}
+} */
 .card{
     padding: 10px;
 }
 .diffrent{
-    margin-left: 100px;
+    margin-left: 13px;
 }
 .iconcircle{
     color: gray;
