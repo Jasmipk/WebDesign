@@ -1,10 +1,4 @@
-
-@media (max-width: 700px){
-    .col-lg-5{
-        margin-top: 3px!important;
-    }
-}
-.far :hover{
+.iconhover :hover{
     color :darkgreen;
 }
   @media only screen and (max-width: 768px) {
@@ -61,13 +55,13 @@
     margin: 5px;
    width: max-content;
 }
-     h2 {
+     .horizontalline {
      width:100%; 
     text-align:center;
     border-bottom: 0.1px solid #dee2e6;
-     line-height:0.1em;
+     /* line-height:0.1em; */
       /* margin:10px 0 20px; */
-      padding: 4px;
+      /* padding: 4px; */
      }
    
 .circle{

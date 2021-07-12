@@ -1,13 +1,5 @@
 
-@media (max-width: 700px){
-    /* .col-lg-5{
-        margin-top: 3px!important;
-    } */
-}
-.far :hover{
-    color :darkgreen;
-}
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1200px) {
     /* For mobile phones: */
     .content{
      margin-left: 0 !important;
@@ -38,23 +30,16 @@
     .h4 ,h4{
         font-size: 17.5px !important;
     }
-
-    
 }
 .content{
   margin-left: 90px;
   padding: 1px 16px;
   height: 1000px;
 }
-.btndone{
-    margin: 75px;
-    height: 40px;
-}
 .btnsend{
     margin-top: 123px;
     height: 40px;
 }
-
 .radiobutton
 {
     margin: 3px;
@@ -66,7 +51,7 @@
     margin: 5px;
    width: max-content;
 }
- h2 {
+ .horizontalline{
      width:100%; 
     text-align:center;
      border-bottom: 0.1px solid #dee2e6;
@@ -90,9 +75,9 @@
 .icon{
     color: gray;
 }
-.icon :hover{
+.hovercolor :hover{
     color: rgb(28, 204, 57);
-}
+} 
 /* .col-lg-4 {
     margin-left: 105px;
 } */
@@ -128,20 +113,23 @@ label {
     margin-top: 6px;
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns
 .row:after {
-    content: "";
+    content:"";
     display: table;
     clear: both;
-}
+} */
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
    
     .col-75
     input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
-}
+} */
 
+.items{
+    margin-left: 160px;
+}

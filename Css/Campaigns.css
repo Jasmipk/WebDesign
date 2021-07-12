@@ -9,9 +9,12 @@
     .customform{
       margin: 0 !important;
     }
+    .model1{
+      float:left !important;
+    }
   }
  .content {
-  margin-left: 50px;
+  margin-left: 90px;
   padding: 1px 16px;
   height: 1000px;
 } 
@@ -19,7 +22,7 @@
   float: right;
   font-size: 14px;
 }
-   .fas, .fa{
+   .downarrow{
     margin-top: 15px !important;
     padding: 3px !important;
     }
@@ -47,7 +50,12 @@
      .customform{
       margin: 80px;
     }
-   
+   .export{
+     text-align: left;
+   }
+   .progressbar{
+     width: 100%;
+   }
 
 
 

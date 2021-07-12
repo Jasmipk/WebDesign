@@ -6,6 +6,7 @@
    */
    .demoicon{
      font-size :x-large;
+     display :contents !important;
    }
   .sidebar {
     margin: 0;
@@ -46,9 +47,8 @@
     position:unset !important;
     }
  }
-  .fa, .fab, .fad, .fal, .far, .fas{
-  display :contents !important;
-}
+  
+
 .mybutton {
   position: fixed;
   bottom: 50px;

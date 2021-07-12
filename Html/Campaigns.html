@@ -14,222 +14,208 @@
 </head>
 
 <body>
-        <!-- sidebar start -->
-        <div class="sidebar">
-            <a href=""><i class="disabled demoicon fa fa-fire"></i></a>
-            <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
-            <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
-            <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
-            <a href="#" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
-            <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
-        </div>
-        <!-- sidebar end -->
-        <!-- start content -->
-        <div class="content">
-            <!-- main start -->
-            <main class="col bg-faded py-3 flex-grow-1">
-                <!-- start row -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12    col-xl-4">
-                        <h5>Flat White<i class="fa fa-chevron-down"></i></h5>
-                        <h1>Campaigns</h1>
-                        <h6>Campaigns allows you to drive footfall and customize your customer experience.</h6>
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <a href=""><i class="disabled demoicon fa fa-fire"></i></a>
+        <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
+        <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
+        <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
+        <a href="#" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+    </div>
+    <!-- sidebar end -->
+    <!-- start content -->
+    <div class="content">
+        <!-- main start -->
+        <main class="col bg-faded py-3 flex-grow-1">
+            <!-- start row -->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
+                    <h5>Flat White<i class="downarrow fa fa-chevron-down"></i></h5>
+                    <h1>Campaigns</h1>
+                    <h6>Campaigns allows you to drive footfall and customize your customer experience.</h6>
+                </div>
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <hr class="solid">
+            </div>
+            <!-- input form start -->
+            <div class="row">
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <input type="search" class="form-control" placeholder="Search..">
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-3">
+                    <div class="dropdown">
+                        <button type="button" class="button1 btn btn-light dropdown-toggle" data-toggle="dropdown">
+                            Filter
                     </div>
                 </div>
-                <!-- end row -->
-                <div class="row">
-                    <hr class="solid">
+                <div class="col-lg-2 col-md-4 col-sm-12">
+                    <span class="fa fa-download"></span><a href=""> EXPORT DATA</a>
                 </div>
-                <!-- input form start -->
-                <div class="row">
-                    <div class="col-lg-2 col-md-6 col-sm-12">
-                        <input type="search" class="form-control" placeholder="Search..">
-                    </div>
-                    <div class="col-lg-1 col-md-6 col-sm-3">
-                        <div class="dropdown">
-                            <button type="button" class="button1 btn btn-light dropdown-toggle" data-toggle="dropdown">
-                                Filter
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-4 col-sm-12">
-                        <span class="fa fa-download"></span><a href=""> EXPORT DATA</a>
-                    </div>
-                    <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12 ">
-                        <button type="button" class="model1 btn btn-primary text-right" data-toggle="modal"
-                            data-target="#firstmodel"> REQUEST CAMPAIGN</button>
-                        <div class="modal fade" id="firstmodel">
-                            <div class="modal-dialog modal-dialog-top">
-                                <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Request a new campaign</h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="col-lg-7 col-xl-7 col-md-12 col-sm-1">
+                    <button type="button" class="model1 btn btn-primary text-right" data-toggle="modal"
+                        data-target="#firstmodel"> REQUEST CAMPAIGN</button>
+                    <div class="modal fade" id="firstmodel">
+                        <div class="modal-dialog modal-dialog-top">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Request a new campaign</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <h6>Reward your best customers and encourage others to visit more often.</h6>
+                                    <div class="form-group">
+                                        <label class="m-3">Campaign Name </label>
+                                        <div class="model1 m-3">10 Characters</div>
+                                        <input type="text" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Campaign Name">
                                     </div>
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <h6>Reward your best customers and encourage others to visit more often.</h6>
-                                        <div class="form-group">
-                                            <label class="m-3">Campaign Name </label>
-                                            <div class="model1 m-3">10 Characters</div>
-                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Campaign Name">
-                                        </div>
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
-                                        <a href="/Html/Requestcampaign.html" class="btn btn-primary">BEGIN</a>
-                                    </div>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
+                                    <a href="/Html/Requestcampaign.html" class="btn btn-primary">BEGIN</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- input form close -->
-                <!-- start table row -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-xl-12">
-                        <div class="table-responsive mt-3">
-                            <!-- start table -->
-                            <table class="table">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th>Campaigns</th>
-                                        <th>Scheduled</th>
-                                        <th>Progress </th>
-                                        <th>Status</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="mytable">
-                                    <tr>
-                                        <td>Campaign Title 01
-                                            <div><small>All Customers</small></div>
-                                            <div><small class="smalltext">Sent to 1,205 customers</small></div>
-                                        </td>
-                                        <td>Apr 11,2021
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar br1 bg-success">30%
-                                                </div>
+            </div>
+            <!-- input form close -->
+            <!-- start table row -->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-12">
+                    <div class="table-responsive mt-3">
+                        <!-- start table -->
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Campaigns</th>
+                                    <th>Scheduled</th>
+                                    <th>Progress </th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mytable">
+                                <tr>
+                                    <td>Campaign Title 01
+                                        <div><small>All Customers</small></div>
+                                        <div><small class="smalltext">Sent to 1,205 customers</small></div>
+                                    </td>
+                                    <td>Apr 11,2021
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar br1 bg-success">30%
                                             </div>
-                                        </td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td><button class="btn btn-light">View</button>
-                                            <button type="button"
-                                                class="btn btn-light dropdown-toggle dropdown-toggle-split"
-                                                data-toggle="dropdown">
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Campaign Title 02
-                                            <div><small>Active Customers</small></div>
-                                            <div><small class="smalltext">Sending to 50 customers</small></div>
-                                        </td>
-                                        <td>Apr 11,2021
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar bar2"></div>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge badge-light">Requested</span></td>
-                                        <td><button class="btn btn-light">View</button>
-                                            <button type="button"
-                                                class="btn btn-light dropdown-toggle dropdown-toggle-split"
-                                                data-toggle="dropdown">
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Campaign Title 03
-                                            <div><small>Lapsed Customers</small></div>
-                                            <div><small class="smalltext">Sending to 50 customers</small></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td><a href="/Html/viewactive.html"><button class="btn btn-light">View</button></a>
+                                        <a href="/Html/viewactive.html"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Campaign Title 02
+                                        <div><small>Active Customers</small></div>
+                                        <div><small class="smalltext">Sending to 50 customers</small></div>
+                                    </td>
+                                    <td>Apr 11,2021
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bar2"></div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-light">Requested</span></td>
+                                    <td><a href="/Html/Viewrequestcampaign.htm"><button class="btn btn-light">View</button></a>
+                                        <a href="/Html/Viewrequestcampaign.htm"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Campaign Title 03
+                                        <div><small>Lapsed Customers</small></div>
+                                        <div><small class="smalltext">Sending to 50 customers</small></div>
 
-                                        </td>
-                                        <td>Apr 11,2021
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar br3 bg-success">60%
-                                                </div>
+                                    </td>
+                                    <td>Apr 11,2021
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar br3 bg-success">60%
                                             </div>
-                                        </td>
-                                        <td><span class="badge badge-success">Scheduled</span></td>
-                                        <td><button class="btn btn-light">View</button>
-                                            <button type="button"
-                                                class="btn btn-light dropdown-toggle dropdown-toggle-split"
-                                                data-toggle="dropdown">
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Campaign Title 04
-                                            <div><small>Top Customers</small></div>
-                                            <div><small class="smalltext">Sending to 50 customers</small></div>
-                                        </td>
-                                        <td>Apr 11,2021
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar br4 bg-success">40%
-                                                </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-success">Scheduled</span></td>
+                                    <td><a href="/Html/Viewshedule.html"><button class="btn btn-light">View</button></a>
+                                        <a href="/Html/Viewshedule.html"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Campaign Title 04
+                                        <div><small>Top Customers</small></div>
+                                        <div><small class="smalltext">Sending to 50 customers</small></div>
+                                    </td>
+                                    <td>Apr 11,2021
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar br4 bg-success">40%
                                             </div>
-                                        </td>
-                                        <td><span class="badge badge-danger">Rejected</span></td>
-                                        <td><button class="btn btn-light">View</button>
-                                            <button type="button"
-                                                class="btn btn-light dropdown-toggle dropdown-toggle-split"
-                                                data-toggle="dropdown">
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Campaign Title 05
-                                            <div><small>Lapsed Customers</small></div>
-                                            <div><small class="smalltext">sent to 50 customers</small></div>
-                                        </td>
-                                        <td>Apr 11,2021
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar br5 bg-secondary">
-                                                    100%
-                                                </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-danger">Rejected</span></td>
+                                    <td><a href="/Html/ViewRejectedCampaign.html"><button class="btn btn-light">View</button></a>
+                                        <a href="/Html/ViewRejectedCampaign.html"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Campaign Title 05
+                                        <div><small>Lapsed Customers</small></div>
+                                        <div><small class="smalltext">sent to 50 customers</small></div>
+                                    </td>
+                                    <td>Apr 11,2021
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar br5 bg-secondary">
+                                                100%
                                             </div>
-                                        </td>
-                                        <td><span class="badge badge-light">Requested</span></td>
-                                        <td><button class="btn btn-light">View</button>
-                                            <button type="button"
-                                                class="btn btn-light dropdown-toggle dropdown-toggle-split"
-                                                data-toggle="dropdown">
-                                            </button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <!-- end table -->
-                        </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-light">Expired</span></td>
+                                    <td><a href="/Html/ViewExpired.html"><button class="btn btn-light">View</button></a>
+                                        <a href="/Html/ViewExpired.html"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end table -->
                     </div>
                 </div>
-                <!-- close table row -->
-            </main>
-            <!-- main close -->
-        </div>
-        <!-- end content -->
+            </div>
+            <!-- close table row -->
+        </main>
+        <!-- main close -->
+    </div>
+    <!-- end content -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function(){
-          $("#myinput").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
-            $("#mytable tr").filter(function() {
-              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        $(document).ready(function () {
+            $("#myinput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#mytable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
             });
-          });
         });
-        </script>
+    </script>
 
 </body>
