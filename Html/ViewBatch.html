@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ViewBatch</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+    <link rel="stylesheet" href="/sidebar.css">
+    <!-- <link rel="stylesheet" href="/Css/Editcampaign.css"> -->
+    <link rel="stylesheet" href="/Css/Campaigns.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href=""><i class="demoicon fa fa-fire"></i></a>
+        <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
+        <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
+        <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
+        <a href="#" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="#" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+    </div>
+    <!-- content -->
+    <div class="content">
+        <!-- main start -->
+        <main class="bg-faded py-3">
+            <!-- first row start -->
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12">
+                    <a href="/Html/Delivery.html"><i class="fas fa-chevron-left"></i> Back to Delivery</a>
+                    <h4 class="mt-4">Batch Title 01</h4>
+                </div>
+            </div>
+            <!-- first row end -->
+            <div class="card d-flex col-lg-8 p-4 mt-4">
+                <div class="row flex-fill">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                       <b>1500 codes generatedon Aug 12,2021</b>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-3">
+                       <b>Batch status :</b> <small class="badge bg-secondary"></small>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <span class="fa fa-download"></span><a href=""> EXPORT DATA</a>
+                    </div>
+                </div>
+                <div class="row flex-fill">
+                    <div class="col-lg-6 mt-4">
+                        <div>
+                            <small>10 customers used</small>
+                            <small class="float-right">85% customers</small>
+                        </div>
+                        <div class="progress progressbar">
+                            <div class="progress-bar bg-success w-75">85%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <button type="button" class="model1 btn btn-primary text-right" data-toggle="modal"
+                            data-target="#firstmodel"> CANCEL BATCH</button>
+                    </div>
+                </div>
+            </div>
+            <!-- first row end -->
+            <!-- start table row -->
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-xl-8 mt-5">
+                    <div class="table-responsive mt-3">
+                        <!-- start table -->
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Generated Code </th>
+                                    <th class="dropdown-toggle" data-toggle="dropdown">
+                                        Age</th>
+                                    <th class="dropdown-toggle" data-toggle="dropdown">
+                                        Nationality</th>
+                                    <th class="dropdown-toggle" data-toggle="dropdown">
+                                        Status</th>
+                                        <th class="dropdown-toggle" data-toggle="dropdown">
+                                            customers ID</th>
+                                    <th>Date & Time used</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mytable">
+                                <tr>
+                                    <td>32230060
+                                    </td>
+                                     <td>18
+                                    </td>
+                                    <td>
+                                        Qatara
+                                    </td>
+                                    <td><span class="badge badge-success">Used</span></td>
+                                    <td>32230060</td>
+                                    <td>Apr 11, 2021 8:23pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>32230060
+                                    </td>
+                                    <td>18
+                                    </td>
+                                    <td>
+                                        Qatara
+                                    </td>
+                                    <td><span class="badge badge-success">Used</span></td>
+                                    <td>32230060</td>
+                                    <td>Apr 11, 2021 8:23pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>32230060
+                                    </td>
+                                    <td>18
+                                    </td>
+                                    <td>
+                                        Qatara
+                                    </td>
+                                    <td><span class="badge badge-success">Used</span></td>
+                                    <td>32230060</td>
+                                    <td>Apr 11, 2021 8:23pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>32230060
+                                    </td>
+                                    <td>18
+                                    </td>
+                                    <td>
+                                        Qatara
+                                    </td>
+                                    <td><span class="badge badge-success">Used</span></td>
+                                    <td>32230060</td>
+                                    <td>Apr 11, 2021 8:23pm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>32230060
+                                    </td>
+                                    <td>18
+                                    </td>
+                                    <td>
+                                        Qatara
+                                    </td>
+                                    <td><span class="badge badge-success">Used</span></td>
+                                    <td></td>
+                                    <td>Apr 11, 2021 8:23pm
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end table -->
+                        <div class="">
+                            <div class="btn btn-light disabled dropdown-toggle col-lg-1" data-toggle="dropdown">
+                                view 25</div>
+                            <p class="text-right"><small><b> 1-25 of 1500</b></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- close table row -->
+    </main>
+    <!-- main end -->
+    </div>
+    <!-- contentc end  -->
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- script end -->
+</body>
