@@ -20,7 +20,7 @@
         <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
         <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
         <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
-        <a href="#" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
         <a href="#" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
     <!-- content -->
@@ -38,17 +38,41 @@
                 <div class="topnav">
                     <a class="active" href="">MY ACCOUNT</a>
                     <a href="#news">MY BUSINESSES </a>
-                  </div>
-<hr class="solid">
+                </div>
+                <hr class="solid">
             </div>
             <!-- first row end -->
-            <div class="row">
-                <div class="col-lg-6">
+            <div class="row mt-3">
+                <div class="col-lg-3">
                     <b>Personal Detail</b>
                 </div>
-                <div class="col-lg-6">
-                    <label for="email"><b>Email</b></label>
-                    <input type="text" class="form-control" placeholder="Enter Email" name="email" id="email" required>  
+                <div class="col-lg-5">
+                    <label for="First name">First name</label>
+                    <input type="text" class="form-control" placeholder="Enter first name" required>
+
+                    <label for="last name" class="mt-2">Last name</label>
+                    <input type="text" class="form-control" placeholder="Enter Last name" required>
+
+                    <label for="email" class="mt-2">Email Addresss</label>
+                    <input type="text" class="form-control" placeholder="Enter Email" name="email" id="email" required>
+
+                    <label for="mobile name" class="mt-2">Mobile name</label>
+                    <input type="number" class="form-control" placeholder="Enter number" required>
+
+                    <button class="btn btn-primary mt-2">Update</button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-lg-3">
+                    <b>Password</b>
+                </div>
+                <div class="col-lg-5">
+                    <label for="verify">Verify current Password</label>
+                    <input type="password" class="form-control" required>
+
+                    <label for="new password" class="mt-2">New Password</label>
+                    <label for="new password" class="float-right mt-2">Generate strong password</label>
+                    <input type="text" class="form-control" placeholder="Enter first name" required>
                 </div>
             </div>
         </main>
