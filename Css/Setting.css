@@ -1,7 +1,13 @@
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .content{
+   margin-left: 0 !important;
+  }
+}
+
 .content{
     margin-left: 90px;
     padding: 1px 16px;
-    height: 1000px;
   }
   .topnav {
     overflow: hidden;
@@ -25,4 +31,13 @@
   
   .topnav a.active {
     border-bottom: 3px solid blue;
+  }
+  /* li::before {content: "•"; color: red} */
+  li::marker{
+    color: rgb(12, 62, 226);
+  }
+  .tablebusiness{
+    border-collapse: collapse;
+  width: 90%;
+  border: 1px solid #ddd;
   }

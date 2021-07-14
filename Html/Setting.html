@@ -21,7 +21,7 @@
         <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
         <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
         <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
-        <a href="#" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+        <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
     <!-- content -->
     <div class="content">
@@ -31,22 +31,23 @@
             <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                     <!-- <a href="/Html/Campaigns.html"><i class="fas fa-chevron-left"></i> Back to campaign</a> -->
-                    <h4 class="mt-4">Settings</h4>
+                    <h3 class="mt-4">Settings</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="topnav">
-                    <a class="active" href="">MY ACCOUNT</a>
-                    <a href="#news">MY BUSINESSES </a>
+                    <a class="active" href="/Html/Setting.html">MY ACCOUNT</a>
+                    <a href="/Html/MyBusinesses.html">MY BUSINESSES </a>
                 </div>
                 <hr class="solid">
             </div>
             <!-- first row end -->
+           <!-- personal detail start -->
             <div class="row mt-3">
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <b>Personal Detail</b>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <label for="First name">First name</label>
                     <input type="text" class="form-control" placeholder="Enter first name" required>
 
@@ -62,19 +63,105 @@
                     <button class="btn btn-primary mt-2">Update</button>
                 </div>
             </div>
+            <!-- personal detail end -->
+            <!-- password star -->
             <div class="row mt-4">
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <b>Password</b>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-4">
                     <label for="verify">Verify current Password</label>
                     <input type="password" class="form-control" required>
 
                     <label for="new password" class="mt-2">New Password</label>
                     <label for="new password" class="float-right mt-2">Generate strong password</label>
                     <input type="text" class="form-control" placeholder="Enter first name" required>
+
+                    <div class="row mt-3">
+                        <div class="col-12 col-md-5">
+                            <li>One lowercase Character</li>
+                            <li>One uppercase character</li>
+                            <li>One number</li>
+                        </div>
+                        <div class="col-12 col-md-5">
+                            <li>One special character</li>
+                            <li>8 characters minimum</li>
+                        </div>
+                    </div>
+                    <label for="confirm Password" class="mt-2">Confirm new Password</label>
+                    <input type="password" class="form-control" required>
                 </div>
             </div>
+            <!-- password end -->
+            <!--account notification start  -->
+            <div class="row mt-4">
+                <div class="col-lg-2">
+                    <b>Account Notifications</b>
+                </div>
+                <div class="col-lg-10">
+                    <p>I'd like to receive the following emails:</p>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div><label for="yes_no_radio"><b>Confirmation when a campaign is sent</b></label></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div>
+                                <div class="custom-control custom-radio custom-control-inline ml-5">
+                                    <input type="radio" class="custom-control-input" id="Yes1" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="Yes1">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="No1" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="No1">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div><label for="yes_no_radio"><b>Monthly account summary</b></label></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div>
+                                <div class="custom-control custom-radio custom-control-inline ml-5">
+                                    <input type="radio" class="custom-control-input" id="Yes2" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="Yes2">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="No2" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="No2">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div><label for="yes_no_radio"><b>Loyltoo Update</b></label></div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div>
+                                <div class="custom-control custom-radio custom-control-inline ml-5">
+                                    <input type="radio" class="custom-control-input" id="Yes3" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="Yes3">Yes</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input type="radio" class="custom-control-input" id="No3" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="No3">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary mt-3">Submit</button>
+                </div>
+            </div>
+            <!-- account notification end -->
         </main>
         <!-- main end -->
     </div>
