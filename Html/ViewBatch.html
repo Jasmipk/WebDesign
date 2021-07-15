@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- slidebar start -->
     <div class="sidebar">
         <a href=""><i class="demoicon fa fa-fire"></i></a>
         <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
@@ -23,6 +24,7 @@
         <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
         <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
         <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+        <!-- sidebar end -->
     </div>
     <!-- content -->
     <div class="content">
@@ -45,13 +47,13 @@
                         <b>Batch status :</b> <small class="badge bg-secondary"></small>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-12">
-                        <span class="fa fa-download"></span><a href=""> EXPORT DATA</a>
+                      <div class="float-right"> <span class="fa fa-download"></span><a href=""> EXPORT DATA</a></div> 
                     </div>
                 </div>
                 <div class="row flex-fill">
                     <div class="col-lg-6 mt-4">
                         <div>
-                            <small>10 customers used</small>
+                            <small>1,304 codes used</small>
                             <small class="float-right">85% customers</small>
                         </div>
                         <div class="progress progressbar">
@@ -59,8 +61,10 @@
                         </div>
                     </div>
                     <div class="col-lg-6 mt-4">
-                        <button type="button" class="model1 btn btn-primary text-right" data-toggle="modal"
-                            data-target="#firstmodel"> CANCEL BATCH</button>
+                        <button type="button" class="btn btn-primary float-right" data-toggle="tooltip" data-placement="top" title="Export batch in CSV format, containing Delivery Codes,Customer ID,Usage Date & Time,and Demographics,">
+                        CANCEL BATCH
+                          </button>
+
                     </div>
                 </div>
             </div>
@@ -174,4 +178,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- script end -->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>

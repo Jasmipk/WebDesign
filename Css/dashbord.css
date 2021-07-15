@@ -65,6 +65,11 @@
     display: block;
   } */
 }
+@media screen and (max-width: 1140px) {
+  .card1{
+    height: 160px !important;
+  }
+}
 .card1{
   border-radius: 8px; 
   border: 1px solid #cccccc;
@@ -106,7 +111,7 @@ border: 1px solid #cccccc;
     margin-top: 10px;
     width: 100%;
     position: relative;
-    border-bottom: 1px solid rgb(126, 123, 123);
+    border-bottom: 1px solid rgb(198 194 194);
   }
 /* bar chart */
  .charts-css .td1{
@@ -160,4 +165,11 @@ ul[data-pie-id] {
 #my-cool-chart {
   width:300px;
 }
+@media screen and (max-width: px){
+  .card1{
+    height: 147px !important;
+  }
+
+}
+
   

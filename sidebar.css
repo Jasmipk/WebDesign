@@ -4,6 +4,9 @@
     font-family: "Lato", sans-serif;
       }
    */
+   .content {
+    margin-left: 90px;
+  } 
    .demoicon{
      font-size :x-large;
      display :contents !important;
@@ -12,7 +15,7 @@
     margin: 0;
     padding: 0;
     background-color: rgb(240, 205, 6);
-    position: fixed;
+    position :fixed;
     height: 100%;
     overflow: auto;
   }
@@ -31,10 +34,13 @@
    
   }
   @media only screen and (max-width: 1000px) {
+    .content{
+      margin-left: 0 !important;
+     }
     .sidebar {
-      width: 100%;
+     width: auto;
       height: auto;
-      position: relative;
+      position :inherit;
     }
     .sidebar a {float: left;}
     .sidebar a{

@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!-- slidebar start -->
     <div class="sidebar">
         <a href=""><i class="demoicon fa fa-fire"></i></a>
         <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
@@ -24,6 +25,7 @@
         <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
         <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
+    <!-- slidebar end -->
     <!-- content -->
     <div class="content">
         <!-- main start -->
@@ -49,7 +51,7 @@
                         <div><b>Status :</b><small class="badge badge-success m-2"> Active</small></div>
                         <div><b>Expires on :</b>Apr 11 2021</div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
                         <span class="fa fa-download"></span><a href=""> EXPORT DATA</a>
                     </div>
                 </div>
@@ -64,107 +66,164 @@
                         </div>
                     </div>
                     <div class="col-lg-4 mt-4">
-                        <button type="button" class="model1 btn btn-primary text-right" data-toggle="modal"
-                            data-target="#firstmodel"> NUDGE CUSTOMERS</button>
+                        <button type="button" class="btn btn-primary float-right" data-toggle="modal" data-target="#myModal">
+                            NUDGE CUSTOMERS
+                        </button>
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Nudge Customers</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                        <h5>Nudging will re-send a push notification to you targeted customers. You can
+                                            only nudge once per campaign.</h5>
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                        <a href="" class="btn btn-light">CANCEL</a>
+                                        </a>
+                                        <a href="" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#myModal1">NUDGE CUSTOMERS</a>
+                                        <!-- model second -->
+                                        <div class="modal fade" id="myModal1">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title">bg-success</h4>
+                                                        <button type="button" class="close"
+                                                            data-dismiss="modal">&times;</button>
+                                                    </div>
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-lg-2"><i class="far fa-check-circle"></i>
+                                                            </div>
+                                                            <div>
+                                                                <h6>You have successfully nudged your customers.</h5>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- Modal footer -->
+                                                    <div class="modal-footer">
+                                                        <a href="" class="btn btn-primary">OK</a>
+                                                        </a>
+
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            </a>
+                                        </div>
+                                        <!-- second model end -->
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- first row end -->
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-xl-10 mt-5">
-                    <div class="table-responsive mt-3">
-                        <!-- start table -->
-                        <table class="table">
-                            <thead class="thead-light">
-                                <tr>
-                                    <th>Customer ID</th>
-                                    <th class="dropdown-toggle" data-toggle="dropdown">
-                                        Age</th>
-                                    <th class="dropdown-toggle" data-toggle="dropdown">
-                                        Nationality</th>
-                                    <th class="dropdown-toggle" data-toggle="dropdown">
-                                        Status</th>
-                                    <th>Date & Time used</th>
-                                </tr>
-                            </thead>
-                            <tbody id="mytable">
-                                <tr>
-                                    <td>32230060
-                                    </td>
-                                    <td>18
-                                    </td>
-                                    <td>
-                                        Qatara
-                                    </td>
-                                    <td><span class="badge badge-success">Used</span></td>
-                                    <td>Apr 11, 2021 8:23pm
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>32230060
-                                    </td>
-                                    <td>18
-                                    </td>
-                                    <td>
-                                        Qatara
-                                    </td>
-                                    <td><span class="badge badge-success">Used</span></td>
-                                    <td>Apr 11, 2021 8:23pm
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>32230060
-                                    </td>
-                                    <td>18
-                                    </td>
-                                    <td>
-                                        Qatara
-                                    </td>
-                                    <td><span class="badge badge-success">Used</span></td>
-                                    <td>Apr 11, 2021 8:23pm
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>32230060
-                                    </td>
-                                    <td>18
-                                    </td>
-                                    <td>
-                                        Qatara
-                                    </td>
-                                    <td><span class="badge badge-success">Used</span></td>
-                                    <td>Apr 11, 2021 8:23pm
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>32230060
-                                    </td>
-                                    <td>18
-                                    </td>
-                                    <td>
-                                        Qatara
-                                    </td>
-                                    <td><span class="badge badge-success">Used</span></td>
-                                    <td>Apr 11, 2021 8:23pm
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <!-- end table -->
+                <!-- first row end -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xl-12 mt-5">
+                        <div class="table-responsive mt-3">
+                            <!-- start table -->
+                            <table class="table">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Customer ID</th>
+                                        <th class="dropdown-toggle" data-toggle="dropdown">
+                                            Age</th>
+                                        <th class="dropdown-toggle" data-toggle="dropdown">
+                                            Nationality</th>
+                                        <th class="dropdown-toggle" data-toggle="dropdown">
+                                            Status</th>
+                                        <th>Date & Time used</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="mytable">
+                                    <tr>
+                                        <td>32230060
+                                        </td>
+                                        <td>18
+                                        </td>
+                                        <td>
+                                            Qatara
+                                        </td>
+                                        <td><span class="badge badge-success">Used</span></td>
+                                        <td>Apr 11, 2021 8:23pm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>32230060
+                                        </td>
+                                        <td>18
+                                        </td>
+                                        <td>
+                                            Qatara
+                                        </td>
+                                        <td><span class="badge badge-success">Used</span></td>
+                                        <td>Apr 11, 2021 8:23pm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>32230060
+                                        </td>
+                                        <td>18
+                                        </td>
+                                        <td>
+                                            Qatara
+                                        </td>
+                                        <td><span class="badge badge-success">Used</span></td>
+                                        <td>Apr 11, 2021 8:23pm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>32230060
+                                        </td>
+                                        <td>18
+                                        </td>
+                                        <td>
+                                            Qatara
+                                        </td>
+                                        <td><span class="badge badge-success">Used</span></td>
+                                        <td>Apr 11, 2021 8:23pm
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>32230060
+                                        </td>
+                                        <td>18
+                                        </td>
+                                        <td>
+                                            Qatara
+                                        </td>
+                                        <td><span class="badge badge-success">Used</span></td>
+                                        <td>Apr 11, 2021 8:23pm
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- end table -->
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="row pagging">
-                <div class="btn btn-light disabled dropdown-toggle" data-toggle="dropdown">
-                    view 25</div>
-                <div class="col-lg-9">
-                    <small class="float-right"><b class="text-right"> 1-25 of 1500</b></small>
+                <div class="row pagging">
+                    <div class="btn btn-light disabled dropdown-toggle" data-toggle="dropdown">
+                        view 25</div>
+                    <div class="col-lg-9">
+                        <small class="float-right"><b class="text-right"> 1-25 of 1500</b></small>
+                    </div>
                 </div>
-            </div>
         </main>
         <!-- main end -->
     </div>
-    <!-- contentc end  -->
+    <!-- content end  -->
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
