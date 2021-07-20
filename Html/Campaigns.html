@@ -48,7 +48,25 @@
                 <div class="col-lg-1 col-md-6 col-sm-3">
                     <div class="dropdown">
                         <button type="button" class="button1 btn btn-light dropdown-toggle" data-toggle="dropdown">
-                            Filter
+                            Filter</button>
+
+                        <div class="dropdown-menu">
+                            <b class="ml-3">Filter by Status</b>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> All</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Active</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Requested</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Completed</a></li>
+                            <hr class="solid">
+                            <b>
+                                <h6 class="ml-3"> Filter by Target Segment</h6>
+                            </b>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> All Customers </a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Active Customers</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Lapsed Customers</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Top Customers</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Customers by Age & Regionq</a>
+                            </li>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-4 col-sm-12">
@@ -95,8 +113,19 @@
                             <thead class="thead-light">
                                 <tr>
                                     <th>Campaigns</th>
-                                    <th>Scheduled</th>
-                                    <th>Progress </th>
+                                    <div class="dropdown">
+                                        <th class="dropdown-toggle" data-toggle="dropdown">Scheduled
+                                                date
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#"><i class="fas fa-sort-amount-down-alt"></i> Scheduled Date</a>
+                                                <a class="dropdown-item" href="#"><i class="fas fa-sort-amount-down-alt"></i> Requested Date</a>
+                                            </div>
+                                        </th>
+                                    </div>
+                                    <div class="">
+                                        <th class="dropdown-toggle">
+                                            Progress</th>
+                                    </div>
                                     <th>Status</th>
                                     <th>Actions</th>
                                 </tr>
@@ -117,7 +146,11 @@
                                     </td>
                                     <td><span class="badge badge-success">Active</span></td>
                                     <td><a href="/Html/viewactive.html"><button class="btn btn-light">View</button></a>
-                                        <a href="/Html/viewactive.html"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                        <button class="btn btn-light" data-toggle="dropdown"><i
+                                                class="fas fa-sort-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Download CSV</a>
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -133,8 +166,13 @@
                                         </div>
                                     </td>
                                     <td><span class="badge badge-light">Requested</span></td>
-                                    <td><a href="/Html/Viewrequestcampaign.htm"><button class="btn btn-light">View</button></a>
-                                        <a href="/Html/Viewrequestcampaign.htm"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                    <td><a href="/Html/Viewrequestcampaign.htm"><button
+                                                class="btn btn-light">View</button></a>
+                                                <button class="btn btn-light" data-toggle="dropdown"><i
+                                                    class="fas fa-sort-down"></i></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Download CSV</a>
+                                            </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -153,7 +191,11 @@
                                     </td>
                                     <td><span class="badge badge-success">Scheduled</span></td>
                                     <td><a href="/Html/Viewshedule.html"><button class="btn btn-light">View</button></a>
-                                        <a href="/Html/Viewshedule.html"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                        <button class="btn btn-light" data-toggle="dropdown"><i
+                                            class="fas fa-sort-down"></i></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Download CSV</a>
+                                    </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -170,8 +212,13 @@
                                         </div>
                                     </td>
                                     <td><span class="badge badge-danger">Rejected</span></td>
-                                    <td><a href="/Html/ViewRejectedCampaign.html"><button class="btn btn-light">View</button></a>
-                                        <a href="/Html/ViewRejectedCampaign.html"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                    <td><a href="/Html/ViewRejectedCampaign.html"><button
+                                                class="btn btn-light">View</button></a>
+                                                <button class="btn btn-light" data-toggle="dropdown"><i
+                                                    class="fas fa-sort-down"></i></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Download CSV</a>
+                                            </div>
                                     </td>
                                 </tr>
                                 <tr>
@@ -190,7 +237,11 @@
                                     </td>
                                     <td><span class="badge badge-light">Expired</span></td>
                                     <td><a href="/Html/ViewExpired.html"><button class="btn btn-light">View</button></a>
-                                        <a href="/Html/ViewExpired.html"><button class="btn btn-light"><i class="fas fa-sort-down"></i></button></a>
+                                        <button class="btn btn-light" data-toggle="dropdown"><i
+                                            class="fas fa-sort-down"></i></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Download CSV</a>
+                                    </div>
                                     </td>
                                 </tr>
                             </tbody>

@@ -58,6 +58,9 @@
    .pagging{
     flex-wrap: inherit;
    }
+   .dropdown{
+     min-width: 20rem !important;
+   }
 
 
 

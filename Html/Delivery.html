@@ -49,9 +49,16 @@
                     </div>
                     <div class="col-lg-1 col-md-6 col-sm-3">
                         <div class="dropdown">
-                            <button type="button" class="button1 btn btn-light dropdown-toggle" data-toggle="dropdown"
-                                id="myinput">
-                                Filter
+                            <button type="button" class="button1 btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                Filter</button>
+
+                            <div class="dropdown-menu">
+                                <b class="ml-3">Filter by Status</b>
+                                <li><a><label><input type="checkbox" class="selectall ml-4"> All</a></li>
+                                <li><a><label><input type="checkbox" class="selectall ml-4"> Active</a></li>
+                                <li><a><label><input type="checkbox" class="selectall ml-4"> Requested</a></li>
+                                <li><a><label><input type="checkbox" class="selectall ml-4"> Completed</a></li>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-sm-12 text-left">
@@ -129,8 +136,11 @@
                                         </td>
                                         <td><span class="badge badge-success">Active</span></td>
                                         <td><a href="/Html/ViewBatch.html" class="btn btn-light">View Batch</a>
-                                            <a href="/Html/Delivery.html"><button class="btn btn-light"><i
-                                                        class="fas fa-sort-down"></i></button></a>
+                                            <button class="btn btn-light" data-toggle="dropdown"><i
+                                                    class="fas fa-sort-down"></i></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Download CSV</a>
+                                            </div>
                                             </a>
                                         </td>
                                     </tr>
@@ -147,10 +157,11 @@
                                         </td>
                                         <td><span class="badge badge-light text-muted">Expire</span></td>
                                         <td><button class="btn btn-light">View Batch</button>
-                                            <button type="button"
-                                                class="btn btn-light dropdown-toggle dropdown-toggle-split"
-                                                data-toggle="dropdown">
-                                            </button>
+                                            <button class="btn btn-light" data-toggle="dropdown"><i
+                                                    class="fas fa-sort-down"></i></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Download CSV</a>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -167,10 +178,11 @@
                                         </td>
                                         <td><span class="badge badge-secondary">Cancle</span></td>
                                         <td><button class="btn btn-light">View Batch</button>
-                                            <button type="button"
-                                                class="btn btn-light dropdown-toggle dropdown-toggle-split"
-                                                data-toggle="dropdown">
-                                            </button>
+                                            <button class="btn btn-light" data-toggle="dropdown"><i
+                                                    class="fas fa-sort-down"></i></button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Download CSV</a>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -187,10 +199,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <!-- tooltip -->
-        <!-- <script>
+        <script>
+            //  tooltip
             $(document).ready(function () {
                 $('[data-toggle="tooltip"]').tooltip();
             });
-        </script> -->
+        </script>
 </body>
