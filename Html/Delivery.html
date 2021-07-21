@@ -14,195 +14,191 @@
 </head>
 
 <body>
-    <!-- first container start -->
-    <div class="containert-fluid">
-        <!-- sidebar start -->
-        <div class="sidebar">
-            <a href=""><i class="disabled demoicon fa fa-fire"></i></a>
-            <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
-            <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
-            <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
-            <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
-            <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
-        </div>
-        <!-- sidebar end -->
-        <!-- start content -->
-        <div class="content">
-            <!-- main start -->
-            <main class="col bg-faded py-3 flex-grow-1">
-                <!-- start row -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
-                        <h5>Flat White<i class="fa fa-chevron-down"></i></h5>
-                        <h1>Delivery</h1>
-                        <h6>Award stamps to customers ordering from home.</h6>
-                    </div>
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <a href=""><i class="disabled demoicon fa fa-fire"></i></a>
+        <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
+        <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
+        <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
+        <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+    </div>
+    <!-- sidebar end -->
+    <!-- start content -->
+    <div class="content">
+        <!-- main start -->
+        <main class="col bg-faded py-3 flex-grow-1">
+            <!-- start row -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                    <h5>Flat White<i class="fa fa-chevron-down"></i></h5>
+                    <h1>Delivery</h1>
+                    <h6>Award stamps to customers ordering from home.</h6>
                 </div>
-                <!-- end row -->
-                <div class="row">
-                    <hr class="solid">
+            </div>
+            <!-- end row -->
+            <div class="row">
+                <hr class="solid">
+            </div>
+            <!-- input form start -->
+            <div class="row">
+                <div class="col-lg-3 col-md-5 col-sm-4">
+                    <input type="search" class="form-control" placeholder="Search campaigns...">
                 </div>
-                <!-- input form start -->
-                <div class="row">
-                    <div class="col-lg-2 col-md-6 col-sm-12">
-                        <input type="search" class="form-control" placeholder="Search campaigns...">
-                    </div>
-                    <div class="col-lg-1 col-md-6 col-sm-3">
-                        <div class="dropdown">
-                            <button type="button" class="button1 btn btn-light dropdown-toggle" data-toggle="dropdown">
-                                Filter</button>
-
-                            <div class="dropdown-menu">
-                                <b class="ml-3">Filter by Status</b>
-                                <li><a><label><input type="checkbox" class="selectall ml-4"> All</a></li>
-                                <li><a><label><input type="checkbox" class="selectall ml-4"> Active</a></li>
-                                <li><a><label><input type="checkbox" class="selectall ml-4"> Requested</a></li>
-                                <li><a><label><input type="checkbox" class="selectall ml-4"> Completed</a></li>
-                            </div>
+                <div class="col-lg-1 col-md-1 col-sm-4">
+                    <div class="dropdown">
+                        <button type="button" class="button1 btn btn-light dropdown-toggle btn-lg" data-toggle="dropdown">
+                            Filter</button>
+                        <div class="dropdown-menu">
+                            <b class="ml-3">Filter by Status</b>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> All</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Active</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Requested</a></li>
+                            <li><a><label><input type="checkbox" class="selectall ml-4"> Completed</a></li>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-4 col-sm-12 text-left">
-                        <a href=""><span class="fas fa-download"></span>EXPORT DATA</a>
-                    </div>
-                    <div class="col-xl col-md-12 col-sm-12">
-                        <button type="button" class="model1 btn btn-primary" data-toggle="modal"
-                            data-target="#firstmodel">NEW BATCH</button>
-                        <div class="modal fade" id="firstmodel">
-                            <div class="modal-dialog modal-dialog-top">
-                                <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Request a new delivery code batch </h4>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-4 text-left mt-2">
+                    <a href=""><span class="fas fa-download"></span> EXPORT DATA</a>
+                </div>
+                <div class="col-xl col-md-12">
+                    <button type="button" class="model1 btn btn-primary" data-toggle="modal"
+                        data-target="#firstmodel">NEW BATCH</button>
+                    <div class="modal fade" id="firstmodel">
+                        <div class="modal-dialog modal-dialog-top">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Request a new delivery code batch </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <!-- Modal body -->
+                                <div class="modal-body">
+                                    <h6>Issue stamps to your customers ordering form home.</h6>
+                                    <div class="form-group">
+                                        <label for="" class="mt-3">Batch Name</label>
+                                        <div class="mt-3 model1">100 Characters</div>
+                                        <input type="text" class="form-control" id="exampleInputPassword1"
+                                            placeholder="Batch Name">
                                     </div>
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
-                                        <h6>Issue stamps to your customers ordering form home.</h6>
-                                        <div class="form-group">
-                                            <label for="" class="mt-3">Batch Name</label>
-                                            <div class="model1 mt-3">100 Characters</div>
-                                            <input type="text" class="form-control" id="exampleInputPassword1"
-                                                placeholder="Batch Name">
-                                        </div>
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
-                                        <a href="/Html/NewBatch.html" class="btn btn-primary">BEGIN</a>
-                                    </div>
+                                </div>
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
+                                    <a href="/Html/NewBatch.html" class="btn btn-primary">BEGIN</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- input form close -->
-                <!-- start table row -->
-                <div class="row">
-                    <div class="col-xl-12 col-md-12 col-sm-12">
-                        <div class="table-responsive mt-3">
-                            <!-- start table -->
-                            <table class="table">
-                                <thead class="thead-light">
-                                    <tr>
-                                        <th>Delivery Batch</th>
-                                        <div class="dropdown">
-                                            <th class="dropdown-toggle" data-toggle="dropdown">
-                                                Data generated</th>
+            </div>
+            <!-- input form close -->
+            <!-- start table row -->
+            <div class="row">
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <div class="table-responsive mt-3">
+                        <!-- start table -->
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>Delivery Batch</th>
+                                    <div class="dropdown">
+                                        <th class="dropdown-toggle" data-toggle="dropdown">
+                                            Data generated</th>
+                                    </div>
+                                    <div class="dropdown">
+                                        <th class="dropdown-toggle" data-toggle="dropdown">
+                                            <a data-toggle="tooltip" data-placement="top"
+                                                title="Export all code batches in CSV  format,cantaining Delivery Codes,Customer ID,U sage Date &Time, and Demographics.">
+                                                Progress</a>
+                                        </th>
+                                    </div>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mytable">
+                                <tr>
+                                    <td>Batch Title 01
+                                        <div> <small>1500 codes generated</small></div>
+                                    </td>
+                                    <td>Apr 12,2021
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar br1 bg-success">30%
+                                            </div>
                                         </div>
-                                        <div class="dropdown">
-                                            <th class="dropdown-toggle" data-toggle="dropdown">
-                                                <a data-toggle="tooltip" data-placement="top"
-                                                    title="Export all code batches in CSV  format,cantaining Delivery Codes,Customer ID,U sage Date &Time, and Demographics.">
-                                                    Progress</a>
-                                            </th>
-                                            <!-- <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a> -->
+                                    </td>
+                                    <td><span class="badge badge-success">Active</span></td>
+                                    <td><a href="/Html/ViewBatch.html" class="btn btn-light">View Batch</a>
+                                        <button class="btn btn-light" data-toggle="dropdown"><i
+                                                class="fas fa-sort-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Download CSV</a>
                                         </div>
-                                        <th>Status</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="mytable">
-                                    <tr>
-                                        <td>Batch Title 01
-                                            <div> <small>1500 codes generated</small></div>
-                                        </td>
-                                        <td>Apr 12,2021
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar br1 bg-success">30%
-                                                </div>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Batch Title 02
+                                        <div><small>1500 codes generated</small></div>
+                                    </td>
+                                    <td>Apr 11,2021
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar bar2 bg-secondary">70%</div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-light text-muted">Expire</span></td>
+                                    <td><button class="btn btn-light">View Batch</button>
+                                        <button class="btn btn-light" data-toggle="dropdown"><i
+                                                class="fas fa-sort-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Download CSV</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Batch Title 03
+                                        <div> <small>1500 codes generated</small></div>
+                                    </td>
+                                    <td>Apr 11,2021
+                                    </td>
+                                    <td>
+                                        <div class="progress">
+                                            <div class="progress-bar br3 bg-secondary">60%
                                             </div>
-                                        </td>
-                                        <td><span class="badge badge-success">Active</span></td>
-                                        <td><a href="/Html/ViewBatch.html" class="btn btn-light">View Batch</a>
-                                            <button class="btn btn-light" data-toggle="dropdown"><i
-                                                    class="fas fa-sort-down"></i></button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Download CSV</a>
-                                            </div>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Batch Title 02
-                                            <div><small>1500 codes generated</small></div>
-                                        </td>
-                                        <td>Apr 11,2021
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar bar2 bg-secondary">70%</div>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge badge-light text-muted">Expire</span></td>
-                                        <td><button class="btn btn-light">View Batch</button>
-                                            <button class="btn btn-light" data-toggle="dropdown"><i
-                                                    class="fas fa-sort-down"></i></button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Download CSV</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Batch Title 03
-                                            <div> <small>1500 codes generated</small></div>
-                                        </td>
-                                        <td>Apr 11,2021
-                                        </td>
-                                        <td>
-                                            <div class="progress">
-                                                <div class="progress-bar br3 bg-secondary">60%
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td><span class="badge badge-secondary">Cancle</span></td>
-                                        <td><button class="btn btn-light">View Batch</button>
-                                            <button class="btn btn-light" data-toggle="dropdown"><i
-                                                    class="fas fa-sort-down"></i></button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Download CSV</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <!-- end table -->
-                        </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="badge badge-secondary">Cancle</span></td>
+                                    <td><button class="btn btn-light">View Batch</button>
+                                        <button class="btn btn-light" data-toggle="dropdown"><i
+                                                class="fas fa-sort-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Download CSV</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- end table -->
                     </div>
                 </div>
-                <!-- close table row -->
-            </main>
-            <!-- main close -->
-        </div>
-        <!-- first content close -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script>
-            //  tooltip
-            $(document).ready(function () {
-                $('[data-toggle="tooltip"]').tooltip();
-            });
-        </script>
+            </div>
+            <!-- close table row -->
+        </main>
+        <!-- main close -->
+    </div>
+    <!-- first content close -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        //  tooltip
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 </body>

@@ -5,13 +5,16 @@
   .content{
    margin-left: 0 !important;
   }
+  .row{
+    margin-right: 0px !important;
+  }
  }
 .content{
   margin-left: 90px;
   padding: 1px 16px;
 }
 .customheight{
-  height: 416px;
+  height: 447px;
     width: auto;
 }  
 .cahrt-1{
@@ -22,8 +25,9 @@
 /* imag */
 .imagmap{
    width: 100%;
-    height: 91%;
-}
+   height :min-content;
+  
+} 
 .rightcolumn {
   float: right;
   width: 30%;
@@ -138,34 +142,12 @@ border: 1px solid #cccccc;
   transition-duration: 0.3s;
 }
 /* pie chart */
-[data-pie-id] li:nth-child(0) {
-  color: blue;
-}
-[data-pie-id] li:nth-child(1) {
-  color: #4d00ff;
-}
-[data-pie-id] li:nth-child(2) {
-  color: #9900ff;
-}
-[data-pie-id] li:nth-child(3) {
-  color: #e500ff;
-}
-[data-pie-id] li:nth-child(4) {
-  color: #ff00cc;
-}
-[data-pie-id] li:nth-child(5) {
-  color: #ff0080;
-}
-[data-pie-id] li:nth-child(6) {
-  color: #ff0033;
-}
-ul[data-pie-id] {
-  list-style: none;
- }
-#my-cool-chart {
-  width:300px;
-}
-@media screen and (max-width: px){
+/* .piechart{
+  width :min-content !important;
+  height :min-content !important;
+
+} */
+@media screen and (max-width: 768px){
   .card1{
     height: 147px !important;
   }

@@ -9,17 +9,15 @@
     .customform{
       margin: 0 !important;
     }
-    .model1{
-      float:left !important;
-    }
   }
  .content {
   margin-left: 90px;
- 
 } 
+@media only screen and (min-width: 768px) {
 .model1{
   float: right;
   font-size: 14px;
+}
 }
    .downarrow{
     margin-top: 15px !important;

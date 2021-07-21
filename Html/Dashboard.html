@@ -138,7 +138,7 @@
                     <div class="row float-right">
                         <div class="dropdown mt-2">
                             <a href="#" data-toggle="dropdown"><i class="fas fa-download"></i>
-                               EXPORT DATA
+                                EXPORT DATA
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Export PDF Report</a>
@@ -147,7 +147,7 @@
                         </div>
                         <div class="dropdown ml-3">
                             <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
-                               Past 30 days
+                                Past 30 days
                             </button>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Last 7 days</a>
@@ -156,34 +156,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="text-right  dropleft">
-                        <a href="#" data-toggle="dropdown"><i class="fas fa-download"></i> EXPORT
-                            DATA</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Export PDF Report</a>
-                            <a class="dropdown-item" href="#">Export CSV</a>
-                        </div>
-                        <a data-toggle="dropdown">
-                            Past 30 days</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Last 30 day</a>
-                                <a class="dropdown-item" href="#">Last 90 days</a>
-                                <a class="dropdown-item" href="#">Custom</a>
-                            </div> -->
-                    <!-- <form>
-                            <div class="form-group">
-                                <input type="input" id="inputDate">
-                            </div>
-                        </form> -->
-                    <!-- </div> -->
                 </div>
             </div>
             <!-- lines end -->
             <!-- bar chart  linechart1 start -->
             <div class="row">
                 <div class="column-33">
-                    <div class="card border">
-                        <div class="row p-2">
+                    <div class="card border customheight">
+                        <div class="row p-3">
                             <div class="col">
                                 <h5>Stamps over time by outlet</h5>
                             </div>
@@ -199,7 +179,7 @@
                 <!-- linechart-1  start -->
                 <div class="column-66">
                     <div class="card border customheight col-lg-10">
-                        <div class="row mt-3">
+                        <div class="row pt-3">
                             <div class="col">
                                 <h5>Average Visits</h5>
                             </div>
@@ -217,7 +197,7 @@
             <!-- linechart-2 start -->
             <div class="row">
                 <div class="column-60">
-                    <div class="mt-2 card border p-5 customheight col-lg-11">
+                    <div class="card border pt-3 customheight col-lg-11">
                         <div class="row">
                             <div class="col">
                                 <h5>Rewards awarded & redeemed</h5>
@@ -227,7 +207,7 @@
                                     title="The number of rewards awarded and redeemed by customers over time."></i>
                             </div>
                         </div>
-                        <canvas id="chartLine2"></canvas>
+                        <canvas id="chartLine2" class="p-5"></canvas>
                     </div>
                 </div>
             </div>
@@ -235,7 +215,7 @@
             <!-- map and pie chart start -->
             <div class="row">
                 <div class="column-40">
-                    <div class="mt-2 card border p-4 customheight">
+                    <div class="pt-2 card border p-4 customheight">
                         <div class="row">
                             <div class="col">
                                 <h5>Stamps over time by outlet</h5>
@@ -245,11 +225,12 @@
                                     title="The percentage of your customers by region"></i>
                             </div>
                         </div>
-                        <img class="imagmap" src="https://fvmstatic.s3.amazonaws.com/maps/m/SG-EPS-01-0001.png" alt="">
+                        <div class=""> <img class="imagmap" src="https://fvmstatic.s3.amazonaws.com/maps/m/SG-EPS-01-0001.png"
+                                alt=""></div>
                     </div>
                 </div>
                 <div class="column-40">
-                    <div class="mt-2 card border customheight p-3">
+                    <div class="card border customheight pt-2">
                         <div class="row">
                             <div class="col">
                                 <h5 class="p-2">Active customers by week</h5>
@@ -259,14 +240,7 @@
                                     title="The percentage of your new & returning customers"></i>
                             </div>
                         </div>
-                        <ul data-pie-id="my-cool-chart">
-                            <li data-value="36"></li>
-                            <li data-value="21"></li>
-                            <li data-value="8"></li>
-                            <li data-value="15"></li>
-                            <li data-value="20"></li>
-                        </ul>
-                        <div id="my-cool-chart"></div>
+                        <div id="piechart" class="piechart"></div>
                     </div>
                 </div>
             </div>
@@ -284,8 +258,9 @@
     <!-- chart-line   chartLine-2-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <!-- pie chart -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/js/pizza.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/js/pizza.min.js"></script> -->
     <!-- pie chart end -->
     <script>
         // chart-1 start
@@ -411,14 +386,36 @@
             });
             // chartline2 end
             // pie chart
-            Pizza.init(document.body, {
-                donut: false,
-                donut_inner_ratio: 0.4, // between 0 and 1
-                percent_offset: 30, // relative to radius
-                /*stroke_color: '#333',*/
-                stroke_width: 0,
-                show_percent: false, // show or hide the percentage on the chart.
-            });
+            // Load google charts
+            google.charts.load('current', { 'packages': ['corechart'] });
+            google.charts.setOnLoadCallback(drawChart);
+
+            // Draw the chart and set the chart values
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Task', 'Hours per Day'],
+                    ['Work', 8],
+                    ['Eat', 2],
+                    ['TV', 4],
+                    ['Gym', 2],
+                    ['Sleep', 8]
+                ]);
+
+                // Optional; add a title and set the width and height of the chart
+                var options = { 'title': 'My Average Day',};
+
+                // Display the chart inside the <div> element with id="piechart"
+                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                chart.draw(data, options);
+            }
+            // Pizza.init(document.body, {
+            //     donut: false,
+            //     donut_inner_ratio: 0.4, // between 0 and 1
+            //     percent_offset: 30, // relative to radius
+            //     /*stroke_color: '#333',*/
+            //     stroke_width: 0,
+            //     show_percent: false, // show or hide the percentage on the chart.
+            // });
             // pie chart end
         });
         // tooltip

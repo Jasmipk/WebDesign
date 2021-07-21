@@ -31,7 +31,7 @@
             <!-- start row -->
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4">
-                    <h5>Flat White<i class="downarrow fa fa-chevron-down"></i></h5>
+                    <h5>Flat White<i class="fa fa-chevron-down"></i></h5>
                     <h1>Campaigns</h1>
                     <h6>Campaigns allows you to drive footfall and customize your customer experience.</h6>
                 </div>
@@ -42,12 +42,12 @@
             </div>
             <!-- input form start -->
             <div class="row">
-                <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-3">
                     <input type="search" class="form-control" placeholder="Search..">
                 </div>
-                <div class="col-lg-1 col-md-6 col-sm-3">
+                <div class="col-lg-1 col-md-3 col-sm-3">
                     <div class="dropdown">
-                        <button type="button" class="button1 btn btn-light dropdown-toggle" data-toggle="dropdown">
+                        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
                             Filter</button>
 
                         <div class="dropdown-menu">
@@ -69,11 +69,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 col-sm-12">
+                <div class="col-lg-2 col-md-4 col-sm-6">
                     <span class="fa fa-download"></span><a href=""> EXPORT DATA</a>
                 </div>
-                <div class="col-lg-7 col-xl-7 col-md-12 col-sm-1">
-                    <button type="button" class="model1 btn btn-primary text-right" data-toggle="modal"
+                <div class="col-lg-6 col-sm-12 text-center">
+                    <button type="button" class="model1 btn btn-primary" data-toggle="modal"
                         data-target="#firstmodel"> REQUEST CAMPAIGN</button>
                     <div class="modal fade" id="firstmodel">
                         <div class="modal-dialog modal-dialog-top">
@@ -87,10 +87,9 @@
                                 <div class="modal-body">
                                     <h6>Reward your best customers and encourage others to visit more often.</h6>
                                     <div class="form-group">
-                                        <label class="mt-3">Campaign Name </label>
-                                        <div class="model1 m-3">10 Characters</div>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Campaign Name">
+                                        <label>Campaign Name </label>
+                                        <div class="model1">10 Characters</div>
+                                        <input type="text" class="form-control" placeholder="Campaign Name">
                                     </div>
                                 </div>
                                 <!-- Modal footer -->
@@ -122,7 +121,7 @@
                                             </div>
                                         </th>
                                     </div>
-                                    <div class="">
+                                    <div>
                                         <th class="dropdown-toggle">
                                             Progress</th>
                                     </div>
@@ -134,7 +133,7 @@
                                 <tr>
                                     <td>Campaign Title 01
                                         <div><small>All Customers</small></div>
-                                        <div><small class="smalltext">Sent to 1,205 customers</small></div>
+                                        <div><small class="text-muted">Sent to 1,205 customers</small></div>
                                     </td>
                                     <td>Apr 11,2021
                                     </td>
@@ -156,7 +155,7 @@
                                 <tr>
                                     <td>Campaign Title 02
                                         <div><small>Active Customers</small></div>
-                                        <div><small class="smalltext">Sending to 50 customers</small></div>
+                                        <div><small class="text-muted">Sending to 50 customers</small></div>
                                     </td>
                                     <td>Apr 11,2021
                                     </td>
@@ -178,7 +177,7 @@
                                 <tr>
                                     <td>Campaign Title 03
                                         <div><small>Lapsed Customers</small></div>
-                                        <div><small class="smalltext">Sending to 50 customers</small></div>
+                                        <div><small class="text-muted">Sending to 50 customers</small></div>
 
                                     </td>
                                     <td>Apr 11,2021
@@ -201,7 +200,7 @@
                                 <tr>
                                     <td>Campaign Title 04
                                         <div><small>Top Customers</small></div>
-                                        <div><small class="smalltext">Sending to 50 customers</small></div>
+                                        <div><small class="text-muted">Sending to 50 customers</small></div>
                                     </td>
                                     <td>Apr 11,2021
                                     </td>
@@ -224,7 +223,7 @@
                                 <tr>
                                     <td>Campaign Title 05
                                         <div><small>Lapsed Customers</small></div>
-                                        <div><small class="smalltext">sent to 50 customers</small></div>
+                                        <div><small class="text-muted">sent to 50 customers</small></div>
                                     </td>
                                     <td>Apr 11,2021
                                     </td>
@@ -259,6 +258,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
+        // filter toggle
         $(document).ready(function () {
             $("#myinput").on("keyup", function () {
                 var value = $(this).val().toLowerCase();
