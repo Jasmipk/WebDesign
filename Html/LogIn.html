@@ -27,15 +27,16 @@
                         <!-- start login form -->
                         <form>
                             <h3> Log In </h3>
-                            <small>Don't have account?<a href="#">Sign up</a></small>
+                            <small>Don't have account?<a href="/Html/Confirm_password.html">Sign up</a></small>
                             <div class="form-group">
                                 <label for="exampleInputEmail1" class="mt-5">Email address</label>
                                 <input type="email" class="form-control" placeholder="Addulla@koolcafe.qa" required >
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
-                                <a href="#" class="icon"><span class="fa fa-eye"></span> Show</a>
-                                <input type="password" class="form-control">
+                                <a href="#" class="icon" type="button" id="passwordBtn" data-toggle="button "
+                                aria-pressed="false" autocomplete="off"><span class="fa fa-eye"></span> Show</a>
+                                <input type="password" class="form-control" id="password" name="password">
                             </div>
                             <button type="button" class="btn btn-primary btn-block" data-toggle="modal"
                                 data-target="#myModal">
@@ -83,4 +84,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+         $(document).ready(function () {
+            // Enables Bootstrap's tooltip plugin
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            const passBtn = $("#passwordBtn");
+            passBtn.click(togglePassword);
+            function togglePassword() {
+                const passInput = $("#password");
+                if (passInput.attr("type") === "password") {
+                    passInput.attr("type", "text");
+                } else {
+                    passInput.attr("type", "password");
+                }
+            }
+        });
+    </script>
 </body>

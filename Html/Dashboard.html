@@ -14,7 +14,6 @@
     <!-- custom sylesheet -->
     <link rel="stylesheet" href="/Css/dashbord.css">
     <link rel="stylesheet" href="/sidebar.css">
-    <!-- <link rel="stylesheet" href="/Css/style.css"> -->
     <!-- custom stylesheet and -->
 </head>
 
@@ -164,7 +163,7 @@
                 <div class="column-33">
                     <div class="card border customheight">
                         <div class="row p-3">
-                            <div class="col">
+                            <div class="col-10">
                                 <h5>Stamps over time by outlet</h5>
                             </div>
                             <div class="col">
@@ -199,7 +198,7 @@
                 <div class="column-60">
                     <div class="card border pt-3 customheight col-lg-11">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-10">
                                 <h5>Rewards awarded & redeemed</h5>
                             </div>
                             <div class="col">
@@ -217,7 +216,7 @@
                 <div class="column-40">
                     <div class="pt-2 card border p-4 customheight">
                         <div class="row">
-                            <div class="col">
+                            <div class="col-10">
                                 <h5>Stamps over time by outlet</h5>
                             </div>
                             <div class="col">
@@ -225,22 +224,22 @@
                                     title="The percentage of your customers by region"></i>
                             </div>
                         </div>
-                        <div class=""> <img class="imagmap" src="https://fvmstatic.s3.amazonaws.com/maps/m/SG-EPS-01-0001.png"
-                                alt=""></div>
+                        <!-- <div class="">  -->
+                        <div id="chartdiv"></div>
                     </div>
                 </div>
                 <div class="column-40">
                     <div class="card border customheight pt-2">
-                        <div class="row">
+                        <div class="row pt-3 pr-2 pl-2">
                             <div class="col">
-                                <h5 class="p-2">Active customers by week</h5>
+                                <h5>Active customers by week</h5>
                             </div>
                             <div class="col">
                                 <i class="fas fa-info-circle float-right" data-toggle="tooltip" data-placement="bottom"
                                     title="The percentage of your new & returning customers"></i>
                             </div>
                         </div>
-                        <div id="piechart" class="piechart"></div>
+                        <div id="chartContainer"></div>
                     </div>
                 </div>
             </div>
@@ -258,10 +257,13 @@
     <!-- chart-line   chartLine-2-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
     <!-- pie chart -->
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pizza/0.2.1/js/pizza.min.js"></script> -->
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <!-- pie chart end -->
+    <!-- map -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/worldIndiaLow.js"></script>
+    <!-- map end -->
     <script>
         // chart-1 start
         $(function () {
@@ -385,39 +387,45 @@
                 }
             });
             // chartline2 end
-            // pie chart
-            // Load google charts
-            google.charts.load('current', { 'packages': ['corechart'] });
-            google.charts.setOnLoadCallback(drawChart);
-
-            // Draw the chart and set the chart values
-            function drawChart() {
-                var data = google.visualization.arrayToDataTable([
-                    ['Task', 'Hours per Day'],
-                    ['Work', 8],
-                    ['Eat', 2],
-                    ['TV', 4],
-                    ['Gym', 2],
-                    ['Sleep', 8]
-                ]);
-
-                // Optional; add a title and set the width and height of the chart
-                var options = { 'title': 'My Average Day',};
-
-                // Display the chart inside the <div> element with id="piechart"
-                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-                chart.draw(data, options);
-            }
-            // Pizza.init(document.body, {
-            //     donut: false,
-            //     donut_inner_ratio: 0.4, // between 0 and 1
-            //     percent_offset: 30, // relative to radius
-            //     /*stroke_color: '#333',*/
-            //     stroke_width: 0,
-            //     show_percent: false, // show or hide the percentage on the chart.
-            // });
-            // pie chart end
         });
+        // map
+        // Create map instance
+        var chart = am4core.create("chartdiv", am4maps.MapChart);
+        chart.homeZoomLevel = 4;
+        chart.homeGeoPoint = {
+            latitude: 23,
+            longitude: 83
+        };
+
+        // Set map definition
+        chart.geodata = am4geodata_worldIndiaLow;
+
+        // Set projection
+        chart.projection = new am4maps.projections.Miller();
+
+        // Create map polygon series
+        var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+
+        // Exclude Antartica
+        polygonSeries.exclude = ["AQ"];
+
+        // Make map load polygon (like country names) data from GeoJSON
+        polygonSeries.useGeodata = true;
+
+        // Configure series
+        var polygonTemplate = polygonSeries.mapPolygons.template;
+        polygonTemplate.tooltipText = "{name}";
+        polygonTemplate.fill = am4core.color("#74B266");
+
+        // Create hover state and set alternative fill color
+        var hs = polygonTemplate.states.create("hover");
+        hs.properties.fill = am4core.color("#367B25");
+
+        // Select India
+        chart.events.on("ready", function (ev) {
+            polygonSeries.getPolygonById("IN").isHover = true;
+        });
+        // map end
         // tooltip
         $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip();
@@ -426,4 +434,37 @@
         $('#inputDate').datepicker({
         });
     </script>
+    <!-- pie chart -->
+    <script type="text/javascript">
+        window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+                {
+                    title: {
+                        text: "Gaming Consoles Sold in 2012"
+                    },
+                    legend: {
+                        maxWidth: 150,
+                        itemWidth: 120
+                    },
+                    data: [
+                        {
+                            type: "pie",
+                            showInLegend: true,
+                            legendText: "{indexLabel}",
+                            dataPoints: [
+                                { y: 4181563, indexLabel: "PlayStation 3" },
+                                { y: 2175498, indexLabel: "Wii" },
+                                { y: 3125844, indexLabel: "Xbox 360" },
+                                { y: 1176121, indexLabel: "Nintendo DS" },
+                                { y: 1727161, indexLabel: "PSP" },
+                                { y: 4303364, indexLabel: "Nintendo 3DS" },
+                                { y: 1717786, indexLabel: "PS Vita" }
+                            ]
+                        }
+                    ]
+                });
+            chart.render();
+        }
+    </script>
+    <!-- pie chart end -->
 </body>

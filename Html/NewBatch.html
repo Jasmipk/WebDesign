@@ -28,16 +28,16 @@
     <div class="content">
         <!-- start main -->
         <main class="col bg-faded py-3 flex-grow-1">
+            <div><span class="fas fa-chevron-left"></span><a href="/Html/Delivery.html"> Back to Delivery</a></div>
             <!-- first row start -->
-            <div class="row">
-                <div class="col-xl-5">
-                    <span class="fas fa-chevron-left"></span><a href="/Html/Delivery.html"> Back to Delivery</a>
-                    <h5 class="mt-5">Flat White</h5>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <h5>Flat White</h5>
                     <h3>Kool Cafe Lapsed Recall</h3>
                     <p class="text-primary">Edit campaign page</p>
                 </div>
-                <div class="rebutton col-lg-3 col-md-6 col-sm-12">
-                    <button type="button" class="btnsend btn btn-primary float-right" data-toggle="modal"
+                <div class="col-lg-4">
+                    <button type="button" class="btn btn-primary float-right" data-toggle="modal"
                         data-target="#firstmodel">
                         GENERATE BATCH</button>
                     <!-- The Modal -->
@@ -65,60 +65,64 @@
             </div>
             <!-- first row end -->
             <!-- card start -->
-            <div class="card col-lg-8">
+            <div class="card col-lg-8 col-md-12 col-sm-12 mt-3">
                 <!-- start expiry data col-1 -->
-                <div class="row diffrent">
-                    <div class="circle">
+                <div class="row">
+                    <div class="ml-4">
                         <a class="icon" href="">
                             <i class="iconhover far fa-check-circle"></i>
                         </a>
                     </div>
-                    <div class="title col-sm-5"><b>
-                            <h4>Set expiration data</h4>
+                    <div><b>
+                            <h4 class=" ml-4">Set expiration data</h4>
                         </b>
-                        <div>
-                            <small>How long should this batch remain active?</small>
-                        </div>
-                        <form>
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <label for="">Form</label>
-                                    <input type="date" class="form-control" placeholder="select a date" name="date">
-                                </div>
-                                <div class="col-lg-6">
-                                    <label for="">To</label>
-                                    <input type="date" class="form-control" placeholder="select a date" name="date">
-                                </div>
+                        <div class="ml-4">
+                            <div>
+                                <small>How long should this batch remain active?</small>
                             </div>
-                        </form>
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label for="">Form</label>
+                                        <input type="date" class="form-control" placeholder="select a date" name="date">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <label for="">To</label>
+                                        <input type="date" class="form-control" placeholder="select a date" name="date">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <!-- end expiry data col-1  -->
-                <h2 class="horizontalline"></h2>
+                <h2 class="horizontalline mt-4"></h2>
                 <!-- start quqntity col-2 -->
-                <div class="row diffrent">
-                    <div class="circle">
+                <div class="row">
+                    <div class="ml-4">
                         <a class="icon" href="">
                             <i class="far fa-check-circle"></i>
                         </a>
                     </div>
-                    <div class="title col-sm-5"><b>
-                            <h4>Set quantity</h4>
+                    <div><b>
+                            <h4 class="ml-4">Set quantity</h4>
                         </b>
-                        <div>
-                            <small>How many codes do you want to generate in this batch?</small>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <label for="defaultRange">Default range</label>
-                                <div class="slidecontainer">
-                                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                                    <label for="">0</label>
-                                    <label for="" class="float-right">100</label>
-                                </div>
+                        <div class="ml-4">
+                            <div>
+                                <small>How many codes do you want to generate in this batch?</small>
                             </div>
-                            <div class="col-lg-4 mt-4">
-                                <div><a href="" class="btn btn-light btn-small btn-sm">Enter quality</a>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <label for="defaultRange">Default range</label>
+                                    <div class="slidecontainer">
+                                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                                        <label for="">0</label>
+                                        <label for="" class="float-right">100</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mt-4">
+                                    <div><a href="" class="btn btn-light btn-small btn-sm">Enter quality</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

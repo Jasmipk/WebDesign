@@ -9,6 +9,12 @@
     .customform{
       margin: 0 !important;
     }
+    .filter{
+      margin-top: 10px;
+    }
+  }
+  .search{
+    background-image: url('searchicon.png');
   }
  .content {
   margin-left: 90px;
@@ -18,6 +24,9 @@
   float: right;
   font-size: 14px;
 }
+/* .filter{
+  margin-top: 10px;
+} */
 }
    .downarrow{
     margin-top: 15px !important;

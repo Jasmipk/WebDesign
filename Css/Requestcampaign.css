@@ -1,19 +1,14 @@
-@media screen and (max-width: 1140px) {
+  @media screen and (min-width: 1000px) {
     .mainclass{
-        margin-left: 45px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .mainclass{
-        margin-left: 0px;
+        margin-left: 0px !important;
     }
   }
   
   @media only screen and (max-width: 1200px) {
     /* For mobile phones: */
-    .content{
+    /* .content{
      margin-left: 0 !important;
-    }
+    } */
     .btnsend{
         margin-top: 0px !important;
         margin-bottom: 5px;
@@ -24,26 +19,6 @@
     .mainrow{
         margin-left: 2 !important;
     }
-    .circle{
-        margin-top: 2 !important;
-    }
-    .workship{
-        padding-left: 2 !important;
-    }
-    .title{
-        padding-left: 2 !important;
-    }
-    .diffrent{
-        margin-left: 0 !important;
-        padding-right: 15px !important;
-    }
-    .h4 ,h4{
-        font-size: 17.5px !important;
-    }
-}
-.content{
-  margin-left: 90px;
-  padding: 1px 16px;
 }
 .btnsend{
     margin-top: 123px;
@@ -67,37 +42,14 @@
      line-height:0.1em;
      margin: 10px 0 20px;
 }
-   
-.circle{
-    margin-top: 20px;
-    margin-left: 20px;
-}
-.workship{
-    font-size: 30px;
-    padding-left: 35px;
-    color: #495057;
-}
-.title{
-    margin-top: 10px;
-    padding-left: 20px;
-}
 .icon{
     color: gray;
 }
 .hovercolor :hover{
     color: rgb(28, 204, 57);
-} 
-/* .col-lg-4 {
-    margin-left: 105px;
-} */
+}
 .card{
     padding: 10px;
-}
-.diffrent{
-    margin-left: 13px;
-}
-.iconcircle{
-    color: gray;
 }
 .form-control{
     padding: 0 !important;
@@ -112,7 +64,6 @@ textarea {
     border-radius: 4px;
     resize: vertical;
 }
-
 label {
     display: inline-block;
 }
@@ -121,24 +72,6 @@ label {
     width: 75%;
     margin-top: 6px;
 }
-
-/* Clear floats after the columns
-.row:after {
-    content:"";
-    display: table;
-    clear: both;
-} */
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-/* @media screen and (max-width: 600px) {
-   
-    .col-75
-    input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-} */
-
 .items{
-    margin-left: 160px;
+    margin-left: 100px;
 }
