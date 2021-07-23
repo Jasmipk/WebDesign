@@ -12,6 +12,9 @@
      font-size :larger;
      display :contents !important;
    }}
+   .row{
+     margin-right: 0 !important;
+   }
   .sidebar {
     margin: 0;
     padding: 0;

@@ -19,6 +19,10 @@
     .mainrow{
         margin-left: 2 !important;
     }
+    .textsize{
+        font-size: 15px !important;
+        flex-wrap: inherit !important;
+        }
 }
 .btnsend{
     margin-top: 123px;

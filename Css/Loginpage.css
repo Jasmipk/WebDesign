@@ -3,66 +3,21 @@
     flex: 0 0 16.666667%;
     max-width: 4.666667% !important;
   } */
-  
-  @media (max-width:768px) {
- .content{
-    margin-left: 0 !important;
-   }
-   .mainrow{
-    margin-left: 0 !important;
-    margin-top: 0 !important;
-   } 
-   .customform{
-    margin: 0 !important;
+  @media only screen and  (max-width:1000px) {
+    .customform{
+      margin: 0px !important;
+    } 
   }
-  }
- div.content {
-  margin-left: 70px;
-  padding: 1px 16px;
-  height: 1000px;
-  /* float: right; */
-}
 .icon{
   float:right;
   font-size:12px;
 }
-/* .img{
-  width: 20% !important;
-  float:right;
-  
-} */
-.mainrow {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  /* margin-right: -15px; */
-  margin-top: 100px;
-}
 .customform{
-  margin: 150px;
+  margin: 100px;
 }
-/* conifirm pass */
-.pass_show{position: relative} 
+.forgopass{
+  margin-top: 10% !important;
+}
 
-.pass_show .ptxt { 
-
-position: absolute; 
-
-top: 50%; 
-
-right: 10px; 
-
-z-index: 1; 
-
-color: #f36c01; 
-
-margin-top: -10px; 
-
-cursor: pointer; 
-
-transition: .3s ease all; 
-
-} 
 
 

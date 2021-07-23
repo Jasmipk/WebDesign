@@ -43,7 +43,10 @@
             <!-- input form start -->
             <div class="row">
                 <div class="col-lg-3 col-md-10 col-sm-10">
-                    <input type="search" class="form-control search" placeholder="Search campaigns...">
+                    <div class="input-group-prepend">
+                        <i class="input-group-text fas fa-search"></i>
+                        <input type="text" class="form-control" placeholder="Search" />
+                    </div>
                 </div>
                 <div class="col-lg-1 col-md-3 filter">
                     <div class="dropdown">
@@ -103,9 +106,9 @@
                                 <tr>
                                     <th>Delivery Batch</th>
                                     <div class="dropdown">
-                                        <th class="dropdown-toggle" data-toggle="dropdown">
+                                        <th class="dropdown-toggle dropup" data-toggle="dropdown">
                                             Data generated</th>
-                                    </div>
+                                        </div>
                                     <div class="dropdown">
                                         <th class="dropdown-toggle" data-toggle="dropdown">
                                             <a data-toggle="tooltip" data-placement="top"

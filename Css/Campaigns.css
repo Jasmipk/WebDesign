@@ -13,17 +13,25 @@
       margin-top: 10px;
     }
   }
-  .search{
-    background-image: url('searchicon.png');
-  }
+  /* input[type=search] {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    background-image: url('search.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat !important;
+    padding: 12px 20px 12px 40px;
+  
+  } */
+  
  .content {
   margin-left: 90px;
 } 
 @media only screen and (min-width: 768px) {
-.model1{
+/* .model1{
   float: right;
   font-size: 14px;
-}
+} */
 /* .filter{
   margin-top: 10px;
 } */
