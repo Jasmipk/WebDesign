@@ -52,7 +52,7 @@
 .column-33 {
   float: left;
   width: 33.33333%;
-  padding: 5px;
+  /* padding: 5px; */
 }
 .column-40 {
   float: left;
@@ -78,10 +78,10 @@
   border-radius: 8px; 
   border: 1px solid #cccccc;
   display: block;
-  align-items :flex-start;
+  /* align-items :flex-start; */
   justify-content: center;
   box-sizing: border-box;
- width: 100%;
+ width: 110%;
  height: 138px;
  text-align: center;
 }

@@ -4,7 +4,6 @@
    margin-left: 0 !important;
   }
 }
-
 .content{
     margin-left: 90px;
     padding: 1px 16px;
@@ -13,7 +12,6 @@
     overflow: hidden;
     /* background-color: #f1f1f1; */
   }
-  
   .topnav a {
     float: left;
     display: block;
@@ -24,11 +22,9 @@
     font-size: 12px;
     border-bottom: 3px solid transparent;
   }
-  
   .topnav a:hover {
     border-bottom: 3px solid blue
   }
-  
   .topnav a.active {
     border-bottom: 3px solid blue;
   }

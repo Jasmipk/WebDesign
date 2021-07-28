@@ -50,7 +50,6 @@
     margin-top: 123px;
     height: 40px;
 }
-
 .radiobutton
 {
     margin: 3px;
@@ -70,7 +69,6 @@
       /* margin:10px 0 20px; */
       /* padding: 4px; */
      }
-   
 .circle{
   margin: 30px;
 }
@@ -88,7 +86,6 @@
 .icon :hover{
     color: rgb(28, 204, 57);
 }
-
 .card{
     padding: 10px;
 }
@@ -98,13 +95,10 @@
 /* .diffrent{
     margin-left: 100px;
 } */
-
-
 /* slider */
 .slidecontainer {
     width: 100%;
   }
-  
   .slider {
     width: 100%;
     height: 15px;
@@ -115,11 +109,9 @@
     -webkit-transition: .2s;
     transition: opacity .2s;
   }
-  
   .slider:hover {
     opacity: 1;
   }
-  
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -129,7 +121,6 @@
     background: red;
     cursor: pointer;
   }
-  
   .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
