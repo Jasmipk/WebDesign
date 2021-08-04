@@ -11,19 +11,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hyperform/0.9.9/hyperform.css">
     <link rel="stylesheet" type="text/css"
         href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+        <!-- start coustome css -->
     <link rel="stylesheet" href="/sidebar.css">
-    <link rel="stylesheet" href="/Css/Setting.css">
+    <link rel="stylesheet" href="/css/setting.css">
+    <!-- end coustome css -->
 </head>
 
 <body>
     <!-- sidebar start -->
     <div class="sidebar">
-        <a href=""><i class="demoicon fa fa-fire"></i></a>
-        <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
-        <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
-        <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
-        <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
-        <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+        <a href=""><i class="disabled demoicon fa fa-fire"></i></a>
+        <a href="/pages/dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
+        <a href="/pages/campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
+        <a href="/pages/delivery.html"><i class="demoicon fa fa-truck"></i></a>
+        <a href="/pages/setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="/pages/login.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
     <!-- sidebar end -->
     <!-- content start-->
@@ -38,8 +40,8 @@
             </div>
             <div class="row">
                 <div class="topnav">
-                    <a class="active" href="/Html/Setting.html">MY ACCOUNT</a>
-                    <a href="/Html/MyBusinesses.html">MY BUSINESSES</a>
+                    <a class="active" href="/pages/setting.html">MY ACCOUNT</a>
+                    <a href="/pages/mybusinesses.html">MY BUSINESSES</a>
                 </div>
                 <hr class="solid">
             </div>
@@ -119,24 +121,6 @@
                     <div class="form-group">
                         <button class="btn btn-primary" data-toggle="modal"
                         data-target="#firstmodel">Update</button>
-                        <div class="modal fade" id="firstmodel">
-                            <div class="modal-dialog modal-dialog-top">
-                                <div class="modal-content">
-                                    <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Password Changed!</h4>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="modal-body"> 
-                                        <h6>You have successfully change your password.</h6>
-                                    </div>
-                                    <!-- Modal footer -->
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-dark">OK</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </form>
             </div>
@@ -214,6 +198,26 @@
         <!-- main end -->
     </div>
     <!-- content end  -->
+    <!-- model for update button -->
+    <div class="modal fade" id="firstmodel">
+        <div class="modal-dialog modal-dialog-top">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Password Changed!</h4>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body"> 
+                    <h6>You have successfully change your password.</h6>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end model for update button -->
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

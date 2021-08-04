@@ -4,11 +4,13 @@
 <head>
     <title>Campaigns</title>
     <meta charset="utf-8">
+    <!-- start bootstrap CSS -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- end bootstrap CSS  -->
     <!-- coustom css  -->
-    <link rel="stylesheet" href="../Css//Campaigns.css">
+    <link rel="stylesheet" href="../css/campaigns.css">
     <link rel="stylesheet" href="/sidebar.css">
     <!-- coustom end -->
 </head>
@@ -17,11 +19,11 @@
     <!-- sidebar start -->
     <div class="sidebar">
         <a href=""><i class="disabled demoicon fa fa-fire"></i></a>
-        <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
-        <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
-        <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
-        <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
-        <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+        <a href="/pages/dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
+        <a href="/pages/campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
+        <a href="/pages/delivery.html"><i class="demoicon fa fa-truck"></i></a>
+        <a href="/pages/setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="/pages/login.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
     <!-- sidebar end -->
     <!-- start content -->
@@ -41,8 +43,8 @@
             <div class="row mt-5">
                 <div class="col-lg-3 col-md-10 col-sm-10">
                     <div class="input-group-prepend">
-                        <i class="input-group-text fas fa-search"></i>   
-                        <input type="text" class="form-control" placeholder="Search"/>
+                        <i class="input-group-text fas fa-search"></i>
+                        <input type="text" class="form-control" placeholder="Search" />
                     </div>
                 </div>
                 <div class="col-lg-1 col-md-3 filter">
@@ -72,33 +74,9 @@
                     <span class="fa fa-download"></span><a href=""> EXPORT DATA</a>
                 </div>
                 <div class="col mt-2">
-                    <button type="button" class="model1 btn btn-primary float-right" data-toggle="modal" data-target="#firstmodel">
+                    <button type="button" class="model1 btn btn-primary float-right" data-toggle="modal"
+                        data-target="#firstmodel">
                         REQUEST CAMPAIGN</button>
-                    <div class="modal fade" id="firstmodel">
-                        <div class="modal-dialog modal-dialog-top">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Request a new campaign</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <h6>Reward your best customers and encourage others to visit more often.</h6>
-                                    <div class="form-group">
-                                        <label>Campaign Name </label>
-                                        <div class="float-right">10 Characters</div>
-                                        <input type="text" class="form-control" placeholder="Campaign Name">
-                                    </div>
-                                </div>
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
-                                    <a href="/Html/Requestcampaign.html" class="btn btn-primary">BEGIN</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- input form close -->
@@ -145,7 +123,7 @@
                                         </div>
                                     </td>
                                     <td><span class="badge badge-success">Active</span></td>
-                                    <td><a href="/Html/viewactive.html"><button class="btn btn-light">View</button></a>
+                                    <td><a href="/pages/viewactive.html"><button class="btn btn-light">View</button></a>
                                         <button class="btn btn-light" data-toggle="dropdown"><i
                                                 class="fas fa-sort-down"></i></button>
                                         <div class="dropdown-menu">
@@ -166,7 +144,7 @@
                                         </div>
                                     </td>
                                     <td><span class="badge badge-light">Requested</span></td>
-                                    <td><a href="/Html/Viewrequestcampaign.htm"><button
+                                    <td><a href="/pages/requestcampaign.html"><button
                                                 class="btn btn-light">View</button></a>
                                         <button class="btn btn-light" data-toggle="dropdown"><i
                                                 class="fas fa-sort-down"></i></button>
@@ -190,7 +168,7 @@
                                         </div>
                                     </td>
                                     <td><span class="badge badge-success">Scheduled</span></td>
-                                    <td><a href="/Html/Viewshedule.html"><button class="btn btn-light">View</button></a>
+                                    <td><a href="/pages/viewshedule.html"><button class="btn btn-light">View</button></a>
                                         <button class="btn btn-light" data-toggle="dropdown"><i
                                                 class="fas fa-sort-down"></i></button>
                                         <div class="dropdown-menu">
@@ -212,7 +190,7 @@
                                         </div>
                                     </td>
                                     <td><span class="badge badge-danger">Rejected</span></td>
-                                    <td><a href="/Html/ViewRejectedCampaign.html"><button
+                                    <td><a href="/pages/viewrejectedcampaign.html"><button
                                                 class="btn btn-light">View</button></a>
                                         <button class="btn btn-light" data-toggle="dropdown"><i
                                                 class="fas fa-sort-down"></i></button>
@@ -236,7 +214,7 @@
                                         </div>
                                     </td>
                                     <td><span class="badge badge-light">Expired</span></td>
-                                    <td><a href="/Html/ViewExpired.html"><button class="btn btn-light">View</button></a>
+                                    <td><a href="/pages/viewexpired.html"><button class="btn btn-light">View</button></a>
                                         <button class="btn btn-light" data-toggle="dropdown"><i
                                                 class="fas fa-sort-down"></i></button>
                                         <div class="dropdown-menu">
@@ -255,6 +233,33 @@
         <!-- main close -->
     </div>
     <!-- end content -->
+    <!-- model for request button -->
+    <div class="modal fade" id="firstmodel">
+        <div class="modal-dialog modal-dialog-top">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Request a new campaign</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h6>Reward your best customers and encourage others to visit more often.</h6>
+                    <div class="form-group">
+                        <label>Campaign Name </label>
+                        <div class="float-right">10 Characters</div>
+                        <input type="text" class="form-control" placeholder="Campaign Name">
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
+                    <a href="/pages/requestcampaign.html" class="btn btn-primary">BEGIN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- model end for request page -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -268,6 +273,6 @@
                 });
             });
         });
-    </script>
+    </script> 
 
 </body>

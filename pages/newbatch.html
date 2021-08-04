@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- custom stylesheet start -->
     <link rel="stylesheet" href="/sidebar.css">
-    <link rel="stylesheet" href="/Css/Editcampaign.css">
+    <link rel="stylesheet" href="/css/editcampaign.css">
     <!-- custom stylesheet end -->
 </head>
 
@@ -17,18 +17,18 @@
     <!-- sidebar start -->
     <div class="sidebar">
         <a href=""><i class="disabled demoicon fa fa-fire"></i></a>
-        <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
-        <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
-        <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
-        <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
-        <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+        <a href="/pages/dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
+        <a href="/pages/campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
+        <a href="/pages/delivery.html"><i class="demoicon fa fa-truck"></i></a>
+        <a href="/pages/setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="/pages/login.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
     <!-- start bar end  -->
     <!-- start content -->
     <div class="content">
         <!-- start main -->
         <main class="col bg-faded py-3 flex-grow-1">
-            <div><span class="fas fa-chevron-left"></span><a href="/Html/Delivery.html"> Back to Delivery</a></div>
+            <div><span class="fas fa-chevron-left"></span><a href="/pages/delivery.html"> Back to Delivery</a></div>
             <!-- first row start -->
             <div class="row mt-4">
                 <div class="col-lg-4 col-md-12 col-sm-12">
@@ -40,27 +40,6 @@
                     <button type="button" class="btn btn-primary float-right" data-toggle="modal"
                         data-target="#firstmodel">
                         GENERATE BATCH</button>
-                    <!-- The Modal -->
-                    <div class="modal" id="firstmodel">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Batch generated</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <small> you have successully created 4,500 codes for kool cafe. Go to Delivery page
-                                        to view or export your codes.</small>
-                                </div>
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <a href="/Html/Delivery.html" class="btn btn-primary btn-sm">OK</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- first row end -->
@@ -135,6 +114,28 @@
         <!-- end main  -->
     </div>
     <!-- end content -->
+    <!-- The Modal for generate batch -->
+    <div class="modal" id="firstmodel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Batch generated</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <small> you have successully created 4,500 codes for kool cafe. Go to Delivery page
+                        to view or export your codes.</small>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <a href="/pages/delivery.html" class="btn btn-primary btn-sm">OK</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end model for generate batch -->
     <!-- script -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>

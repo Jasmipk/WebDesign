@@ -73,6 +73,11 @@
   .card1{
     height: 160px !important;
   }
+  /* .d-flex {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+     display:inline !important; 
+  } */
 }
 .card1{
   border-radius: 8px; 
@@ -94,9 +99,14 @@ border: 1px solid #cccccc;
   box-sizing: border-box;
  width: 100%;
 }
-.stages{
-  padding-right: 12px;
-}
+/* .d-flex {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+} */
+/* .stages{
+ display :flex !important;
+} */
 /* .row{
   display: block;
 } */

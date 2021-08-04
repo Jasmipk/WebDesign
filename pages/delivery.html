@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- coustom css  -->
-    <link rel="stylesheet" href="../Css//Campaigns.css">
+    <link rel="stylesheet" href="/css/campaigns.css">
     <link rel="stylesheet" href="/sidebar.css">
     <!-- coustom end -->
 </head>
@@ -17,11 +17,11 @@
     <!-- sidebar start -->
     <div class="sidebar">
         <a href=""><i class="disabled demoicon fa fa-fire"></i></a>
-        <a href="/Html/Dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
-        <a href="/Html/Campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
-        <a href="/Html/Delivery.html"><i class="demoicon fa fa-truck"></i></a>
-        <a href="/Html/Setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
-        <a href="/Html/LogIn.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
+        <a href="/pages/dashboard.html"><i class="demoicon fa fa-grip-horizontal"></i></a>
+        <a href="/pages/campaigns.html"><i class="demoicon fa fa-bullhorn"></i></a>
+        <a href="/pages/delivery.html"><i class="demoicon fa fa-truck"></i></a>
+        <a href="/pages/setting.html" class="mybutton"><i class="demoicon fa fa-cog"></i></a>
+        <a href="/pages/login.html" class="mybutton1"><i class="demoicon fa fa-sign-out-alt"></i></a>
     </div>
     <!-- sidebar end -->
     <!-- start content -->
@@ -67,32 +67,6 @@
                 <div class="col">
                     <button type="button" class="float-right btn btn-primary" data-toggle="modal"
                         data-target="#firstmodel">NEW BATCH</button>
-                    <div class="modal fade" id="firstmodel">
-                        <div class="modal-dialog modal-dialog-top">
-                            <div class="modal-content">
-                                <!-- Modal Header -->
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Request a new delivery code batch </h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <!-- Modal body -->
-                                <div class="modal-body">
-                                    <h6>Issue stamps to your customers ordering form home.</h6>
-                                    <div class="form-group">
-                                        <label class="mt-3">Batch Name</label>
-                                        <div class="mt-3 model1">100 Characters</div>
-                                        <input type="text" class="form-control" id="exampleInputPassword1"
-                                            placeholder="Batch Name">
-                                    </div>
-                                </div>
-                                <!-- Modal footer -->
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
-                                    <a href="/Html/NewBatch.html" class="btn btn-primary">BEGIN</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- input form close -->
@@ -134,7 +108,7 @@
                                         </div>
                                     </td>
                                     <td><span class="badge badge-success">Active</span></td>
-                                    <td><a href="/Html/ViewBatch.html" class="btn btn-light">View Batch</a>
+                                    <td><a href="/pages/viewbatch.html" class="btn btn-light">View Batch</a>
                                         <button class="btn btn-light" data-toggle="dropdown"><i
                                                 class="fas fa-sort-down"></i></button>
                                         <div class="dropdown-menu">
@@ -195,6 +169,35 @@
         <!-- main close -->
     </div>
     <!-- first content close -->
+
+    <!-- model  for new batch -->
+    <div class="modal fade" id="firstmodel">
+        <div class="modal-dialog modal-dialog-top">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Request a new delivery code batch </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <h6>Issue stamps to your customers ordering form home.</h6>
+                    <div class="form-group">
+                        <label class="mt-3">Batch Name</label>
+                        <div class="mt-3 model1">100 Characters</div>
+                        <input type="text" class="form-control" id="exampleInputPassword1"
+                            placeholder="Batch Name">
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">CANCEL</button>
+                    <a href="/pages/newbatch.html" class="btn btn-primary">BEGIN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end model -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
