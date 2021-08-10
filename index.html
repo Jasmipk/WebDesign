@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tab Styles Inspiration</title>
+	<meta name="description" content="Tab Styles Inspiration: A small collection of styles for tabs" />
+	<meta name="keywords" content="tabs, inspiration, web design, css, modern, effects, svg" />
+	<meta name="author" content="Codrops" />
+	<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="/demo.css" />
+	<link rel="stylesheet" type="text/css" href="tabs.css" />
+	<link rel="stylesheet" type="text/css" href="/tabstyles.css" />
+	<script src="/modemizer.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+	<div class="container">
+		<section>
+			<div class="tabs tabs-style-topline">
+				<nav>
+					<ul>
+						<li><a href="#section-topline-1" class="bi bi-house-door">
+								<div><span>Home</span></div>
+							</a></li>
+						<li><a href="#section-topline-2" class="bi bi-gift">
+								<div><span>Deals</span></div>
+							</a></li>
+						<li><a href="#section-topline-3" class="bi bi-cloud-upload">
+								<div><span>Upload</span></div>
+							</a></li>
+						<li><a href="#section-topline-4" class="bi bi-cup">
+								<div><span>Work</span></div>
+							</a></li>
+						<li><a href="#section-topline-5" class="bi bi-gear">
+								<div><span>Settings</span></div>
+							</a>
+							<div class="dropdown">
+								<div class="sub-menu">
+									<nav class="tabs-style-underline">
+										<ul>
+											<li><a href="" class="bi bi-house-door"><span> Home</span></a></li>
+											<li><a href="" class="bi bi-gift"><span> Deals</span></a></li>
+											<li><a href="" class="bi bi-cloud-upload"><span> Upload</span></a></li>
+											<li><a href="" class="bi bi-cup"><span> Work</span></a></li>
+											<li><a href="" class="bi bi-gear"><span> Settings</span></a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</nav>
+				<div class="content-wrap">
+					<section id="section-topline-1">
+						<p>1</p>
+					</section>
+					<section id="section-topline-2">
+						<p>2</p>
+					</section>
+					<section id="section-topline-3">
+						<p>3</p>
+					</section>
+					<section id="section-topline-4">
+						<p>4</p>
+					</section>
+					<section id="section-topline-5">
+						<p>5</p>
+					</section>
+				</div><!-- /content -->
+			</div><!-- /tabs -->
+		</section>
+
+	</div><!-- /container -->
+	<script src="/cbpFWTabs.js"></script>
+	<script>
+		(function () {
+
+			[].slice.call(document.querySelectorAll( '.tabs')).forEach(function (el) {
+				new CBPFWTabs(el);
+			});
+
+		})();
+	</script>
+
+
+	<!-- For the demo ad only -->
+	<script src="//tympanus.net/codrops/adpacks/demoad.js"></script>
+
+</body>
+
+</html>
