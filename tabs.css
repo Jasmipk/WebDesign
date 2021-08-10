@@ -20,16 +20,16 @@
 }
 ul li:hover .sub-menu {
 	display  :inline-block;
-	width: 500% !important;
+	width: 500%;
 	float: right;
 	background: white;
 	margin-top: 10px;
 	margin: left 10px;
-	border-radius: 2px;
+	/* border-radius: 2px; */
 } 
 .sub-menu ul li a span{
 	text-transform :capitalize;
-	border-bottom: #0bb9ab;
+	/* border-bottom: #0bb9ab; */
 	
 }
 /* .tabs {
@@ -156,14 +156,18 @@ ul li:hover .sub-menu {
 	vertical-align: middle;
 	font-size: 0.75em;
 }
-
-.tabs nav li.tab-current a {
-	color: #74777b;
-}
-
 .tabs nav a:focus {
 	outline: none;
 }
 /* nav{
 	background-color:#caccce;
 } */
+@media screen and (max-width: 500px){
+	.tabs nav ul{
+		font-size: large !important;
+
+	}
+	ul li:hover .sub-menu{
+		font:icon !important;
+	}
+}

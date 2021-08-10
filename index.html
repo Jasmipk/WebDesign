@@ -22,10 +22,10 @@
 <body>
 	<div class="container">
 		<section>
-			<div class="tabs tabs-style-topline">
+			<div class="tabs tabs-style-topline topline">
 				<nav>
 					<ul>
-						<li><a href="#section-topline-1" class="bi bi-house-door">
+						<li><a href="#section-topline-1" class="bi bi-house-door ">
 								<div><span>Home</span></div>
 							</a></li>
 						<li><a href="#section-topline-2" class="bi bi-gift">
@@ -40,11 +40,11 @@
 						<li><a href="#section-topline-5" class="bi bi-gear">
 								<div><span>Settings</span></div>
 							</a>
-							<div class="dropdown">
+							<div class="row">
 								<div class="sub-menu">
 									<nav class="tabs-style-underline">
 										<ul>
-											<li><a href="" class="bi bi-house-door"><span> Home</span></a></li>
+											<li class="col"><a href="" class="bi bi-house-door"><span> Home</span></a></li>
 											<li><a href="" class="bi bi-gift"><span> Deals</span></a></li>
 											<li><a href="" class="bi bi-cloud-upload"><span> Upload</span></a></li>
 											<li><a href="" class="bi bi-cup"><span> Work</span></a></li>
@@ -81,7 +81,7 @@
 	<script>
 		(function () {
 
-			[].slice.call(document.querySelectorAll( '.tabs')).forEach(function (el) {
+			[].slice.call(document.querySelectorAll('.tabs')).forEach(function (el) {
 				new CBPFWTabs(el);
 			});
 
